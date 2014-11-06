@@ -1,0 +1,30 @@
+{
+  "name": "verstat-template",
+  "description": "Frontend project for Verstat Template",
+  "author": {
+    "name": "SE7ENSKY",
+    "email": "hello@se7ensky.com",
+    "url": "http://se7ensky.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:SE7ENSKY/verstat-template.git"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "verstat": "^3.10.0",
+    "verstat-cli": "^1.1.0",
+    "verstat-plugin-bem": "^1.0.1",
+    "verstat-plugin-bemto": "^1.3.2",
+    "verstat-plugin-coffee": "^1.0.0",
+    "verstat-plugin-cssmin": "^1.0.0",
+    "verstat-plugin-globals": "^1.1.0",
+    "verstat-plugin-group-css-media-queries": "^1.0.0",
+    "verstat-plugin-jade": "^1.4.0",
+    "verstat-plugin-livereload": "^1.1.0",
+    "verstat-plugin-sprockets": "^1.0.2",
+    "verstat-plugin-stylus": "^1.2.1",
+    "verstat-plugin-uglify": "^1.0.0",
+    "verstat-plugin-watch": "^1.0.0"
+  }
+}

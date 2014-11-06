@@ -1,0 +1,84 @@
+mixin line(j)
+		tr
+			td.title
+				if j.sitegrid
+					if j.sitegrid.title
+						span= j.sitegrid.title
+					else
+						span= j.title
+				else
+					span= j.title
+			td.url: a(href=j.url)= j.url
+			//- td.template
+			//- 	if j.sitegrid
+			//- 		if j.sitegrid.templates
+			//- 			span= j.sitegrid.templates.join(', ')
+			//- 		else if j.sitegrid.template
+			//- 			span= j.sitegrid.template
+			//- td.category
+			//- 	if j.sitegrid
+			//- 		 span= j.sitegrid.category
+			//- td.parent
+			//- 	if j.sitegrid
+			//- 		span= j.sitegrid.parent
+			td.layout
+				span= j.layout
+			//- td.comment
+			//- 	if j.sitegrid
+			//- 		span= j.sitegrid.comment
+
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(content="user-scalable=no, width=device-width", name="viewport")
+		title SiteGrid
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic', rel='stylesheet', type='text/css')
+		style
+			:stylus
+				body
+					font-size 15px
+					line-height 1.5
+					font-family "PT Sans", sans-serif 
+				table
+					width 100%
+				table, td, th
+					border 0 none
+					border-spacing 0
+				thead tr
+					background #eee
+				tbody tr:hover
+					background #f5f5f5
+				td, th
+					padding 3px 5px
+				th
+					text-align left
+				td
+					&.title
+						width 30%
+						//- span
+						//- 	width 100%
+						//- 	text-overflow ellipsis
+						//- 	overflow hidden
+						//- 	white-space nowrap
+						//- 	display inline-block
+					&.category
+					&.template span
+						white-space nowrap
+	body
+		table
+			thead
+				tr
+					th.title title
+					th.url url
+					//- th.template template
+					//- th.category category
+					//- th.parent parent
+					th.layout layout
+					//- th.comment comment
+			tbody
+				- var jades = queryFiles({ extname: ".html", write: true })
+				each j in jades
+					if j.dir != 'layouts' && j.dir.split("/")[0] != 'vendor' && j.dir != 'globals'
+						+line(j)

@@ -1,0 +1,25 @@
+extends root
+
+block head
+	script.
+		enqueueStyle('#{asset("project.min.css")}')
+
+		enqueueScript('#{asset("jquery-1.11.0.min.js")}')
+		enqueueScript('#{asset("project.min.js")}')
+
+		WebFontConfig = {
+			google: { families: [
+				'Fira+Sans:400,500,700:latin,cyrillic'
+			] }
+		}
+
+		enqueueScript('//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js')
+
+block root
+	+b("header").header Header
+	
+	block main
+		!= content
+	
+	unless file.hideFooter
+		+b("footer").footer Footer
