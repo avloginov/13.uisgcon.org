@@ -1,5 +1,5 @@
 doctype html
-html.preloading
+html
 	head
 		meta(charset="UTF-8")
 		meta(content="width=device-width, minimum-scale=1, maximum-scale=1", name="viewport")
@@ -10,20 +10,10 @@ html.preloading
 					| #{file.title} – #{site.title}
 				else
 					| #{site.title}
-		style#style-preloading!= queryFile({ fullname: "assets/styles/preloading" }).processed
-		script!= queryFile({ fullname: "assets/scripts/head-loader" }).processed
-		
-		block head
-
-		| <!--[if lt IE 9]>
-		script(src=asset("ie-js/html5.js"))
-		script(src=asset("ie-js/respond.min.js"))
-		script(src=asset("http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"))
-		| <!--<![endif]-->
+		block fonts
+		block styles
+		block scripts
 	body(class=file.bodyClasses)
 		block root
 			!= content
-		
 		block analytics
-		
-		+b.preloader: +e.spinner

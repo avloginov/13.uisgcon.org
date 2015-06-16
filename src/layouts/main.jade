@@ -1,20 +1,5 @@
 extends root
 
-block head
-	script.
-		enqueueStyle('#{asset("project.min.css")}')
-
-		enqueueScript('#{asset("jquery-1.11.0.min.js")}')
-		enqueueScript('#{asset("project.min.js")}')
-
-		WebFontConfig = {
-			google: { families: [
-				'Fira+Sans:400,500,700:latin,cyrillic'
-			] }
-		}
-
-		enqueueScript('//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js')
-
 block root
 	+b("header").header Header
 	
@@ -23,3 +8,20 @@ block root
 	
 	unless file.hideFooter
 		+b("footer").footer Footer
+
+block fonts
+	link(href='http://fonts.googleapis.com/css?family=Fira+Sans:400,400italic|Roboto:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+block styles
+	link(rel="stylesheet", href=asset("project.min.css"))
+block scripts
+	script(src=asset("jquery-1.11.0.min.js") defer)
+	script(src=asset("project.min.js") defer)
+//- block analytics
+	script.
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42536803-1', 'fastimport.ru');
+		ga('send', 'pageview');

@@ -1,1 +1,0 @@
-$(".main-menu__item:first").addClass "active"
