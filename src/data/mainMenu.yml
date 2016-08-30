@@ -1,4 +1,2 @@
-- title: Главная
-  url: /
-- title: О проекте
-  url: /about.html
+- title: Home
+  url: "/"

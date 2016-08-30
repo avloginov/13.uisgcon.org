@@ -1,31 +1,31 @@
 mixin line(j)
-		tr
-			td.title
-				if j.sitegrid
-					if j.sitegrid.title
-						span= j.sitegrid.title
-					else
-						span= j.title
+	tr
+		td.title
+			if j.sitegrid
+				if j.sitegrid.title
+					span= j.sitegrid.title
 				else
 					span= j.title
-			td.url: a(href=j.url)= j.url
-			//- td.template
-			//- 	if j.sitegrid
-			//- 		if j.sitegrid.templates
-			//- 			span= j.sitegrid.templates.join(', ')
-			//- 		else if j.sitegrid.template
-			//- 			span= j.sitegrid.template
-			//- td.category
-			//- 	if j.sitegrid
-			//- 		 span= j.sitegrid.category
-			//- td.parent
-			//- 	if j.sitegrid
-			//- 		span= j.sitegrid.parent
-			td.layout
-				span= j.layout
-			//- td.comment
-			//- 	if j.sitegrid
-			//- 		span= j.sitegrid.comment
+			else
+				span= j.title
+		td.url: a(href=j.url)= j.url
+		//- td.template
+		//- 	if j.sitegrid
+		//- 		if j.sitegrid.templates
+		//- 			span= j.sitegrid.templates.join(', ')
+		//- 		else if j.sitegrid.template
+		//- 			span= j.sitegrid.template
+		//- td.category
+		//- 	if j.sitegrid
+		//- 		 span= j.sitegrid.category
+		//- td.parent
+		//- 	if j.sitegrid
+		//- 		span= j.sitegrid.parent
+		td.layout
+			span= j.layout
+		//- td.comment
+		//- 	if j.sitegrid
+		//- 		span= j.sitegrid.comment
 
 
 doctype html

@@ -3,7 +3,8 @@ html
 	head
 		meta(charset="UTF-8")
 		meta(content="width=device-width, minimum-scale=1, maximum-scale=1", name="viewport")
-		meta(name="author", content="SE7ENSKY frontend studio <hello@se7ensky.com>")
+		//- meta(name="theme-color" content="#000")
+		link(rel="shortcut icon" href=asset("i/favicon.png?v=0"))
 		title
 			block title
 				if file.title
@@ -12,8 +13,9 @@ html
 					| #{site.title}
 		block fonts
 		block styles
-		block scripts
-	body(class=file.bodyClasses)
+	body
 		block root
 			!= content
+
+		block scripts
 		block analytics
