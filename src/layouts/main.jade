@@ -10,12 +10,13 @@ block root
 	+b("footer").footer Footer
 
 block fonts
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic" rel="stylesheet")
 
 block styles
-	link(rel="stylesheet", href=asset("project.min.css"))
+	link(rel="stylesheet", href=asset("uisgcon.min.css"))
 
 block scripts
 	script(src=asset("jquery-1.11.0.min.js") defer)
-	script(src=asset("project.min.js") defer)
+	script(src=asset("uisgcon.min.js") defer)
 
 block analytics
