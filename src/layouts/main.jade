@@ -1,13 +1,46 @@
 extends root
 
 block root
-	+b("header").header Header
-	
+	+b("header").header
+		.container
+			+b.logotype
+				+e("a").link(href="/")
+					+e("img").image(src="" alt="UISGCON 12 logotype")
+					+e("span").text ukrainian information security group conference
+
+			//- +b("nav").menu.header__menu.nav: +i({ prefix: "main", items: "", activeMenuIndex: "" })
+
+			+b.registration
+				+e.button Реєстрація
+			+b.language-switch
+				+e.button ENG
+
 	main.main
 		block main
 			!= content
-	
-	+b("footer").footer Footer
+
+	+b("footer").footer
+		.container
+			+b.logotype
+				+e("a").link(href="/")
+					+e("img").image(src="" alt="UISGCON 12 logotype")
+					//- +e("span").text ukrainian information security group conference
+				+e("small").copyright &copy; UISGCON, Cyber Security Conference
+
+			+b.location
+				+e("address").address Прем'єр Готель Русь, Київ, Україна
+					+e("span").dates
+						time.location__date(datetime="2016-11-25") 25
+						| -
+						time.location__date(datetime="2016-11-26") 26 листопада, 2016
+
+			+b.social
+
+			+b.developers
+				+e("address").text Розроблено в
+					+e("a").link(rel="author" href="https://se7ensky.com/")
+						+e("img").image(src="" alt="se7ensky logotype")
+
 
 block fonts
 	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic" rel="stylesheet")

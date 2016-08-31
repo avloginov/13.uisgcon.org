@@ -1,5 +1,283 @@
 extends main
 
 block main
-	!= content
+	//- != content
+	+b("section").hero#hero
+		.container
+			+e("h1").title Cyber Security Conference
+			+b.location
+				+e("address").address Прем'єр Готель Русь, Київ, Україна
+					+e("span").dates
+						time.location__date(datetime="2016-11-25") 25
+						| -
+						time.location__date(datetime="2016-11-26") 26 листопада, 2016
 
+	+b("section").about#about
+		.container
+			+e("h2").title Про UISGCON
+			+e("ul").features-list
+				+e("li").features-list-item
+					+e("span").features-text
+						+e("span") 12
+							+e("span") -а
+								+e("span") конференція
+									+e("span") інформаційної безпеки
+				+e("li").features-list-item
+					+e("span").features-text 25-26
+						+e("span") листопада, 2016
+							+e("span") Прем'єр Готель Русь, Київ, Україна
+			+e("p").text Як і раніше, захід викликає інтерес у представників кредитно-фінансової та банківської систем України, провайдерів телекомунікаційних послуг, промисловості, торгівлі, професіоналів з надання ІБ-послуг, органів державної влади, а також у системних адміністраторів, інженерів, студентів профільних ВНЗ та ін.
+			+e.details Детально про UISGCON
+
+	+b("section").features#features
+		.container
+			+e("ul").list
+				+e("li").list-item
+					+e("span").text 2
+						+e("span") Дні унікального контенту
+				+e("li").list-item
+					+e("span").text 70
+						+e("span") Кращих спеціалістів з інформаційної безпеки
+				+e("li").list-item
+					+e("span").text 120
+						+e("span") Тематичних лекцій, дискусій та майстер-класів
+
+	+b("section").speakers#speakers
+		.container
+			+e("li").list
+				+e("li").list-item
+					+e.person
+						+e("img").avatar(src="" alt="Костянтин Корсун. Голова Ради Української Групи Інформаційної Безпеки.")
+						+e("span").name Костянтин Корсун
+						+e("span").position Голова Ради Української Групи Інформаційної Безпеки
+				+e("li").list-item
+					+e.person
+						+e("img").avatar(src="" alt="Андрій Логінов. Член Ради Української Групи Інформаційної Безпеки.")
+						+e("span").name Андрій Логінов
+						+e("span").position Член Ради Української Групи Інформаційної Безпеки
+				+e("li").list-item
+					+e.person
+						+e("img").avatar(src="" alt="Володимир Стиран. Голова Наглядової Ради Української Групи Інформаційної Безпеки.")
+						+e("span").name Володимир Стиран
+						+e("span").position Голова Наглядової Ради Української Групи Інформаційної Безпеки
+				+e("li").list-item
+					+e.person
+						+e("img").avatar(src="" alt="Олег Бондаренко. Секретар Української Групи Інформаційної Безпеки.")
+						+e("span").name Олег Бондаренко
+						+e("span").position Секретар Української Групи Інформаційної Безпеки
+				+e("li").list-item
+					+e.person
+						+e("img").avatar(src="" alt="Лідія Скалицька. Виконавчий продюсер та головний редактор Securit13 Podcast.")
+						+e("span").name Лідія Скалицька
+						+e("span").position Виконавчий продюсер та головний редактор Securit13 Podcast
+				+e("li").list-item
+					+e.person
+						+e("img").avatar(src="" alt="Віктор Бистров. Член Ради Української Групи Інформаційної Безпеки.")
+						+e("span").name Віктор Бистров
+						+e("span").position Член Ради Української Групи Інформаційної Безпеки
+			+e.more Всі спікери
+
+	+b("section").program#program
+		.container
+			+e.tabs
+				+e("ul").external-tabs-list
+					+e("li").external-tabs-list-item
+						+e("a").external-tabs-list-link(href="#day-1") День перший
+							time(datetime="2016-11-25") 25/11/2016
+				+e("li").external-tabs-list-item
+					+e("a").external-tabs-list-link(href="#day-2") День другий
+						time(datetime="2016-11-26") 26/11/2016
+
+				+e.tabs-content#day-1
+					+e("ul").internal-tabs-list
+						+e("li").internal-tabs-list-item
+							+e("a").internal-tabs-list-link(href="#day-1-hall-1") Зал 1
+						+e("li").internal-tabs-list-item
+							+e("a").internal-tabs-list-link(href="#day-1-hall-2") Зал 2
+						+e("li").internal-tabs-list-item
+							+e("a").internal-tabs-list-link(href="#day-1-hall-3") Зал 3
+
+					+e.internal-tabs-content#day-1-hall-1
+						+e("ul").events-list
+							+e("li").events-list-item
+								time.program__events-time 08:30
+								+e("span").events-text Реєстрація
+							+e("li").events-list-item
+								time.program__events-time 09:00
+								+e("span").events-text Ранкова кава
+							+e("li").events-list-item
+								time.program__events-time 09:15
+								+e("span").events-text Відкриття конференції / Привітальне слово
+							+e("li").events-list-item
+								time.program__events-time 09:30
+								+e("span").events-text "Кібер Війна у Перспективі: Агресія Росії проти України", Кеннет Гірз
+							+e("li").events-list-item
+								time.program__events-time 10:30
+								+e("span").events-text “Кібер Безпека в Україні”,
+									+e("span") Мустафа Айдінлі
+							+e("li").events-list-item
+								time.program__events-time 11:10
+								+e("span").events-text "Горизонталь це нова вертикаль - погляд “гіка” на можливості навколо вас",
+									+e("span") Пол Андерсон
+							+e("li").events-list-item
+								time.program__events-time 11:55
+								+e("span").events-text Кава-брейк
+							+e("li").events-list-item
+								time.program__events-time 12:20
+								+e("span").events-text "Боротьба зі шкідливим ПЗ в 2016 році і за його межами: виклики, приклади, і стратегії",
+									+e("span") Гійом Лове
+
+				//	+e.internal-tabs-content#day-1-hall-2
+				//		+e("ul").events-list
+				//
+				//	+e.internal-tabs-content#day-1-hall-3
+				//		+e("ul").events-list
+				//
+				//+e.tabs-content#day-2
+				//	+e("ul").internal-tabs-list
+				//		+e("li").internal-tabs-list-item
+				//			+e("a").internal-tabs-list-link(href="#day-2-hall-1") Зал 1
+				//		+e("li").internal-tabs-list-item
+				//			+e("a").internal-tabs-list-link(href="#day-2-hall-2") Зал 2
+				//		+e("li").internal-tabs-list-item
+				//			+e("a").internal-tabs-list-link(href="#day-2-hall-3") Зал 3
+				//
+				//	+e.internal-tabs-content#day-2-hall-1
+				//		+e("ul").events-list
+				//
+				//	+e.internal-tabs-content#day-2-hall-2
+				//		+e("ul").events-list
+				//
+				//	+e.internal-tabs-content#day-2-hall-3
+				//		+e("ul").events-list
+
+	+b("section").contest#contest
+		.container
+			+e("h2").title Конкурс
+			+e("p").text Розробіть новий семпл або модифікуйте існуючі семпли, що не будуть виявлятися засобами для боротьби з malware і отримайте цінні призи
+			+e("ul").prizes-list
+				+e("li").prizes-list-item
+					figure.contest__prize
+						+e("img").prize-image(src="" alt="iPad mini 3")
+						figcaption.contest__prize-name iPad mini 3
+				+e("li").prizes-list-item
+					figure.contest__prize
+						+e("img").prize-image(src="" alt="Petcube")
+						figcaption.contest__prize-name Petcube
+				+e("li").prizes-list-item
+					figure.contest__prize
+						+e("img").prize-image(src="" alt="INTEL Compute Stick")
+						figcaption.contest__prize-name INTEL Compute Stick
+
+			+e.more Більше подробиць
+
+	+b("section").news#news
+		.container
+			+e("h2").title Новини
+			+e("ul").list
+				+e("li").list-item
+					time(datetime="2016-05-21").news__date 21.05.2016
+					+e("span").text DIGITAL MAMA - результати третьої хвилі дослідження споживчої поведінки українських мам в Інтернеті
+				+e("li").list-item
+					time(datetime="2016-04-06").news__date 06.04.2016
+					+e("span").text MarTech Europe - конференція про трансформацію маркетингу за допомогою технологій
+				+e("li").list-item
+					time(datetime="2016-03-18").news__date 18.03.2016
+					+e("span").text Програми лояльності - навіщо вони потрібні і як працюють? досвід Tesco
+				+e("li").list-item
+					time(datetime="2016-02-14").news__date 14.02.2016
+					+e("span").text Панельна дискусія: "Розслідування інцидентів кібербезпеки", "Еволюція атак на пристрої мережевої інфраструктури"
+				+e("li").list-item
+					time(datetime="2016-02-07").news__date 07.02.2016
+					+e("span").text Сертифікація фахівців в галузі інформаційної безпеки та сертифікація на відповідність стандартам
+				+e("li").list-item
+					time(datetime="2016-02-01").news__date 01.02.2016
+					+e("span").text Захист персональних даних vs забезпечення інформаційної безпеки. N-кількість кіберзагроз, які Ви могли проспати. Практичні приклади
+				+e("li").list-item
+					time(datetime="2016-01-29").news__date 29.01.2016
+					+e("span").text Підведення підсумків конкурсу "Bring Your Own Sample"
+
+		+e.more Всі новини
+
+	+b("section").tickets#tickets
+		.container
+			+e("ul").list
+				+e("li").list-item
+					+e.model
+						+e("span").model-name early bird
+						+e("span").model-price 5600
+							abbr(title="UAH") ₴
+						+e("span").model-description При купівлі квитка до
+							time(datetime="2016-09-31") 31.09.16
+						+e("span").model-buy Купити
+				+e("li").list-item
+					+e.model
+						+e("span").model-name mid season
+						+e("span").model-price 6600
+							abbr(title="UAH") ₴
+						+e("span").model-description При купівлі квитка до
+							time(datetime="2016-10-31") 31.10.16
+						+e("span").model-buy Купити
+				+e("li").list-item
+					+e.model
+						+e("span").model-name hot
+						+e("span").model-price 9000
+							abbr(title="UAH") ₴
+						+e("span").model-description При купівлі квитка в день конференції
+						+e("span").model-buy Купити
+
+	+b("section").sponsors#sponsors
+		.container
+			+e("h2").title Спонсори
+			+e("ul").list
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Генеральний спонсор 'ISIGHT PARTNERS'")
+						figcaption.sponsors__logotype-text Генеральний спонсор 'ISIGHT PARTNERS'"
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Золотий спонсор CISCO SYSTEMS, INC")
+						figcaption.sponsors__logotype-text Золотий спонсор CISCO SYSTEMS, INC
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Золотий спонсор IBM UKRAINE")
+						figcaption.sponsors__logotype-text Золотий спонсор IBM UKRAINE
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Срібний спонсор FORTINET, INC")
+						figcaption.sponsors__logotype-text Срібний спонсор FORTINET, INC
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Срібний спонсор Virgil Security")
+						figcaption.sponsors__logotype-text Срібний спонсор Virgil Security
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Срібний спонсор Symantec")
+						figcaption.sponsors__logotype-text Срібний спонсор Symantec
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Спонсор круглого столу ТОВ 'Агенство Активного Аудиту'")
+						figcaption.sponsors__logotype-text Спонсор круглого столу ТОВ "Агенство Активного Аудиту"
+				+e("li").list-item
+					figure.sponsors__logotype
+						+e("img").logotype-image(src="" alt="Спонсор круглого столу ТОВ 'Інфосейф ІТ'")
+						figcaption.sponsors__logotype-text Спонсор круглого столу ТОВ "Інфосейф ІТ"
+
+	+b("section").map#map
+		+e.interactive#map-interactive
+
+	+b("section").partners#partners
+		+e("h2") Партнери
+		+e("ul").list
+			+e("li").list-item
+				figure.partners__logotype
+					+e("img").logotype-image(src="" alt="Конкурс-партнер - ТОВ 'Бережа security'")
+					figcaption.partners__logotype-text Конкурс-партнер - ТОВ "Бережа security"
+			+e("li").list-item
+				figure.partners__logotype
+					+e("img").logotype-image(src="" alt="Технологічний партнер - ТОВ 'SmartNet'")
+					figcaption.partners__logotype-text Технологічний партнер - ТОВ "SmartNet"
+			+e("li").list-item
+				figure.partners__logotype
+					+e("img").logotype-image(src="" alt="Тренінг-партнер - ТОВ 'ISSP'")
+					figcaption.partners__logotype-text Тренінг-партнер - ТОВ "ISSP"
