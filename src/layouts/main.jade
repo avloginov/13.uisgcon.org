@@ -1,13 +1,7 @@
 extends root
 
 block root
-	+b("header").header
-		.container
-			+e.menu
-				+b("nav").menu: +i({ prefix: "main", items: "mainMenu"})
-			+e.controls
-				+e("a").reg.btn(href="/") Реєстрація
-				+e("a").language(href="/") ENG
+	+b("header").header: +i
 
 	main.main
 		block main

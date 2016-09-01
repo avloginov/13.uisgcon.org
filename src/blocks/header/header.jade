@@ -1,0 +1,7 @@
+.container
+	+e.logo
+	+e.menu
+		+b("nav").menu: +i({ prefix: "main", items: mainMenu, blockTitle: "Головне меню"})
+	+e.controls
+		+e("a").reg.btn(href="/") Реєстрація
+		+e("a").language(href="/") ENG

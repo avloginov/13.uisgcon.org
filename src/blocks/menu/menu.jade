@@ -10,9 +10,9 @@ mixin menu(prefix, items, addUlClasses, addLiClasses)
 			- if (item.active) liClasses.push("active");
 
 			li(class=liClasses)
-				a(href=item.url, title=item.title, class="#{prefix}-menu__item-link")
-					= item.title
+				a(href=item.url, title=item.title, class="#{prefix}-menu__item-link")= item.title
 				if item.children
 					+menu(prefix + "-sub", item.children)
-
+if blockTitle
+	h2.sr-only= blockTitle
 +menu(prefix, items, addUlClasses, addLiClasses)
