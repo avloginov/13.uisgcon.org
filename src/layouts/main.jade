@@ -3,17 +3,11 @@ extends root
 block root
 	+b("header").header
 		.container
-			+b.logotype
-				+e("a").link(href="/")
-					+e("img").image(src="" alt="UISGCON 12 logotype")
-					+e("span").text ukrainian information security group conference
-
-			//- +b("nav").menu.header__menu.nav: +i({ prefix: "main", items: "", activeMenuIndex: "" })
-
-			+b.registration
-				+e.button Реєстрація
-			+b.language-switch
-				+e.button ENG
+			+e.menu
+				+b("nav").menu: +i({ prefix: "main", items: "mainMenu"})
+			+e.controls
+				+e("a").reg.btn(href="/") Реєстрація
+				+e("a").language(href="/") ENG
 
 	main.main
 		block main
@@ -21,25 +15,33 @@ block root
 
 	+b("footer").footer
 		.container
-			+b.logotype
-				+e("a").link(href="/")
-					+e("img").image(src="" alt="UISGCON 12 logotype")
-					//- +e("span").text ukrainian information security group conference
-				+e("small").copyright &copy; UISGCON, Cyber Security Conference
+			+e.main
+				+e.info
+					+e.logo
+						+e("a").link(href="/")
+							+e("img").logo-image(src="" alt="UISGCON 12 logotype")
+					+e.copyright &copy; UISGCON, Cyber Security Conference
 
-			+b.location
-				+e("address").address Прем'єр Готель Русь, Київ, Україна
-					+e("span").dates
-						time.location__date(datetime="2016-11-25") 25
-						| -
-						time.location__date(datetime="2016-11-26") 26 листопада, 2016
-
-			+b.social
-
-			+b.developers
-				+e("address").text Розроблено в
-					+e("a").link(rel="author" href="https://se7ensky.com/")
-						+e("img").image(src="" alt="se7ensky logotype")
+				+e.location
+					+e("address").location-address= site.location
+					+e("span").location-dates
+						if site.date.dateStart
+							time.footer__location-date(datetime=site.date.dateStartShort)= site.date.dateStart
+						if site.date.dateEnd
+							| -
+							time.footer__location-date(datetime=site.date.dateEndShort)= site.date.dateEnd
+						if site.date.month
+							| #{site.date.month}
+						if site.date.year
+							| , #{site.date.year}
+				if site.socials
+					+e.socials
+						+b.socials: +i({ items: site.socials })
+			+e.dev
+				+e("address").dev-label Розроблено в
+					+e("a").dev-link(rel="author" href="https://se7ensky.com/")
+						// svg here
+						//+e("img").dev-image(src="" alt="Se7ensky - ...")
 
 
 block fonts

@@ -1,2 +1,10 @@
-title: UISGCON 12 - ukrainian information security group conference
+title: "UISGCON 12 - ukrainian information security group conference"
 baseUrl: "/"
+location: "Прем'єр Готель Русь, Київ, Україна"
+date:
+  dateStart: "25"
+  dateStartShort: "2016-11-25"
+  dateEnd: "26"
+  dateEndShort: "2016-11-26"
+  month: "листопада"
+  year: "2016"

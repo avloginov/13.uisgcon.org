@@ -8,6 +8,29 @@ $ ->
 	longitude = 30.524122 unless longitude
 	zoom = 15 unless zoom
 
+	throttle = (func, ms) ->
+		isThrottled = false
+		savedArgs = undefined
+		savedThis = undefined
+
+		wrapper = ->
+			if isThrottled
+				savedArgs = arguments
+				savedThis = this
+				return
+			func.apply this, arguments
+			isThrottled = true
+			setTimeout (->
+				isThrottled = false
+				if savedArgs
+					wrapper.apply savedThis, savedArgs
+					savedArgs = savedThis = null
+				return
+			), ms
+			return
+
+		wrapper
+
 	window.initMap = ->
 		coordinates =
 			lat: latitude
@@ -28,7 +51,7 @@ $ ->
 			icon: imageData
 			title: title
 
-		google.maps.event.addDomListener(window, 'resize', initMap)
+		google.maps.event.addDomListener(window, "resize", initMap)
 
 	loadMapAPI = ->
 		script = document.createElement("script")
