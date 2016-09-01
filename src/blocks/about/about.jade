@@ -1,0 +1,14 @@
++b("header").header.header_static: +i({ logoSmall: site.logotypeSmall, logoAlt: site.logotypeAlt, menu: mainMenu, controls: site.controls })
+.container
+	+e("h2").title.main-title!= title
+	+e("ul").features
+		+e("li").features-item
+			+e.features-value!= featuresValue
+			+e.features-label!= featuresLabel
+		+e("li").features-item
+			if date
+				+e.features-value #{date.dateStart}-#{date.dateEnd}
+				+e.features-label #{date.month}, #{date.year} <br>#{location}
+	+e.text!= text
+	+e.footer
+		+e("a").more.btn.btn_default(href="/")!= btnMore

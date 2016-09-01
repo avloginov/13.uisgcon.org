@@ -4,38 +4,13 @@ block main
 	h1.sr-only= site.title
 	+b("section").intro#intro: +i({ title: file.intro.title, location: site.location, date: site.date, arrowUrl: file.intro.arrowUrl })
 
-	+b("section").about#about
-		+b("header").header.header_static: +i({ logoSmall: site.logotypeSmall, logoAlt: site.logotypeAlt, menu: mainMenu, controls: site.controls })
-		.container
-			+e("h2").title Про UISGCON
-			+e("ul").features
-				+e("li").features-item
-					+e.features-value 12<small>-а</small>
-					+e.features-label конференція <br>інформаційної безпеки
-				+e("li").features-item
-					+e.features-value #{site.date.dateStart}-#{site.date.dateEnd}
-					+e.features-label #{site.date.month}, #{site.date.year} <br>#{site.location}
-			+e.text Як і раніше, захід викликає інтерес у представників кредитно-фінансової та банківської систем України, провайдерів телекомунікаційних послуг, промисловості, торгівлі, професіоналів з надання ІБ-послуг, органів державної влади, а також у системних адміністраторів, інженерів, студентів профільних ВНЗ та ін.
-			+e.footer
-				+e("a").more.btn.btn_default(href="/") Детально про UISGCON
+	+b("section").about#about: +i({ title: file.about.title, featuresValue: file.about.featuresValue, featuresLabel: file.about.featuresLabel, btnMore: file.about.btnMore, text: file.about.text, date: site.date, location: site.location })
 
-	+b("section").features#features
-		.container
-			+e("h2").title.sr-only Особливості
-			+e("ul").list
-				+e("li").list-item
-					+e.list-value 2
-					+e.list-label Дні унікального контенту
-				+e("li").list-item
-					+e.list-value 70
-					+e.list-label Кращих спеціалістів з інформаційної безпеки
-				+e("li").list-item
-					+e.list-value 120
-					+e.list-label Тематичних лекцій, дискусій та майстер-класів
+	+b("section").features#features: +i({ title: file.features.title, list: file.features.list })
 
 	+b("section").speakers#speakers
 		.container
-			+e("h2").title Спікери
+			+e("h2").title.main-title Спікери
 			+e("ul").list
 				+e("li").list-item
 					+e("a").person(href="#modal-speaker-korsun" data-toggle="modal")
@@ -68,11 +43,11 @@ block main
 				//		+e("span").name Віктор Бистров
 				//		+e("span").position Член Ради Української Групи Інформаційної Безпеки
 			+e.footer
-				+e("a").more.btn(href="/") Всі спікери
+				+e("a").more.btn.btn_default(href="/") Всі спікери
 
 	+b("section").program#program
 		.container
-			+e("h2").title Програма
+			+e("h2").title.main-title Програма
 			//+e.tabs
 			//	+e("ul").external-tabs-list
 			//		+e("li").external-tabs-list-item
@@ -145,91 +120,15 @@ block main
 				//	+e.internal-tabs-content#day-2-hall-3
 				//		+e("ul").events-list
 
-	+b("section").contest#contest
-		.container
-			+e("h2").title Конкурс
-			+e.text Розробіть новий семпл або модифікуйте існуючі семпли, що не будуть виявлятися засобами для боротьби з malware і отримайте цінні призи
-			+e("ul").gifts
-				+e("li").gifts-item
-					+e.gift
-						+e.gift-image
-							+e("img").gift-img(src="" alt="iPad mini 3")
-							+e.gift-badge._big
-								+e("span").gift-badge-value 1
-								+e("span").gift-badge-label місце
-						+e.gift-label iPad mini 3
-				//+e("li").gifts-item
-				//	figure.contest__prize
-				//		+e("img").prize-image(src="" alt="Petcube")
-				//		figcaption.contest__prize-name Petcube
-				//+e("li").gifts-item
-				//	figure.contest__prize
-				//		+e("img").prize-image(src="" alt="INTEL Compute Stick")
-				//		figcaption.contest__prize-name INTEL Compute Stick
+	+b("section").contest#contest: +i({ title: file.contest.title, text: file.contest.text, gifts: file.contest.gifts, btnMore: file.contest.btnMore })
 
-			+e.footer
-				+e("a").more.btn(href="/") Більше подробиць
+	+b("section").news#news: +i({ title: file.news.title, list: file.news.list, btnMore: file.news.btnMore, btnMoreLink: file.news.btnMoreLink })
 
-	+b("section").news#news
-		.container
-			+e("h2").title Новини
-			+e("ul").list
-				+e("li").list-item
-					time(datetime="2016-05-21").news__date 21.05.2016
-					+e("a").text(href="/") DIGITAL MAMA - результати третьої хвилі дослідження споживчої поведінки українських мам в Інтернеті
-				//+e("li").list-item
-				//	time(datetime="2016-04-06").news__date 06.04.2016
-				//	+e("span").text MarTech Europe - конференція про трансформацію маркетингу за допомогою технологій
-				//+e("li").list-item
-				//	time(datetime="2016-03-18").news__date 18.03.2016
-				//	+e("span").text Програми лояльності - навіщо вони потрібні і як працюють? досвід Tesco
-				//+e("li").list-item
-				//	time(datetime="2016-02-14").news__date 14.02.2016
-				//	+e("span").text Панельна дискусія: "Розслідування інцидентів кібербезпеки", "Еволюція атак на пристрої мережевої інфраструктури"
-				//+e("li").list-item
-				//	time(datetime="2016-02-07").news__date 07.02.2016
-				//	+e("span").text Сертифікація фахівців в галузі інформаційної безпеки та сертифікація на відповідність стандартам
-				//+e("li").list-item
-				//	time(datetime="2016-02-01").news__date 01.02.2016
-				//	+e("span").text Захист персональних даних vs забезпечення інформаційної безпеки. N-кількість кіберзагроз, які Ви могли проспати. Практичні приклади
-				//+e("li").list-item
-				//	time(datetime="2016-01-29").news__date 29.01.2016
-				//	+e("span").text Підведення підсумків конкурсу "Bring Your Own Sample"
-
-		+e.footer
-			+e("a").more.btn(href="/") Всі новини
-
-	+b("section").tickets#tickets
-		.container
-			+e("h2").title Варіанти квитків
-			+e("ul").list
-				+e("li").list-item
-					+e.box
-						+e("span").box-title early bird
-						+e("span").box-price 5600
-							sup ₴
-						+e("span").box-text При купівлі квитка <br>до
-							time(datetime="2016-09-31") 31.09.16
-						+e("a").box-order.btn.btn-default(href="/") Купити
-				//+e("li").list-item
-				//	+e.model
-				//		+e("span").model-name mid season
-				//		+e("span").model-price 6600
-				//			abbr(title="UAH") ₴
-				//		+e("span").model-description При купівлі квитка до
-				//			time(datetime="2016-10-31") 31.10.16
-				//		+e("span").model-buy Купити
-				//+e("li").list-item
-				//	+e.model
-				//		+e("span").model-name hot
-				//		+e("span").model-price 9000
-				//			abbr(title="UAH") ₴
-				//		+e("span").model-description При купівлі квитка в день конференції
-				//		+e("span").model-buy Купити
+	+b("section").tickets#tickets: +i({ title: file.tickets.title, box: file.tickets.box })
 
 	+b("section").sponsors#sponsors
 		.container
-			+e("h2").title Спонсори
+			+e("h2").title.main-title Спонсори
 			+e("ul").list
 				+e("li").list-item
 					+b("a").tile(href="/" target="_blank")
@@ -271,7 +170,7 @@ block main
 			+e("h2").title Контакти
 
 	+b("section").partners#partners
-		+e("h2") Партнери
+		+e("h2").title.main-title Партнери
 		+e("ul").list
 			+e("li").list-item
 				+b("a").tile(href="/" target="_blank")

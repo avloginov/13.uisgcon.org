@@ -1,0 +1,14 @@
+.container
+	+e("h2").title.main-title Варіанти квитків
+	+e("ul").list
+		if box
+			each item in box
+				+e("li").list-item
+					+e.box
+						+e("span").box-title!= item.title
+						+e("span").box-price!= item.price
+							small!= item.currency
+						+e("span").box-text!= item.text
+							if item.time
+								time(datetime!=item.dateTime)!= item.time
+						+e("a").box-order.btn.btn-default(href=item.orderLink)!= item.order

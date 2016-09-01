@@ -1,0 +1,10 @@
+.container
+	+e("h2").title.main-title!= title
+	+e("ul").list
+		if list
+			each item in list
+				+e("li").list-item
+					time(datetime=!item.dateTime).news__date!= item.date
+					+e("a").text(href!=item.link)!= item.linkText
+	+e.footer
+		+e("a").more.btn.btn_default(href!=btnMoreLink)!= btnMore

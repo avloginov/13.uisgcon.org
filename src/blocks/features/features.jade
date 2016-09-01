@@ -1,0 +1,8 @@
+.container
+	+e("h2").title.sr-only!= title
+	+e("ul").list
+		if list
+			each item in list
+				+e("li").list-item
+					+e.list-value!= item.value
+					+e.list-label!= item.label

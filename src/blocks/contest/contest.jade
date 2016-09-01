@@ -1,0 +1,20 @@
+.container
+	+e("h2").title.main-title!= title
+	+e.text!= text
+	+e("ul").gifts
+		if gifts
+			each item, i in gifts
+				+e("li").gifts-item
+					+e.gift
+						+e.gift-image
+							+e("img").gift-img(src!=item.image alt!=item.imageAlt)
+							if i === 0
+								- classes = "contest__gift-badge_big"
+							else
+								- classes = ""
+							+e.gift-badge(class=classes)
+								+e("span").gift-badge-value!= item.badgeValue
+								+e("span").gift-badge-label!= item.badgeLabel
+						+e.gift-label!= item.label
+	+e.footer
+		+e("a").more.btn.btn_default(href="/")!= btnMore
