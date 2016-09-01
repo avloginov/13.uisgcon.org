@@ -1,7 +1,7 @@
 extends root
 
 block root
-	+b("header").header: +i
+	+b("header").header.header_static: +i({ logoBig: site.logotypeBig, logoAlt: site.logotypeAlt, logoLabel: site.logotypeLabel, controls: site.controls })
 
 	main.main
 		block main

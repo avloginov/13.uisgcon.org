@@ -52,6 +52,7 @@ $ ->
 			title: title
 
 		google.maps.event.addDomListener(window, "resize", initMap)
+		# google.maps.event.addDomListener(window, "resize", throttle(initMap, 100))
 
 	loadMapAPI = ->
 		script = document.createElement("script")

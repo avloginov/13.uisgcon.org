@@ -1,7 +1,19 @@
 .container
-	+e.logo
-	+e.menu
-		+b("nav").menu: +i({ prefix: "main", items: mainMenu, blockTitle: "Головне меню"})
-	+e.controls
-		+e("a").reg.btn(href="/") Реєстрація
-		+e("a").language(href="/") ENG
+	+e("a").logo(href="/")
+		if logoBig
+			+e("img").logo-img(src=logoBig alt=logoAlt height="41" width="314")
+			+e.logo-text!= logoLabel
+		if logoSmall
+			+e("img").logo-img(src=logoSmall alt=logoAlt height="25" width="186")
+
+	if menu
+		+e.menu
+			+b("nav").menu: +i({ prefix: "main", items: menu })
+			+e.controls
+				+e("a").reg.btn.btn_default(href=controls.registrationUrl)!= controls.registration
+				+e("a").language(href=controls.languageUrl)!= controls.language
+
+	if controls && !menu
+		+e.controls
+			+e("a").reg.btn(href=controls.registrationUrl)!= controls.registration
+			+e("a").language(href=controls.languageUrl)!= controls.language

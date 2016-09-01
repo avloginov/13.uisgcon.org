@@ -2,41 +2,22 @@ extends main
 
 block main
 	h1.sr-only= site.title
-	+b("section").intro#intro
-		.container
-			+e.header
-				+e.logo
-				+e.controls
-					p reg
-					p eng
-			+e("h2").title Cyber Security Conference
-			+e.info
-				+e("address").info-address= site.location
-				+e("span").info-dates
-					if site.date.dateStart
-						time.intro__info-date(datetime=site.date.dateStartShort)= site.date.dateStart
-					if site.date.dateEnd
-						| -
-						time.intro__info-date(datetime=site.date.dateEndShort)= site.date.dateEnd
-					if site.date.month
-						| #{site.date.month}
-					if site.date.year
-						| , #{site.date.year}
-			+e("a").arrow(href="#about")
+	+b("section").intro#intro: +i({ title: file.intro.title, location: site.location, date: site.date, arrowUrl: file.intro.arrowUrl })
 
 	+b("section").about#about
+		+b("header").header.header_static: +i({ logoSmall: site.logotypeSmall, logoAlt: site.logotypeAlt, menu: mainMenu, controls: site.controls })
 		.container
 			+e("h2").title Про UISGCON
 			+e("ul").features
 				+e("li").features-item
-					+e.features-value 12<sub>-а</sub>
+					+e.features-value 12<small>-а</small>
 					+e.features-label конференція <br>інформаційної безпеки
 				+e("li").features-item
 					+e.features-value #{site.date.dateStart}-#{site.date.dateEnd}
 					+e.features-label #{site.date.month}, #{site.date.year} <br>#{site.location}
 			+e.text Як і раніше, захід викликає інтерес у представників кредитно-фінансової та банківської систем України, провайдерів телекомунікаційних послуг, промисловості, торгівлі, професіоналів з надання ІБ-послуг, органів державної влади, а також у системних адміністраторів, інженерів, студентів профільних ВНЗ та ін.
 			+e.footer
-				+e("a").more.btn(href="/") Детально про UISGCON
+				+e("a").more.btn.btn_default(href="/") Детально про UISGCON
 
 	+b("section").features#features
 		.container
