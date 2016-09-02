@@ -126,43 +126,7 @@ block main
 
 	+b("section").tickets#tickets: +i({ title: file.tickets.title, box: file.tickets.box })
 
-	+b("section").sponsors#sponsors
-		.container
-			+e("h2").title.main-title Спонсори
-			+e("ul").list
-				+e("li").list-item
-					+b("a").tile(href="/" target="_blank")
-						figure.tile__image
-							+e("img").tile-img(src="" alt="ISIGHT PARTNERS")
-							figcaption.tile__label Генеральний спонсор 'ISIGHT PARTNERS'
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Золотий спонсор CISCO SYSTEMS, INC")
-				//		figcaption.sponsors__logotype-text Золотий спонсор CISCO SYSTEMS, INC
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Золотий спонсор IBM UKRAINE")
-				//		figcaption.sponsors__logotype-text Золотий спонсор IBM UKRAINE
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Срібний спонсор FORTINET, INC")
-				//		figcaption.sponsors__logotype-text Срібний спонсор FORTINET, INC
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Срібний спонсор Virgil Security")
-				//		figcaption.sponsors__logotype-text Срібний спонсор Virgil Security
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Срібний спонсор Symantec")
-				//		figcaption.sponsors__logotype-text Срібний спонсор Symantec
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Спонсор круглого столу ТОВ 'Агенство Активного Аудиту'")
-				//		figcaption.sponsors__logotype-text Спонсор круглого столу ТОВ "Агенство Активного Аудиту"
-				//+e("li").list-item
-				//	figure.sponsors__logotype
-				//		+e("img").logotype-image(src="" alt="Спонсор круглого столу ТОВ 'Інфосейф ІТ'")
-				//		figcaption.sponsors__logotype-text Спонсор круглого столу ТОВ "Інфосейф ІТ"
+	+b("section").sponsors#sponsors: +i({ title: file.sponsors.title, list: file.sponsors.list })
 
 	+b("section").map#map
 		+e.interactive#map-interactive(data-title="Прем'єр-готель 'Русь'" data-latitude="50.435883" data-longitude="30.524122" data-zoom="15" data-icon=asset("i/map-pin.png"))

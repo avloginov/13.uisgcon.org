@@ -1,0 +1,10 @@
+.container
+	+e("h2").title.main-title!= title
+	+e("ul").list
+		if list
+			each item in list
+				+e("li").list-item
+					+b("a").tile(href=item.link target="_blank")
+						figure.tile__image
+							+e("img").tile-img(src=item.image alt=item.alt)
+							figcaption.tile__label!= item.text
