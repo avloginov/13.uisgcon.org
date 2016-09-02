@@ -6,22 +6,21 @@
 				+e.logo-copyright &copy; UISGCON, Cyber Security Conference
 
 		+e.location
-			+e("address").location-address!= location
+			+e("address").location-address!= site.location
 			+e("span").location-dates
-				if date
-					if date.dateStart
-						time.footer__location-date(datetime!=date.dateStartShort)!= date.dateStart
-					if date.dateEnd
+				if site.date
+					if site.date.dateStart
+						time.footer__location-date(datetime!=site.date.dateStartShort)!= site.date.dateStart
+					if site.date.dateEnd
 						| -
-						time.footer__location-date(datetime!=date.dateEndShort)!= date.dateEnd
-					if date.month
-						| #{date.month}
-					if date.year
-						| , #{date.year}
+						time.footer__location-date(datetime!=site.date.dateEndShort)!= site.date.dateEnd
+					if site.date.month
+						| #{site.date.month}
+					if site.date.year
+						| , #{site.date.year}
 		//- +b.socials: +i
 
-	if dev
-		+e.dev
-			+e("address").dev-label Розроблено в
-			+e("a").dev-link(href="https://se7ensky.com/" rel="author" target="_blank")
-				+e("img").dev-image(src=asset("i/se7ensky-logo.svg"), alt="Se7ensky" height="53" width="111")
+	+e.dev
+		+e("address").dev-label Розроблено в
+		+e("a").dev-link(href="https://se7ensky.com/" rel="author" target="_blank")
+			+e("img").dev-image(src=asset("i/se7ensky-logo.svg"), alt="Se7ensky" height="53" width="111")
