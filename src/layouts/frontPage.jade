@@ -128,10 +128,7 @@ block main
 
 	+b("section").sponsors#sponsors: +i({ title: file.sponsors.title, list: file.sponsors.list })
 
-	+b("section").map#map
-		+e.interactive#map-interactive(data-title="Прем'єр-готель 'Русь'" data-latitude="50.435883" data-longitude="30.524122" data-zoom="15" data-icon=asset("i/map-pin.png"))
-		+e.info
-			+e("h2").title Контакти
+	+b("section").map#map: +i({ data: file.map.data, title: file.map.title, adress: file.map.adress, mailLink: file.map.mailLink, mailLinkText: file.map.mailLinkText, times: file.map.times })
 
 	+b("section").partners#partners
 		+e("h2").title.main-title Партнери
