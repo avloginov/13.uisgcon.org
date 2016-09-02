@@ -7,36 +7,7 @@ block root
 		block main
 			!= content
 
-	+b("footer").footer
-		.container
-			+e.main
-				+e.info
-					+e.logo
-						+e("a").link(href="/")
-							+e("img").logo-image(src="" alt="UISGCON 12 logotype")
-					+e.copyright &copy; UISGCON, Cyber Security Conference
-
-				+e.location
-					+e("address").location-address= site.location
-					+e("span").location-dates
-						if site.date.dateStart
-							time.footer__location-date(datetime=site.date.dateStartShort)= site.date.dateStart
-						if site.date.dateEnd
-							| -
-							time.footer__location-date(datetime=site.date.dateEndShort)= site.date.dateEnd
-						if site.date.month
-							| #{site.date.month}
-						if site.date.year
-							| , #{site.date.year}
-				if site.socials
-					+e.socials
-						+b.socials: +i({ items: site.socials })
-			+e.dev
-				+e("address").dev-label Розроблено в
-					+e("a").dev-link(rel="author" href="https://se7ensky.com/")
-						// svg here
-						//+e("img").dev-image(src="" alt="Se7ensky - ...")
-
+	+b("footer").footer: +i({ dev: file.footer.dev, owner: file.footer.owner, location: site.location, date: site.date, socials: site.socials })
 
 block fonts
 	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic" rel="stylesheet")

@@ -1,0 +1,27 @@
+.container
+	+e.main
+		+e.info
+			+e("a").link(href!=owner.link)
+				+e("img").logo-image(src!=owner.image alt!=owner.alt height="25" width="197")
+				+e.logo-copyright!= owner.copyright
+
+		+e.location
+			+e("address").location-address!= location
+			+e("span").location-dates
+				if date
+					if date.dateStart
+						time.footer__location-date(datetime!=date.dateStartShort)!= date.dateStart
+					if date.dateEnd
+						| -
+						time.footer__location-date(datetime!=date.dateEndShort)!= date.dateEnd
+					if date.month
+						| #{date.month}
+					if date.year
+						| , #{date.year}
+		+b.socials: +i
+
+	if dev
+		+e.dev
+			+e("address").dev-label!= dev.label
+			+e("a").dev-link(rel!=dev.rel href!=dev.link)
+				+e("img").dev-image(src!=dev.image alt!=dev.alt height="53" width="111")
