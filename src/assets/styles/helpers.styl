@@ -16,14 +16,17 @@
 	text-decoration none
 	display inline-block
 	line-height 1
-
-.btn_default
-	border-radius 25px
-	padding 14px 38px
-	border-color brandColor
-	color brandColor
-	font-size 18px
-	font-weight 600
+	&_default
+		border-radius 25px
+		padding 14px 38px
+		border-color brandColor
+		color brandColor
+		font-size 18px
+		font-weight 600
+		transition all 0.2s ease-in-out
+		&:hover
+			background-color brandColor
+			color #fff
 
 .main-title
 	color blueColor
