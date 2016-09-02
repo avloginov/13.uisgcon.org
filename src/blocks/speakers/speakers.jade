@@ -1,0 +1,13 @@
+.container
+	+e("h2").title.main-title!= title
+	if persons
+		+e("ul").list
+			each item in persons
+				+e("li").list-item
+					+e.person
+						+e("img").person-avatar(src!=item.image alt!=item.alt)
+						+e("a").person-link(href!=item.link)
+							+e("span").person-name!= item.name
+						+e("span").person-position!= item.position
+	+e.footer
+		+e("a").more.btn.btn_default(href!=btnMoreLink)!= btnMore

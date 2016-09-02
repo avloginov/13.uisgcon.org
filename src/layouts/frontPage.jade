@@ -8,42 +8,7 @@ block main
 
 	+b("section").features#features: +i({ title: file.features.title, list: file.features.list })
 
-	+b("section").speakers#speakers
-		.container
-			+e("h2").title.main-title Спікери
-			+e("ul").list
-				+e("li").list-item
-					+e("a").person(href="#modal-speaker-korsun" data-toggle="modal")
-						+e("img").person-avatar(src="" alt="Костянтин Корсун")
-						+e("span").person-name Костянтин Корсун
-						+e("span").person-position Голова Ради Української Групи Інформаційної Безпеки
-				//+e("li").list-item
-				//	+e.person
-				//		+e("img").avatar(src="" alt="Андрій Логінов. Член Ради Української Групи Інформаційної Безпеки.")
-				//		+e("span").name Андрій Логінов
-				//		+e("span").position Член Ради Української Групи Інформаційної Безпеки
-				//+e("li").list-item
-				//	+e.person
-				//		+e("img").avatar(src="" alt="Володимир Стиран. Голова Наглядової Ради Української Групи Інформаційної Безпеки.")
-				//		+e("span").name Володимир Стиран
-				//		+e("span").position Голова Наглядової Ради Української Групи Інформаційної Безпеки
-				//+e("li").list-item
-				//	+e.person
-				//		+e("img").avatar(src="" alt="Олег Бондаренко. Секретар Української Групи Інформаційної Безпеки.")
-				//		+e("span").name Олег Бондаренко
-				//		+e("span").position Секретар Української Групи Інформаційної Безпеки
-				//+e("li").list-item
-				//	+e.person
-				//		+e("img").avatar(src="" alt="Лідія Скалицька. Виконавчий продюсер та головний редактор Securit13 Podcast.")
-				//		+e("span").name Лідія Скалицька
-				//		+e("span").position Виконавчий продюсер та головний редактор Securit13 Podcast
-				//+e("li").list-item
-				//	+e.person
-				//		+e("img").avatar(src="" alt="Віктор Бистров. Член Ради Української Групи Інформаційної Безпеки.")
-				//		+e("span").name Віктор Бистров
-				//		+e("span").position Член Ради Української Групи Інформаційної Безпеки
-			+e.footer
-				+e("a").more.btn.btn_default(href="/") Всі спікери
+	+b("section").speakers#speakers: +i({ title: file.speakers.title, persons: file.speakers.persons, btnMore: file.speakers.btnMore, btnMoreLink: file.speakers.btnMoreLink })
 
 	+b("section").program#program
 		.container
