@@ -11,4 +11,4 @@ $ ->
 		else if scrollTop <= preakpoint and $block.hasClass("header_fixed")
 			$block.removeClass("header_fixed")
 
-	$window.on("scroll", throttle(stickyHeader, 100))
+	$window.on("scroll", throttle(stickyHeader, 50))
