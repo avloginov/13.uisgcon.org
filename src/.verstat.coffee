@@ -13,3 +13,10 @@ module.exports =
 	'ignore+': [
 		///^globals/.*///
 	]
+	'out': 'server/public'
+	"rawExtnames+": [
+		'.mp4'
+		'.pdf'
+		'.doc'
+		'.docx'
+	]

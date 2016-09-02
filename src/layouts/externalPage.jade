@@ -1,4 +1,7 @@
 extends main
 
-block main
+block root
+	if file.showHeader
+		+b("header").header.header_static.header_superfixed.header_main#header: +i({ logoSmall: site.logotypeSmall, logoAlt: site.logotypeAlt, menu: mainMenu, controls: site.controls })
+
 	!= content

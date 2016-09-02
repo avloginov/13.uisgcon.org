@@ -14,11 +14,29 @@
 			&:hover
 				color #dca544
 	&_fixed
+	&_superfixed
+		z-index 10
 		position fixed
 		top 0
 		left 0
 		// right 0
 		// bottom 0
+	&_main
+		background-color lightGrey
+		.header
+			&__controls
+				margin 0 0 0 35px
+			&_static
+				padding 19px 0
+			&__menu
+				margin-right 0
+				.main-menu
+					margin 9px 0
+			&__reg
+				padding 11px 29px
+				color brandColor
+			&__language
+				color blueColor
 	&__logo
 		margin 10px 0
 		float left
