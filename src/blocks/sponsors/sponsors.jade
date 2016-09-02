@@ -4,7 +4,4 @@
 		if list
 			each item in list
 				+e("li").list-item
-					+b("a").tile(href=item.link target="_blank")
-						figure.tile__image
-							+e("img").tile-img(src=item.image alt=item.alt)
-							figcaption.tile__label!= item.text
+					+b("a").tile(href!=item.link target!=item.target): +i({ src: item.image, alt: item.alt, text: item.text })

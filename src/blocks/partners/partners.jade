@@ -1,0 +1,6 @@
++e("h2").title.main-title!= title
+if list
+	+e("ul").list
+		each item in list
+			+e("li").list-item
+				+b("a").tile(href!=item.link target!=item.target): +i({ src: item.img, alt: item.alt, text: item.text })

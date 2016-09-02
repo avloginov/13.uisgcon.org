@@ -130,22 +130,4 @@ block main
 
 	+b("section").map#map: +i({ data: file.map.data, title: file.map.title, adress: file.map.adress, mailLink: file.map.mailLink, mailLinkText: file.map.mailLinkText, times: file.map.times })
 
-	+b("section").partners#partners
-		+e("h2").title.main-title Партнери
-		+e("ul").list
-			+e("li").list-item
-				+b("a").tile(href="/" target="_blank")
-					figure.tile__image
-						+e("img").tile-img(src="" alt="ТОВ 'Бережа security'")
-						figcaption.tile__label Конкурс-партнер - ТОВ "Бережа security"
-			//	figure.partners__logotype
-			//		+e("img").logotype-image(src="" alt="Конкурс-партнер - ТОВ 'Бережа security'")
-			//		figcaption.partners__logotype-text Конкурс-партнер - ТОВ "Бережа security"
-			//+e("li").list-item
-			//	figure.partners__logotype
-			//		+e("img").logotype-image(src="" alt="Технологічний партнер - ТОВ 'SmartNet'")
-			//		figcaption.partners__logotype-text Технологічний партнер - ТОВ "SmartNet"
-			//+e("li").list-item
-			//	figure.partners__logotype
-			//		+e("img").logotype-image(src="" alt="Тренінг-партнер - ТОВ 'ISSP'")
-			//		figcaption.partners__logotype-text Тренінг-партнер - ТОВ "ISSP"
+	+b("section").partners#partners: +i({ title: file.partners.title, list: file.partners.list })
