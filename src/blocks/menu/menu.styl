@@ -14,3 +14,19 @@
 				font-size 18px
 				color blueColor
 				text-decoration none
+				transform color 0.2s ease
+				position relative
+				&:after
+					opacity 0
+					content ""
+					position absolute
+					top 52px
+					left 0
+					width 100%
+					border-bottom 2px solid brandColor
+					transition opacity 0.2s ease
+				&.active
+				&:hover
+					color brandColor
+					&:after
+						opacity 1
