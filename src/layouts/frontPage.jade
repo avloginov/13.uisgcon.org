@@ -10,80 +10,9 @@ block main
 
 	+b("section").speakers#speakers: +i({ title: file.speakers.title, persons: file.speakers.persons, btnMore: file.speakers.btnMore, btnMoreLink: file.speakers.btnMoreLink })
 
-	+b("section").program#program
-		.container
-			+e("h2").title.main-title Програма
-			//+e.tabs
-			//	+e("ul").external-tabs-list
-			//		+e("li").external-tabs-list-item
-			//			+e("a").external-tabs-list-link(href="#day-1") День перший
-			//				time(datetime="2016-11-25") 25/11/2016
-			//	+e("li").external-tabs-list-item
-			//		+e("a").external-tabs-list-link(href="#day-2") День другий
-			//			time(datetime="2016-11-26") 26/11/2016
-			//
-			//	+e.tabs-content#day-1
-			//		+e("ul").internal-tabs-list
-			//			+e("li").internal-tabs-list-item
-			//				+e("a").internal-tabs-list-link(href="#day-1-hall-1") Зал 1
-			//			+e("li").internal-tabs-list-item
-			//				+e("a").internal-tabs-list-link(href="#day-1-hall-2") Зал 2
-			//			+e("li").internal-tabs-list-item
-			//				+e("a").internal-tabs-list-link(href="#day-1-hall-3") Зал 3
-			//
-			//		+e.internal-tabs-content#day-1-hall-1
-			//			+e("ul").events-list
-			//				+e("li").events-list-item
-			//					time.program__events-time 08:30
-			//					+e("span").events-text Реєстрація
-			//				+e("li").events-list-item
-			//					time.program__events-time 09:00
-			//					+e("span").events-text Ранкова кава
-			//				+e("li").events-list-item
-			//					time.program__events-time 09:15
-			//					+e("span").events-text Відкриття конференції / Привітальне слово
-			//				+e("li").events-list-item
-			//					time.program__events-time 09:30
-			//					+e("span").events-text "Кібер Війна у Перспективі: Агресія Росії проти України", Кеннет Гірз
-			//				+e("li").events-list-item
-			//					time.program__events-time 10:30
-			//					+e("span").events-text “Кібер Безпека в Україні”,
-			//						+e("span") Мустафа Айдінлі
-			//				+e("li").events-list-item
-			//					time.program__events-time 11:10
-			//					+e("span").events-text "Горизонталь це нова вертикаль - погляд “гіка” на можливості навколо вас",
-			//						+e("span") Пол Андерсон
-			//				+e("li").events-list-item
-			//					time.program__events-time 11:55
-			//					+e("span").events-text Кава-брейк
-			//				+e("li").events-list-item
-			//					time.program__events-time 12:20
-			//					+e("span").events-text "Боротьба зі шкідливим ПЗ в 2016 році і за його межами: виклики, приклади, і стратегії",
-			//						+e("span") Гійом Лове
-
-				//	+e.internal-tabs-content#day-1-hall-2
-				//		+e("ul").events-list
-				//
-				//	+e.internal-tabs-content#day-1-hall-3
-				//		+e("ul").events-list
-				//
-				//+e.tabs-content#day-2
-				//	+e("ul").internal-tabs-list
-				//		+e("li").internal-tabs-list-item
-				//			+e("a").internal-tabs-list-link(href="#day-2-hall-1") Зал 1
-				//		+e("li").internal-tabs-list-item
-				//			+e("a").internal-tabs-list-link(href="#day-2-hall-2") Зал 2
-				//		+e("li").internal-tabs-list-item
-				//			+e("a").internal-tabs-list-link(href="#day-2-hall-3") Зал 3
-				//
-				//	+e.internal-tabs-content#day-2-hall-1
-				//		+e("ul").events-list
-				//
-				//	+e.internal-tabs-content#day-2-hall-2
-				//		+e("ul").events-list
-				//
-				//	+e.internal-tabs-content#day-2-hall-3
-				//		+e("ul").events-list
+	//- +b("section").program#program
+	//- 	.container
+	//- 		+e("h2").title.main-title Програма
 
 	+b("section").contest#contest: +i({ title: file.contest.title, text: file.contest.text, gifts: file.contest.gifts, btnMore: file.contest.btnMore })
 

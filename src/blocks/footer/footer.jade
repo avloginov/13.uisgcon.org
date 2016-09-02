@@ -1,9 +1,9 @@
 .container
 	+e.main
 		+e.info
-			+e("a").link(href!=owner.link)
-				+e("img").logo-image(src!=owner.image alt!=owner.alt height="25" width="197")
-				+e.logo-copyright!= owner.copyright
+			+e("a").link(href=site.baseUrl)
+				+e("img").logo-image(src=asset("i/uisg12-logo-footer.svg"), alt="" height="25" width="197")
+				+e.logo-copyright &copy; UISGCON, Cyber Security Conference
 
 		+e.location
 			+e("address").location-address!= location
@@ -18,10 +18,10 @@
 						| #{date.month}
 					if date.year
 						| , #{date.year}
-		+b.socials: +i
+		//- +b.socials: +i
 
 	if dev
 		+e.dev
-			+e("address").dev-label!= dev.label
-			+e("a").dev-link(rel!=dev.rel href!=dev.link)
-				+e("img").dev-image(src!=dev.image alt!=dev.alt height="53" width="111")
+			+e("address").dev-label Розроблено в
+			+e("a").dev-link(href="https://se7ensky.com/" rel="author" target="_blank")
+				+e("img").dev-image(src=asset("i/se7ensky-logo.svg"), alt="Se7ensky" height="53" width="111")

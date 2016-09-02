@@ -5,14 +5,11 @@
 			each item, i in box
 				+e("li").list-item
 					+e.box
-						+e("span").box-title!= item.title
-						+e("span").box-price!= item.price
-							small!= item.currency
-						+e("span").box-text!= item.text
-							if item.time
-								time(datetime!=item.dateTime)!= item.time
-						if i === 0
+						+e.box-title!= item.title
+						+e.box-price!= item.price
+							sup!= item.currency
+						if i === 2
 							- classes = "active"
 						else
 							- classes = ""
-						+e("a").box-order.btn.btn-default(class=classes href=item.orderLink)!= item.order
+						+e("a").box-order.btn.btn-default(class=classes href=item.orderLink target="_blank")!= item.order
