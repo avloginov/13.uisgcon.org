@@ -7,8 +7,9 @@ unless 'ontouchstart' in window or window.DocumentTouch and document instanceof 
 $ ->
 	FastClick.attach(document.body)
 
-	$('.scroll-link').click ->
+	$('.scroll-link').on "click", (event) ->
 		if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
+			event.preventDefault()
 			target = $(@hash)
 			target = if target.length then target else $('[name=' + @hash.slice(1) + ']')
 			if target.length
