@@ -60,12 +60,15 @@
 		font-size 30px
 		color #fff
 		text-decoration none
-		transition color 0.2s ease
+		transition .2s color ease-in-out
+		animation arrowFly 2s ease-in-out infinite
 		&:hover
 			color brandColor
-			animation fly 1s ease infinite
 
-@keyframes fly {
-	from { bottom: 40px  }
-	to { bottom: 20px }
-}
+@keyframes arrowFly
+	0%
+		transform translateY(0)
+	50%
+		transform translateY(10px)
+	100%
+		transform translateY(0)
