@@ -1,0 +1,33 @@
+.main-menu
+	margin 0
+	padding 0
+	list-style none
+	clearfix()
+	&__item
+		float left
+		margin-right 25px
+		&:last-child
+			margin-right 0
+		&-link
+			position relative
+			display block
+			padding-bottom 28px
+			font-size 18px
+			color blueColor
+			text-decoration none
+			transform color 0.2s ease
+			&:after
+				content ""
+				position absolute
+				bottom 0
+				left 0
+				right 0
+				opacity 0
+				height 2px
+				background-color brandColor
+				transition .2s opacity ease-in-out
+			&.active
+			&:hover
+				color brandColor
+				&:after
+					opacity 1

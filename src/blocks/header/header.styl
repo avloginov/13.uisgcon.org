@@ -1,61 +1,38 @@
 .header
-	&__menu
-		float right
-		margin-right 270px
+	position absolute
+	z-index 150
+	left 0
+	right 0
+	height 80px
+	padding-top 18px
+	background-color lightGrey
+	transform translate3d(0,0,0)
 	&_static
-		padding 29px 0
-		position absolute
-		top 0
-		left 0
-		width 100%
-		z-index 2
-		.header__reg
-		.header__language
-			&:hover
-				color #dca544
+		position relative
 	&_fixed
-	&_superfixed
-		z-index 10
 		position fixed
 		top 0
-		left 0
-		// right 0
-		// bottom 0
-	&_main
-		background-color lightGrey
-		.header
-			&__controls
-				margin 0 0 0 35px
-			&_static
-				padding 19px 0
-			&__menu
-				margin-right 0
-				.main-menu
-					margin 9px 0
-			&__reg
-				padding 11px 29px
-				color brandColor
-			&__language
-				color blueColor
+		box-shadow 0 0 5px rgba(0,0,0,.1)
+	&__menu
+		float right
+		margin-top 7px
 	&__logo
-		margin 10px 0
 		float left
+		margin-top 4px
 		text-decoration none
 		&-img
 			display block
-		&-text
-			color #fff
-			font-size 14px
-	&__reg
 	&__language
-		color #fff
-	&__language
-		font-size 18px
-		font-weight 600
+		margin-left 35px
 		display inline-block
-		line-height 1
-		margin-left 37px
+		vertical-align middle
+		font-size 18px
+		color blueColor
+		font-weight 600
+		text-transform uppercase
 		text-decoration none
+		&:hover
+			color brandColor
 	&__controls
 		float right
-		margin 14px 0
+		margin-left 30px

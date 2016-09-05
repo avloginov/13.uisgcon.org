@@ -2,9 +2,17 @@ extends main
 
 block main
 	h1.sr-only= site.title
-	+b("section").intro#intro: +i({ title: file.intro.title, location: site.location, date: site.date, arrowUrl: file.intro.arrowUrl })
 
-	+b("section").about#about: +i({ title: file.about.title, featuresValue: file.about.featuresValue, featuresLabel: file.about.featuresLabel, btnMore: file.about.btnMore, text: file.about.text, date: site.date, location: site.location })
+	+b("section").about#about: +i({
+		title: file.about.title,
+		featuresValue: file.about.featuresValue,
+		featuresLabel: file.about.featuresLabel,
+		btnMore: file.about.btnMore,
+		btnMoreUrl: file.about.btnMoreUrl,
+		text: file.about.text,
+		date: site.date,
+		location: site.location
+	})
 
 	+b("section").features#features: +i({ title: file.features.title, list: file.features.list })
 

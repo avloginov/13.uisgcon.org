@@ -1,7 +1,14 @@
 extends root
 
 block root
-	+b("header").header.header_static: +i({ logoBig: site.logotypeBig, logoAlt: site.logotypeAlt, logoLabel: site.logotypeLabel, controls: site.controls })
+	if file.intro
+		+b("section").intro#intro: +i({
+			title: file.intro.title,
+			location: site.location,
+			date: site.date,
+			arrowUrl: file.intro.arrowUrl
+		})
+	+b("header").header#header: +i
 
 	main.main
 		block main

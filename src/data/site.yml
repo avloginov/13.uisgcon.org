@@ -1,8 +1,6 @@
 title: "UISGCON 12 - ukrainian information security group conference"
-logotypeBig: "assets/i/uisg12-logo-big.svg"
-logotypeSmall: "assets/i/uisg12-logo-small.svg"
-logotypeAlt: "UISGCON 12"
-logotypeLabel: "ukrainian information security group conference"
+logoBig: "assets/i/uisg12-logo-big.svg"
+logoSmall: "assets/i/uisg12-logo-small.svg"
 baseUrl: "https://uisgcon.org/"
 location: "Прем'єр Готель Русь, Київ, Україна"
 date:
@@ -12,9 +10,4 @@ date:
   dateEndShort: "2016-11-26"
   month: "листопада"
   year: "2016"
-controls:
-  language: "ENG"
-  languageUrl: "/"
-  registration: "Реєстрація"
-  registrationUrl: "/order"
 
