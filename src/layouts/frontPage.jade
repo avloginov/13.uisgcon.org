@@ -10,9 +10,7 @@ block main
 
 	+b("section").speakers#speakers: +i({ title: file.speakers.title, persons: file.speakers.persons, btnMore: file.speakers.btnMore, btnMoreLink: file.speakers.btnMoreLink })
 
-	//- +b("section").program#program
-	//- 	.container
-	//- 		+e("h2").title.main-title Програма
+	+b("section").program#program: +i({ title: file.program.title, data: program })
 
 	+b("section").contest#contest: +i({ title: file.contest.title, text: file.contest.text, gifts: file.contest.gifts, btnMore: file.contest.btnMore })
 

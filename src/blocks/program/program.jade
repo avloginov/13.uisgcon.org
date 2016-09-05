@@ -1,0 +1,32 @@
+.container
+	if title
+		+e("h2").title.main-title!= title
+	if data
+		+e("ul").nav
+			each item, i in data
+				if i === 0
+					- var classes = "active"
+				else
+					- var classes = ""
+				+e("li").nav-item(class=classes)
+					+e("a").nav-link(href="#{item.id}")
+						+e("span").nav-title!= item.title
+						br
+						+e("span").nav-date!= item.date
+		+e.tab-content
+			each item, i in data
+				if item.places
+					if i === 0
+						- var classes2 = "active"
+					else
+						- var classes2 = ""
+					+e.tab-pane(id=item.id class=classes2)
+						each item2 in item.places
+							+e.column
+								+e.column-title!= item2.title
+								if item2.list
+									+e("ul").list
+										each item3 in item2.list
+											+e("li").list-item
+												+e.list-date!= item3.time
+												+e.list-text!= item3.event

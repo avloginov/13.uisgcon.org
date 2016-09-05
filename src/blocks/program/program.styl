@@ -1,3 +1,86 @@
 .program
 	background-color lightGrey
 	padding 80px 0
+	&__nav
+		list-style none
+		padding 0
+		margin 0
+		text-align center
+		border 1px solid #e0e6ec
+		&:after
+			content ""
+			display block
+			clear both
+		&-link
+			display block
+			text-decoration none
+			padding 14px 0 11px
+		&-item
+			display inline-block
+			width 50%
+			height auto
+			float left
+			border-right 1px solid #e0e6ec
+			background #fff
+			transition background 0.2s ease
+			&:last-child
+				border-right 0
+			&:hover
+			&.active
+				background blueColor
+				.program__nav-title
+					color #fff
+				.program__nav-date
+					color #badaf5
+		&-title
+			color blueColor
+			font-size 30px
+			font-weight 600
+		&-date
+			color #9fa8b0
+			font-size 13px
+	&__tab
+		&-pane
+			border 1px solid #e0e6ec
+			border-top 0
+			background #fff
+			display none
+			&.active
+				display block
+			&:after
+				content ""
+				display block
+				clear both
+	&__column
+		float left
+		width 33.333%
+		height auto
+		border-right 1px solid #e0e6ec
+		&:last-child
+			border-right 0
+		&-title
+			background lightGrey
+			text-align center
+			color blueColor
+			padding 14px 0
+			border-bottom 1px solid #e0e6ec
+	&__list
+		list-style none
+		padding 0
+		margin 20px 20px
+		&-item
+			margin-bottom 5px
+			&:last-child
+				margin-bottom 0
+		&-date
+			display inline-block
+			color brandColor
+			font-weight 600
+			margin-right 11px
+		&-text
+			color siteColor
+			font-size 18px
+			display inline
+			span
+				color blueColor
+				font-weight 600
