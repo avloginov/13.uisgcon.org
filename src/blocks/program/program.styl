@@ -28,6 +28,7 @@
 			&:hover
 			&.active
 				background blueColor
+				// border-right 1px solid blueColor
 				.program__nav-title
 					color #fff
 				.program__nav-date
@@ -53,7 +54,7 @@
 				clear both
 	&__column
 		float left
-		width 33.333%
+		width (100% / 3)
 		height auto
 		border-right 1px solid #e0e6ec
 		&:last-child
@@ -72,15 +73,21 @@
 			margin-bottom 5px
 			&:last-child
 				margin-bottom 0
+			&:after
+				content ""
+				display block
+				clear both
 		&-date
-			display inline-block
 			color brandColor
 			font-weight 600
-			margin-right 11px
+			float left
+			width 18%
+			padding-right 20px
 		&-text
 			color siteColor
 			font-size 18px
-			display inline
+			float right
+			width 82%
 			span
 				color blueColor
 				font-weight 600

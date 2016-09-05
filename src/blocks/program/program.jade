@@ -9,7 +9,7 @@
 				else
 					- var classes = ""
 				+e("li").nav-item(class=classes)
-					+e("a").nav-link(href="#{item.id}")
+					+e("a").nav-link(href="##{item.id}")
 						+e("span").nav-title!= item.title
 						br
 						+e("span").nav-date!= item.date
