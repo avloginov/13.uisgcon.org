@@ -7,6 +7,40 @@
 	padding-top 18px
 	background-color lightGrey
 	transform translate3d(0,0,0)
+	&__tooltip
+		cursor pointer
+		display inline-block
+		margin-top 11px
+		line-height 1
+		margin-left 16px
+		color #a4b5c6
+		position relative
+		&:hover
+			.header__tooltip-text
+				display block
+		&-text
+			display none
+			color blueColor
+			font-size 16px
+			line-height 1.4
+			width 200px
+			height 103px
+			background-color #fff
+			border-radius 5px
+			box-shadow 0 3px 5px rgba(16, 22, 30, 0.15)
+			position absolute
+			padding 16px 18px
+			bottom -120px
+			left -92px
+			&:after
+				content ""
+				position absolute
+				bottom 100%
+				left 50%
+				margin-left -10px
+				border-width 10px
+				border-style solid
+				border-color transparent transparent #fff transparent
 	&_static
 		position relative
 	&_fixed
@@ -20,8 +54,15 @@
 		float left
 		margin-top 4px
 		text-decoration none
+		&:before
+			color #a4b5c6
+			position absolute
+			right -36px
+			top 50%
+			transform translateY(-50%)
 		&-img
-			display block
+			display inline-block
+			vertical-align middle
 	&__language
 		margin-left 35px
 		display inline-block
