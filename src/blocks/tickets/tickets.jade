@@ -1,8 +1,8 @@
 .container
 	+e("h2").title.main-title Варіанти квитків
-	+e("ul").list
-		if box
-			each item, i in box
+	if list
+		+e("ul").list
+			each item, i in list
 				+e("li").list-item
 					+e.box
 						+e.box-title!= item.title
@@ -12,4 +12,4 @@
 							- classes = "active"
 						else
 							- classes = ""
-						+e("a").box-order.btn.btn-default(class=classes href=item.orderLink)!= item.order
+						+e("a").box-order.btn(class=classes href=item.orderLink)!= item.order

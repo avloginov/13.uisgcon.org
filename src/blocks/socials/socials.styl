@@ -1,6 +1,29 @@
 .socials
-	float right
-	&__test
-		width 175px
-		height 57px
+	&__item
+		display inline-block
+		vertical-align top
+		margin-left 10px
+		width 50px
+		height 50px
 		background-color #a4b5c6
+		font-size 30px
+		text-align center
+		color #0b172b
+		line-height @height
+		border-radius 100px
+		transition .2s background-color ease-in-out, .2s box-shadow ease-in-out
+		&:active
+			color #fff
+			box-shadow 0 3px 7px rgba(0,0,0,0.5) inset
+		&_facebook
+			&:hover
+			&:active
+				background-color #3b5998
+		&_twitter
+			&:hover
+			&:active
+				background-color #1da1f2
+		&_linkedin
+			&:hover
+			&:active
+				background-color #1985bc

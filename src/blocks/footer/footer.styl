@@ -1,27 +1,32 @@
 .footer
 	position relative
 	z-index 50
-	padding 45px 0
+	padding 45px 0 35px
 	background-color #0b172b
+	color #6b7788
 	&__main
+		clearfix()
 		text-align center
-		clear both
 	&__info
 		float left
-	&__link
-		display block
-		text-decoration none
+		text-align left
 	&__logo
-		&-copyright
-			color #6b7788
-			font-size 16px
-		&-image
+		display block
+		margin-bottom 5px
+		text-decoration none
+		&-img
 			display block
-			margin-bottom 3px
+	&__copyright
+		font-size 16px
+	&__socials
+		float right
+		margin-top 5px
 	&__location
 		display inline-block
-		color #6b7788
+		vertical-align top
+		margin-top 5px
 		font-size 16px
+		line-height 1.875
 		&-address
 			font-style normal
 	&__dev
@@ -30,12 +35,22 @@
 		clear both
 		&-label
 			display inline-block
-			color #6b7788
 			font-size 16px
 			font-style normal
 			margin-right 10px
 		&-link
 			display inline-block
 			vertical-align middle
+			width 112px
+			height 53px
 		&-image
 			display block
+			width 100% !important
+			height auto !important
+			path
+				fill #a4b5c6
+				transition .2s fill ease-in-out
+		&:hover
+			.footer__dev-image path
+				fill #ff7700
+			

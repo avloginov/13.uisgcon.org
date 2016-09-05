@@ -1,18 +1,26 @@
++e.header
+	.container
+		+e("a").logo(href=site.baseUrl)
+			+e("img").logo-img(src=site.logoBig, alt="" width="372" height="94")
+		+e.controls
+			+e("a").reg.btn.btn-sm.btn-white(href="/order.html") Реєстрація
+			+e("a").language(href="/") Eng
 .container
 	+e.content
-		+e("h2").title!= title
-		+e.info
-			if location
-				+e("address").info-address!= location
-			+e("span").info-dates
-				if date
-					if date.dateStart
-						time.intro__info-date(datetime=date.dateStartShort)=date.dateStart
-					if date.dateEnd
-						| -
-						time.intro__info-date(datetime=date.dateEndShort)= date.dateEnd
-					if date.month
-						|  #{date.month}
-					if date.year
-						| , #{date.year}
-	+e("a").arrow(href=arrowUrl)
+		+e.content-inner
+			+e("h2").title!= title
+			+e.info
+				if location
+					+e("address").info-address!= location
+				+e("span").info-dates
+					if date
+						if date.dateStart
+							time.intro__info-date(datetime=date.dateStartShort)=date.dateStart
+						if date.dateEnd
+							| -
+							time.intro__info-date(datetime=date.dateEndShort)= date.dateEnd
+						if date.month
+							|  #{date.month}
+						if date.year
+							| , #{date.year}
++e("a").arrow(href=arrowUrl)

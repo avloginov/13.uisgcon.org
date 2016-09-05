@@ -5,7 +5,6 @@
 			each item in list
 				+e("li").list-item
 					time(datetime=!item.dateTime).news__date!= item.date
-					+e.text-wrapper
-						+e("a").text(href!=item.link)!= item.linkText
+					+e("a").text(href!=item.link)!= item.linkText
 	+e.footer
 		+e("a").more.btn.btn_default(href!=btnMoreLink)!= btnMore

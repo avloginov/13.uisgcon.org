@@ -1,32 +1,24 @@
 .features
+	padding 55px 0
 	background-color blueColor
 	&__list
-		list-style none
-		margin 55px 0
+		margin 0
 		padding 0
+		list-style none
 		text-align center
-		font-size 0
+		claerfix()
 		&-item
-			display inline-block
-			border-right 1px solid rgba(186,218,245, 0.5)
-			&:nth-child(1)
-				.features__list-label
-					padding 0 115px
-			&:nth-child(2)
-				.features__list-label
-					padding 0 82px
-			&:nth-child(3)
-				border 0
-				.features__list-label
-					padding 0 65px
+			float left
+			width 33.333%
+			border-right 1px solid #678ab8
+			&:last-child
+				border-right 0 none
 		&-value
-			color #fff
+			margin-bottom 20px
 			font-size 90px
-			font-weight 300
 			line-height 1
-			margin-bottom 21px
+			font-weight 300
+			color #fff
 		&-label
-			font-size: 18px
-			color rgba(186,218,245, 0.8)
-			max-width 377px
-			margin-bottom 3px
+			font-size 18px
+			color #a2c1e0

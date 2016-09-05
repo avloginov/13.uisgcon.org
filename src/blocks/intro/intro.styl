@@ -1,11 +1,45 @@
 .intro
+	position relative
 	background url("i/intro.jpg") no-repeat center
 	background-size cover
-	.container
-		min-height 800px
-		height 100vh
+	&__header
+		position absolute
+		z-index 2
+		top 0
+		left 0
+		right 0
+		padding-top 20px
+	&__logo
+		float left
+		text-decoration none
+	&__controls
+		float right
+		margin-top 20px
+	&__language
+		display inline-block
+		vertical-align middle
+		margin-left 35px
+		font-size 18px
+		font-weight 600
+		color #fff
+		text-decoration none
+		text-transform uppercase
+		&:hover
+			color brandColor
 	&__content
+		height 100vh
+		min-height 800px
 		text-align center
+		&:after
+			content ""
+			display inline-block
+			vertical-align middle
+			width 0
+			height 100%
+		&-inner
+			display inline-block
+			vertical-align middle
+			max-width 96%
 	&__title
 		color #fff
 		font-size 58px

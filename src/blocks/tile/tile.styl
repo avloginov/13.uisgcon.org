@@ -1,11 +1,15 @@
 .tile
 	display block
 	text-decoration none
-	&__img
+	&__image
 		display block
-		max-width 100%
-		height auto
+		height 100px
+		fit-image()
+		margin-bottom 15px
 	&__label
-		margin-top 15px
 		font-size 15px
 		color #717171
+		transition .2s color ease-in-out
+	&:hover
+		.tile__label
+			color blueColor

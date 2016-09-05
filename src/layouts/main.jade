@@ -1,6 +1,7 @@
 extends root
 
 block root
+	h1.sr-only= site.title
 	if file.intro
 		+b("section").intro#intro: +i({
 			title: file.intro.title,

@@ -1,6 +1,7 @@
 title: "UISGCON 12 - ukrainian information security group conference"
 logoBig: "assets/i/uisg12-logo-big.svg"
 logoSmall: "assets/i/uisg12-logo-small.svg"
+logoSmallGrey: "assets/i/uisg12-logo-small-grey.svg"
 baseUrl: "https://uisgcon.org/"
 location: "Прем'єр Готель Русь, Київ, Україна"
 date:
@@ -10,4 +11,11 @@ date:
   dateEndShort: "2016-11-26"
   month: "листопада"
   year: "2016"
+socials:
+  - title: "facebook"
+    url: "https://www.facebook.com/ngouisg/"
+  - title: "twitter"
+    url: "https://twitter.com/search?q=uisgcon"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/groups/4580558"
 

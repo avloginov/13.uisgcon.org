@@ -1,22 +1,18 @@
 .contest
-	padding 80px 0
+	padding 80px 0 100px
 	&__text
 		text-align center
 		max-width 600px
 		margin 0 auto 30px
 	&__gifts
-		list-style none
 		margin 0
 		padding 0
+		list-style none
 		text-align center
-		font-size 0
+		clearfix()
 		&-item
-			display inline-block
-			margin-right 70px
-			&:nth-child(2)
-				margin-right 118px
-			&:last-child
-				margin-right 0
+			float left
+			width 33.33%
 	&__gift
 		&-badge
 			position absolute
@@ -28,12 +24,12 @@
 			border-radius 50%
 			height 70px
 			width 70px
-			&_big
-				height 91px
-				width 91px
-				top 30%
-				.contest__gift-badge-value
-					font-size 60px
+			// &_big
+			// 	height 91px
+			// 	width 91px
+			// 	top 30%
+			// 	.contest__gift-badge-value
+			// 		font-size 60px
 			&-value
 				font-size 42px
 				font-weight 600
@@ -46,12 +42,12 @@
 				font-size 15px
 				display block
 				line-height 1.1
-		&-img
-			display block
-			max-width 100%
-			height auto
 		&-image
 			position relative
+			width 250px
+			height @width
+			margin 0 auto
+			fit-image()
 		&-label
 			font-size 22px
 			color blueColor
