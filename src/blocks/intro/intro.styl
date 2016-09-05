@@ -56,10 +56,16 @@
 	&__arrow
 		position absolute
 		left 50%
-		bottom 31px
+		bottom 40px
 		font-size 30px
 		color #fff
 		text-decoration none
 		transition color 0.2s ease
 		&:hover
 			color brandColor
+			animation fly 1s ease infinite
+
+@keyframes fly {
+	from { bottom: 40px  }
+	to { bottom: 20px }
+}
