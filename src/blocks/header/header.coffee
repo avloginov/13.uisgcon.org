@@ -1,5 +1,6 @@
 $ ->
 	$block = $("#header")
+	return unless $block.length
 	$window = $(window)
 	preakpoint = $block.offset().top
 
