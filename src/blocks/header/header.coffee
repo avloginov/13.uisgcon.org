@@ -19,15 +19,7 @@ $ ->
 
 	menuToggle = (event) ->
 		$this = $(@)
-		$this.toggleClass("active")
-
-		$tabletMenu.slideToggle("100")
-
-	closeMobileMenu = (event) ->
-		if window.innerWidth > 1000 and $menuToggle.hasClass("active")
-			$menuToggle.removeClass("active")
-			$tabletMenu.removeAttr("style")
+		$this.closest(".header").toggleClass("menu-open")
 
 	$window.on("scroll", throttle(stickyHeader, 50))
-	$window.on("resize", throttle(closeMobileMenu, 50))
 	$menuToggle.on("click", menuToggle)

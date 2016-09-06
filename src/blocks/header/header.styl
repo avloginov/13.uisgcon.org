@@ -3,14 +3,34 @@
 	z-index 150
 	left 0
 	right 0
-	height 80px
-	padding-top 18px
 	background-color lightGrey
 	transform translate3d(0,0,0)
+	&.menu-open
+		.header
+			&__toggle
+				border-color transparent
+				&:before
+					transform rotate(45deg)
+				&:after
+					transform rotate(-45deg)
+			&__menu
+				@media tablet
+					display block
+			&__content
+				@media phone
+					display block
+	&__inner
+		height 80px
+		padding-top 18px
+		@media phone
+			height 60px
+			padding-top 16px
 	&__tooltip
 		float left
 		position relative
 		margin 11px 0 0 15px
+		@media phone
+			margin-top 5px
 		&:hover .header__tooltip-body
 			display block
 		&-icon
@@ -53,26 +73,28 @@
 		top 0
 		box-shadow 0 0 5px rgba(0,0,0,.1)
 	&__menu
-		float right
-		margin-top 7px
+		@media desktop
+			float right
+			margin-top 7px
 		@media sm
 			margin-top 10px
 		@media tablet
-			margin-top 0
 			display none
 			position absolute
-			top 62px
+			top 100%
 			right 0
-			background-color #fff
-			border 1px solid lightGrey
-			border-top 0
-		@media phone
-			float none
-			margin-top 0
+			background-color lightGrey
+			min-width 250px
 	&__logo
 		float left
 		margin-top 4px
+		width 186px
+		height 35px
 		text-decoration none
+		@media phone
+			margin-top 0
+			width 150px
+			height 28px
 		&:before
 			color #a4b5c6
 			position absolute
@@ -80,8 +102,9 @@
 			top 50%
 			transform translateY(-50%)
 		&-img
-			display inline-block
-			vertical-align middle
+			display block
+			width 100% !important
+			height auto !important
 	&__language
 		margin-left 35px
 		display inline-block
@@ -102,63 +125,65 @@
 		@media sm
 			margin-left 20px
 		@media phone
-			margin 0
-			display inline-block
 			float none
-			margin-bottom 30px
+			margin 0 10px
+			padding 20px 0
 	&__content
 		float right
 		@media phone
-			text-align center
 			display none
 			position absolute
-			top 62px
+			top 100%
 			left 0
-			width 100%
-			// background-color lightGrey
-			background-color red
+			right 0
+			text-align center
+			background-color #fff
+			border-top 1px dotted #e0e0e0
+			max-height 350px
+			overflow-y auto
+			-webkit-overflow-scrolling touch
+			box-shadow 0 7px 5px rgba(0,0,0,.1)
 	&__toggle
 		display none
-		float right
-		margin-left 30px
-		margin-top 8px
-		height 25px
-		width 29px
 		position relative
-		transform rotate(0deg)
-		transition 0.5s ease-in-out
-		cursor pointer
-		&.active
-			span
-				&:nth-child(1)
-					top 12px
-					width 0
-					left 50%
-				&:nth-child(2)
-					transform rotate(45deg)
-				&:nth-child(3)
-					transform rotate(-45deg)
-				&:nth-child(4)
-					top 12px
-					width 0
-					left 50%
-		span
-			display block
-			position absolute
-			height 2px
-			width 100%
-			background brandColor
-			border-radius 3px
-			opacity 1
-			left 0
-			transform rotate(0deg)
-			transition 0.25s ease-in-out
-			&:nth-child(1)
-				top 0
-			&:nth-child(2)
-			&:nth-child(3)
-				top 12px
-			&:nth-child(4)
-				top 24px
+		float right
+		margin 8px 0 0 30px
+		width 29px
+		height 26px
+		border-width 2px 0
+		border-style solid
+		border-color brandColor
+		transition .2s border-color ease-in-out
+		cursor default
+		user-select none
 		@media phone_tablet
 			display block
+		@media phone
+			margin-top 2px
+		&:before
+		&:after
+			content ""
+			position absolute
+			top 50%
+			left 0
+			right 0
+			height 2px
+			margin-top -(@height / 2)
+			background-color brandColor
+			transition .2s transform ease-in-out
+		// span
+		// 	position absolute
+		// 	left 0
+		// 	height 2px
+		// 	width 100%
+		// 	background-color brandColor
+		// 	border-radius 3px
+		// 	opacity 1
+		// 	transition .25s transform ease-in-out
+		// 	&:nth-child(1)
+		// 		top 0
+		// 	&:nth-child(2)
+		// 	&:nth-child(3)
+		// 		top 12px
+		// 	&:nth-child(4)
+		// 		top 24px
