@@ -21,27 +21,12 @@ $ ->
 		$this = $(@)
 		$this.toggleClass("active")
 
-		if window.innerWidth > 768
-			$tabletMenu.slideToggle("100")
-			$tabletMenu.toggleClass("active")
-		else
-			$mobileMenu.slideToggle("100")
-			$mobileMenu.toggleClass("active")
+		$tabletMenu.slideToggle("100")
 
 	closeMobileMenu = (event) ->
-		if $menuToggle.hasClass("active")
-
-			if window.innerWidth > 768 and $mobileMenu.hasClass("active")
-				$menuToggle.removeClass("active")
-				$mobileMenu.removeAttr("style").removeClass("active")
-
-			else if window.innerWidth > 1000 and $tabletMenu.hasClass("active")
-				$menuToggle.removeClass("active")
-				$tabletMenu.removeAttr("style").hasClass("active")
-
-			else if window.innerWidth < 768 and $tabletMenu.hasClass("active")
-				$menuToggle.removeClass("active")
-				$tabletMenu.removeAttr("style").hasClass("active")
+		if window.innerWidth > 1000 and $menuToggle.hasClass("active")
+			$menuToggle.removeClass("active")
+			$tabletMenu.removeAttr("style")
 
 	$window.on("scroll", throttle(stickyHeader, 50))
 	$window.on("resize", throttle(closeMobileMenu, 50))
