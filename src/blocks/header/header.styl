@@ -51,7 +51,6 @@
 			color blueColor
 			font-size 16px
 			line-height 1.4
-			color blueColor
 			background-color #fff
 			border-radius 5px
 			box-shadow 0 3px 5px rgba(16, 22, 30, 0.15)
@@ -126,7 +125,7 @@
 			margin-left 20px
 		@media phone
 			float none
-			margin 0 10px
+			margin 10px 10px 10px
 			padding 20px 0
 	&__content
 		float right
@@ -139,7 +138,8 @@
 			text-align center
 			background-color #fff
 			border-top 1px dotted #e0e0e0
-			max-height 350px
+			max-height 100vh
+			content 'viewport-units-buggyfill;max-height: 100vh;'
 			overflow-y auto
 			-webkit-overflow-scrolling touch
 			box-shadow 0 7px 5px rgba(0,0,0,.1)
@@ -171,19 +171,3 @@
 			margin-top -(@height / 2)
 			background-color brandColor
 			transition .2s transform ease-in-out
-		// span
-		// 	position absolute
-		// 	left 0
-		// 	height 2px
-		// 	width 100%
-		// 	background-color brandColor
-		// 	border-radius 3px
-		// 	opacity 1
-		// 	transition .25s transform ease-in-out
-		// 	&:nth-child(1)
-		// 		top 0
-		// 	&:nth-child(2)
-		// 	&:nth-child(3)
-		// 		top 12px
-		// 	&:nth-child(4)
-		// 		top 24px

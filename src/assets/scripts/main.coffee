@@ -6,6 +6,7 @@ unless 'ontouchstart' in window or window.DocumentTouch and document instanceof 
 
 $ ->
 	FastClick.attach(document.body)
+	window.viewportUnitsBuggyfill.init()
 
 	$('.scroll-link').on "click", (event) ->
 		if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
