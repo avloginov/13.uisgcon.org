@@ -2,6 +2,8 @@
 	position relative
 	background url("i/intro.jpg") no-repeat center
 	background-size cover
+	@media phone
+		padding 30px 0 60px
 	&__header
 		position absolute
 		z-index 2
@@ -9,14 +11,22 @@
 		left 0
 		right 0
 		padding-top 20px
+		@media phone
+			position static
+			padding-top 0
+			margin-bottom 40px
 	&__logo
 		float left
 		text-decoration none
 		width 372px
 		height 94px
-		@media tablet
+		@media phone_tablet
 			width 270px
 			height 68px
+		@media phone
+			float none
+			display block
+			margin 0 auto 30px
 		&-img
 			width 100% !important
 			height auto !important
@@ -25,6 +35,15 @@
 		margin-top 20px
 		@media tablet
 			margin-top 13px
+		@media phone
+			float none
+			text-align center
+			margin-top 0
+	&__reg
+		@media phone
+			display block
+			max-width 300px
+			margin 0 auto
 	&__language
 		display inline-block
 		vertical-align middle
@@ -36,10 +55,15 @@
 		text-transform uppercase
 		&:hover
 			color brandColor
+		@media phone
+			margin 20px 0 0
 	&__content
 		height 100vh
 		min-height 800px
 		text-align center
+		@media phone
+			height auto
+			min-height inherit
 		&:after
 			content ""
 			display inline-block
@@ -57,34 +81,44 @@
 		margin-bottom 55px
 		@media tablet
 			font-size 48px
+		@media phone
+			margin-bottom 30px
+			font-size 40px
 	&__info
-		&-date-wrapper
-			vertical-align inherit
-			margin-left 14px
+		font-size 22px
+		color #fff
+		@media phone
+			font-size 18px
 		&-location
 			margin-bottom 10px
 		&-icon
 			display inline-block
+			vertical-align middle
+			margin-right 15px
 			font-size 25px
 			color #fff
-		&-dates
+			@media phone
+				display none
 		&-address
-			color #fff
-			font-size 22px
-			font-style normal
-			vertical-align text-bottom
-		&-address
+		&-date-wrapper
 			display inline-block
-			margin-left 10px
+			vertical-align middle
+		address
+			font-style normal
 	&__arrow
 		position absolute
 		left 50%
 		bottom 40px
 		font-size 30px
 		color #fff
+		width 30px
+		height @width
+		margin-left -(@width / 2)
 		text-decoration none
 		transition .2s color ease-in-out
 		animation arrowFly 2s ease-in-out infinite
+		@media phone
+			bottom 20px
 		&:hover
 			color brandColor
 

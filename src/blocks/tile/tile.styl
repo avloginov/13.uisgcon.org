@@ -6,10 +6,15 @@
 		height 100px
 		fit-image()
 		margin-bottom 15px
+		@media phone
+			height 60px
 	&__label
+		display block
 		font-size 15px
 		color #717171
 		transition .2s color ease-in-out
+		@media phone
+			font-size 13px
 	&:hover
 		.tile__label
 			color blueColor

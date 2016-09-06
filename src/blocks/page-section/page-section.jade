@@ -1,0 +1,8 @@
+.container
+	if title
+		+e("h2").title.main-title!= title
+	if list
+		+b.tiles: +i({ data: list })
+	if buttonLabel
+		+e.footer
+			a.btn(href=buttonUrl)= buttonLabel

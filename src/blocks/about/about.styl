@@ -7,10 +7,18 @@
 		width 50%
 		list-style none
 		text-align center
+		@media phone_tablet
+			width auto
+		@media phone
+			margin 0
 		&-item
 			display inline-block
 			vertical-align top
 			width 49%
+			@media phone
+				display block
+				width auto
+				margin-bottom 30px
 		&-value
 			margin-bottom 20px
 			font-size 50px

@@ -7,10 +7,24 @@
 		list-style none
 		text-align center
 		claerfix()
+		@media phone
+			max-width 300px
+			margin 0 auto
 		&-item
 			float left
 			width 33.333%
 			border-right 1px solid #678ab8
+			@media phone
+				float none
+				width auto
+				padding 30px 0
+				border-right 0 none
+				border-bottom 1px dotted #678ab8
+				&:first-child
+					padding-top 0
+				&:last-child
+					padding-bottom 0
+					border-bottom 0 none
 			&:last-child
 				border-right 0 none
 		&-value
@@ -21,8 +35,10 @@
 			color #fff
 			@media tablet
 				font-size 65px
+			@media phone
+				font-size 50px
 		&-label
 			font-size 18px
 			color #a2c1e0
-			@media tablet
+			@media phone_tablet
 				font-size 15px

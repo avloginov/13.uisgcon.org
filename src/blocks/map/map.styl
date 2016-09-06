@@ -1,22 +1,37 @@
 .map
 	position relative
 	&__interactive
-		height 663px
+		position relative
+		z-index 1
 		width 100%
+		height 665px
+		@media phone
+			height 250px
 	&__info
 		position absolute
+		z-index 2
 		top 185px
 		left 115px
 		width 370px
-		height 275px
 		background-color #fff
-		padding 40px
+		padding 30px 40px
 		box-shadow 0 3px 15px rgba(16, 22, 30, 0.15)
+		@media phone
+			position static
+			padding 30px 10px
+			width auto
+			box-shadow none
+			background-color lightGrey
+		&-content
+			p
+				margin 0 0 10px
 	&__title
 		color blueColor
 		font-size 40px
 		font-weight 600
-		margin-bottom 8px
+		margin-bottom 20px
+		@media phone
+			margin-bottom 30px
 	&__adress
 	&__link
 	&__times
@@ -34,7 +49,6 @@
 	&__adress
 	&__link
 		display block
-		margin-bottom 10px
 	&__adress
 		&:before
 			content "\e900"
@@ -46,4 +60,4 @@
 		&:before
 			content "\e905"
 		&:hover
-			text-decoration underline
+			color brandColor

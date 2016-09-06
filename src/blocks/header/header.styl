@@ -8,41 +8,41 @@
 	background-color lightGrey
 	transform translate3d(0,0,0)
 	&__tooltip
-		cursor pointer
-		display inline-block
-		margin-top 11px
-		line-height 1
-		margin-left 16px
-		color #a4b5c6
+		float left
 		position relative
-		&:hover
-			.header__tooltip-text
-				opacity 1
-				visibility visible
-				height 103px
-		&-text
-			font-family mainFont
-			opacity 0
-			visibility hidden
-			height 0
+		margin 11px 0 0 15px
+		&:hover .header__tooltip-body
+			display block
+		&-icon
+			display block
+			width 20px
+			height @width
+			font-size 20px
+			color #a4b5c6
+		&-body
+			display none
+			position absolute
+			top 100%
+			left 50%
+			width 216px
+			margin-left -(@width / 2)
+			margin-top 10px
+			padding 15px 20px
 			color blueColor
 			font-size 16px
 			line-height 1.4
-			width 214px
+			color blueColor
 			background-color #fff
 			border-radius 5px
 			box-shadow 0 3px 5px rgba(16, 22, 30, 0.15)
-			position absolute
-			padding 16px 18px
-			bottom -120px
-			left -99px
-			transition opacity 0.2s ease
 			&:after
 				content ""
 				position absolute
 				bottom 100%
 				left 50%
 				margin-left -10px
+				width 0
+				height 0
 				border-width 10px
 				border-style solid
 				border-color transparent transparent #fff transparent

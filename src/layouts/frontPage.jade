@@ -52,9 +52,11 @@ block main
 		list: file.tickets.list
 	})
 
-	+b("section").sponsors#sponsors: +i({
+	+b("section").page-section#sponsors: +i({
 		title: file.sponsors.title,
-		list: sponsors
+		//- list: sponsors,
+		buttonLabel: file.sponsors.buttonLabel,
+		buttonUrl: file.sponsors.buttonUrl
 	})
 
 	+b("section").map#contacts: +i({
@@ -66,7 +68,14 @@ block main
 		times: file.map.times
 	})
 
-	+b("section").partners#partners: +i({
+	+b("section").page-section.bg-lightgrey#organizers: +i({
+		title: file.organizers.title,
+		list: organizers
+	})
+
+	+b("section").page-section#partners: +i({
 		title: file.partners.title,
-		list: partners
+		//- list: partners,
+		buttonLabel: file.partners.buttonLabel,
+		buttonUrl: file.partners.buttonUrl
 	})

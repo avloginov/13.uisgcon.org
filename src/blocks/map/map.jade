@@ -1,11 +1,15 @@
-if data
-	+e.interactive#map-interactive(data-title!=data.title data-latitude!=data.latitude data-longitude!=data.longitude data-zoom!=data.zoom data-icon!=data.icon)
 +e.info
 	+e("h2").title!= title
-	+e("span").adress!= adress
-	+e("a").link(href!=mailLink)!= mailLinkText
-	if times
-		+e("span").times
-			time.map__time!= times[0]
-			|  -
-			time.map__time!= times[1]
+	+e.info-content
+		p
+			+e("span").adress!= adress
+		p
+			+e("a").link(href!=mailLink)!= mailLinkText
+		if times
+			p
+				+e("span").times
+					time.map__time!= times[0]
+					|  -
+					time.map__time!= times[1]
+if data
+	+e.interactive#map-interactive(data-title!=data.title data-latitude!=data.latitude data-longitude!=data.longitude data-zoom!=data.zoom data-icon!=data.icon)

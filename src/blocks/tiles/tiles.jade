@@ -1,0 +1,8 @@
+if data
+	each item in data
+		+e.item
+			+b("a").tile(href=item.url target="_blank"): +i({
+				image: item.image,
+				alt: item.title,
+				text: item.text
+			})
