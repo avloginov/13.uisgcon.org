@@ -4,6 +4,8 @@ $ ->
 	$window = $(window)
 	preakpoint = $block.offset().top
 	$menuToggle = $block.find(".header__toggle")
+	$tooltip = $block.find(".header__tooltip")
+
 
 	stickyHeader = (event) ->
 		scrollTop = $(window).scrollTop()
@@ -17,6 +19,12 @@ $ ->
 		$this = $(@)
 		$this.closest(".header").toggleClass("menu-open")
 
+	manageTooltip = (event) ->
+		if not $tooltip.is(event.target) and $tooltip.has(event.target).length is 0
+			$tooltip.removeClass("active")
+		else
+			$tooltip.addClass("active")
 
 	$window.on("scroll", stickyHeader)
 	$menuToggle.on("click", menuToggle)
+	$(document).on("touchstart", manageTooltip)
