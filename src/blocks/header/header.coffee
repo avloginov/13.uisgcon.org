@@ -18,5 +18,5 @@ $ ->
 		$this.closest(".header").toggleClass("menu-open")
 
 
-	$window.on("scroll", throttle(stickyHeader, 50))
+	$window.on("scroll", stickyHeader)
 	$menuToggle.on("click", menuToggle)
