@@ -25,6 +25,12 @@ $ ->
 		else
 			$tooltip.addClass("active")
 
+	closeMenuOnResize = ->
+		if window.innerWidth > 1000 and $block.hasClass("menu-open")
+			$block.removeClass("menu-open")
+
 	$window.on("scroll", stickyHeader)
+	$window.on("resize", closeMenuOnResize)
+
 	$menuToggle.on("click", menuToggle)
 	$(document).on("touchstart", manageTooltip)
