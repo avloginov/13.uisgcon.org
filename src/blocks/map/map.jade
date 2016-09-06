@@ -1,15 +1,15 @@
 +e.info
-	+e("h2").title!= title
+	+e("h2").title!= items.title
 	+e.info-content
 		p
-			+e("span").adress!= adress
+			+e("span").adress!= site.location
 		p
-			+e("a").link(href!=mailLink)!= mailLinkText
-		if times
+			+e("a").link(href=items.mailLink)!= items.mailLinkText
+		if items.times
 			p
 				+e("span").times
-					time.map__time!= times[0]
+					time.map__time!= items.times[0]
 					|  -
-					time.map__time!= times[1]
-if data
-	+e.interactive#map-interactive(data-title!=data.title data-latitude!=data.latitude data-longitude!=data.longitude data-zoom!=data.zoom data-icon!=data.icon)
+					time.map__time!= items.times[1]
+if items.data
+	+e.interactive#map-interactive(data-title!=items.data.title data-latitude!=items.data.latitude data-longitude!=items.data.longitude data-zoom!=items.data.zoom data-icon!=items.data.icon)

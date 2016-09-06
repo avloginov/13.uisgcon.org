@@ -1,0 +1,116 @@
+map:
+  data:
+    title: "Прем'єр-готель 'Русь'"
+    latitude: 50.435883
+    longitude: 30.524122
+    zoom: 15
+    icon: "assets/i/map-pin.png"
+  title: "Контакти"
+  mailLink: "mailto:biz@uisgcon.org"
+  mailLinkText: "biz@uisgcon.org"
+  times:
+    - 8:30
+    - 21:00
+
+about:
+  title: "Про UISGCON"
+  featuresValue: "12<small>-а</small>"
+  featuresLabel: "конференція <br>інформаційної безпеки"
+  text: "Як і раніше, захід викликає інтерес у представників кредитно-фінансової та банківської систем України, провайдерів телекомунікаційних послуг, промисловості, торгівлі, професіоналів з надання ІБ-послуг, органів державної влади, а також у системних адміністраторів, інженерів, студентів профільних ВНЗ та ін."
+  btnMore: "Детально про UISGCON"
+  btnMoreUrl: "/"
+
+news:
+  title: "Новини"
+  list:
+    - dateTime: "2016-05-21"
+      date: "21.05.2016"
+      link: "/"
+      linkText: "DIGITAL MAMA - результати третьої хвилі дослідження споживчої поведінки українських мам в Інтернеті"
+    - dateTime: "2016-04-06"
+      date: "06.04.2016"
+      link: "/"
+      linkText: "MarTech Europe - конференція про трансформацію маркетингу за допомогою технологій"
+    - dateTime: "2016-03-18"
+      date: "18.03.2016"
+      link: "/"
+      linkText: "Програми лояльності - навіщо вони потрібні і як працюють? досвід Tesco"
+    - dateTime: "2016-02-14"
+      date: "14.02.2016"
+      link: "/"
+      linkText: Панельна дискусія: 'Розслідування інцидентів кібербезпеки', 'Еволюція атак на пристрої мережевої інфраструктури'
+    - dateTime: "2016-02-07"
+      date: "07.02.2016"
+      link: "/"
+      linkText: "Сертифікація фахівців в галузі інформаційної безпеки та сертифікація на відповідність стандартам"
+    - dateTime: "2016-02-01"
+      date: "01.02.2016"
+      link: "/"
+      linkText: "Захист персональних даних vs забезпечення інформаційної безпеки. N-кількість кіберзагроз, які Ви могли проспати. Практичні приклади"
+    - dateTime: "2016-01-29"
+      date: "29.01.2016"
+      link: "/"
+      linkText: Підведення підсумків конкурсу 'Bring Your Own Sample'
+  btnMore: "Всі новини"
+  btnMoreLink: "/"
+
+sponsors:
+  title: "Спонсори"
+  buttonLabel: "Стати спонсором"
+  buttonUrl: "/cfp"
+
+organizers:
+  title: "Організатори"
+
+partners:
+  title: "Партнери"
+  buttonLabel: "Стати партнером"
+  buttonUrl: "mailto:biz@uisgcon.org?subject=UISGCON12 Partnership"
+
+speakers:
+  title: "Спікери"
+  btnMore: "Всі спікери"
+  btnMoreLink: "/"
+
+program:
+  title: "Програма"
+
+contest:
+  title: "Конкурс"
+  text: "Розробіть новий семпл або модифікуйте існуючі семпли, що не будуть виявлятися засобами для боротьби з malware і отримайте цінні призи"
+  btnMore: "Більше подробиць"
+  btnMoreLink: "/"
+
+features:
+  title: "Особливості"
+  list:
+    - value: "2"
+      label: "Дні унікального <br>контенту"
+    - value: "30+"
+      label: "Кращих спеціалістів <br>з інформаційної безпеки"
+    - value: "30+"
+      label: "Тематичних лекцій, дискусій <br>та майстер-класів"
+
+tickets:
+  title: "Варіанти квитків"
+  list:
+    - title: "Квиток на<div class='color-blue'>25.11.16</div>"
+      price: 500
+      currency: "грн"
+      orderLink: "/order"
+      order: "Купити"
+    - title: "Квиток на<div class='color-blue'>26.11.16</div>"
+      price: 500
+      currency: "грн"
+      orderLink: "/order"
+      order: "Купити"
+    - title: "Квиток на два дні <div class='color-blue'>25-26.11.16</div>"
+      price: 700
+      currency: "грн"
+      orderLink: "/order"
+      order: "Купити"
+    - title: "Студентський квиток <div class='color-blue'>два дні</div>"
+      price: 350
+      currency: "грн"
+      orderLink: "/order"
+      order: "Купити"

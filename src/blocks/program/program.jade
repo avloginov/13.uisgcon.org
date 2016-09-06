@@ -1,9 +1,9 @@
 .container
-	if title
-		+e("h2").title.main-title!= title
-	if data
+	if data.title
+		+e("h2").title.main-title!= data.title
+	if list
 		+e("ul").nav
-			each item, i in data
+			each item, i in list
 				if i === 0
 					- var classes = "active"
 				else
@@ -14,7 +14,7 @@
 						br
 						+e("span").nav-date!= item.date
 		+e.tab-content
-			each item, i in data
+			each item, i in list
 				if item.places
 					if i === 0
 						- var classes2 = "active"

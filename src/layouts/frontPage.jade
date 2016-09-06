@@ -2,80 +2,54 @@ extends main
 
 block main
 	+b("section").about#about: +i({
-		title: file.about.title,
-		featuresValue: file.about.featuresValue,
-		featuresLabel: file.about.featuresLabel,
-		btnMore: file.about.btnMore,
-		btnMoreUrl: file.about.btnMoreUrl,
-		text: file.about.text,
-		date: site.date,
-		location: site.location
+		data: sections.about
 	})
 
 	+b("section").features#features: +i({
-		title: file.features.title,
-		list: file.features.list
+		data: sections.features
 	})
 
 	//- +b("section").speakers#speakers: +i({
-	//- 	title: file.speakers.title,
-	//- 	persons: speakers,
-	//- 	btnMore: file.speakers.btnMore,
-	//- 	btnMoreLink: file.speakers.btnMoreLink
+	//- 	list: speakers,
+	//- 	data: sections.speakers
 	//- })
 
 	//- +b("section").program#program: +i({
-	//- 	title: file.program.title,
-	//- 	data: program
+	//- 	list: program,
+	//- 	data: sections.program
 	//- })
 
 	//- +b("section").contest#contest: +i({
-	//- 	title: file.contest.title,
-	//- 	text: file.contest.text,
-	//- 	gifts: file.contest.gifts,
-	//- 	btnMore: file.contest.btnMore,
-	//- 	btnMoreLink: file.contest.btnMoreLink
+	//- 	gifts: gifts,
+	//- 	data: sections.contest
 	//- })
 
 	//- .container
 	//- 	hr.offset-0
 
 	//- +b("section").news#news: +i({
-	//- 	title: file.news.title,
-	//- 	list: file.news.list,
-	//- 	btnMore: file.news.btnMore,
-	//- 	btnMoreLink: file.news.btnMoreLink
+	//- 	data: sections.news
 	//- })
 
 	+b("section").tickets#tickets: +i({
-		title: file.tickets.title,
-		list: file.tickets.list
+		data: sections.tickets
 	})
 
 	+b("section").page-section#sponsors: +i({
-		title: file.sponsors.title,
 		//- list: sponsors,
-		buttonLabel: file.sponsors.buttonLabel,
-		buttonUrl: file.sponsors.buttonUrl
+		items: sections.sponsors
 	})
 
 	+b("section").map#contacts: +i({
-		data: file.map.data,
-		title: file.map.title,
-		adress: site.location,
-		mailLink: file.map.mailLink,
-		mailLinkText: file.map.mailLinkText,
-		times: file.map.times
+		items: sections.map
 	})
 
 	+b("section").page-section.bg-lightgrey#organizers: +i({
-		title: file.organizers.title,
-		list: organizers
+		list: organizers,
+		items: sections.organizers
 	})
 
 	+b("section").page-section#partners: +i({
-		title: file.partners.title,
 		//- list: partners,
-		buttonLabel: file.partners.buttonLabel,
-		buttonUrl: file.partners.buttonUrl
+		items: sections.partners
 	})

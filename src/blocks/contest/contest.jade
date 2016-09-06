@@ -1,8 +1,10 @@
 .container
-	+e("h2").title.main-title!= title
-	+e.text!= text
-	+e("ul").gifts
-		if gifts
+	if data.title
+		+e("h2").title.main-title!= data.title
+	if data.text
+		+e.text!= data.text
+	if gifts
+		+e("ul").gifts
 			each item, i in gifts
 				+e("li").gifts-item
 					+e.gift
@@ -17,4 +19,4 @@
 								+e("span").gift-badge-label!= item.badgeLabel
 						+e.gift-label!= item.label
 	+e.footer
-		+e("a").more.btn(href="/")!= btnMore
+		+e("a").more.btn(href=data.btnMoreLink)!= data.btnMore

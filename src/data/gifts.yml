@@ -1,0 +1,12 @@
+- image: "assets/i/gifts/ipad-mini-3.png"
+  badgeValue: 1
+  badgeLabel: "місце"
+  label: "iPad mini 3"
+- image: "assets/i/gifts/petcube.png"
+  badgeValue: 2
+  badgeLabel: "місце"
+  label: "Petcube"
+- image: "assets/i/gifts/intel-compute-stick.png"
+  badgeValue: 3
+  badgeLabel: "місце"
+  label: "INTEL Compute Stick"

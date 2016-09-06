@@ -1,8 +1,8 @@
 .container
-	+e("h2").title.main-title Варіанти квитків
-	if list
+	+e("h2").title.main-title!= data.title
+	if data.list
 		+e("ul").list
-			each item, i in list
+			each item, i in data.list
 				+e("li").list-item
 					+e.box
 						+e.box-title!= item.title
