@@ -12,11 +12,18 @@
 		&-item
 			float left
 			width 25%
-			height 350px
 			border-right 1px solid #dfe2e5
+			@media tablet_sm
+				width 50%
+				&:nth-child(even)
+					border-right 0 none
+			@media tablet_sm
+				border-right-color lightGrey
+				border-bottom 1px solid lightGrey
 			&:last-child
 				border-right 0 none
 	&__box
+		height 350px
 		padding 40px 30px
 		background-color #fff
 		&-title

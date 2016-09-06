@@ -12,9 +12,19 @@
 	&__logo
 		float left
 		text-decoration none
+		width 372px
+		height 94px
+		@media tablet
+			width 270px
+			height 68px
+		&-img
+			width 100% !important
+			height auto !important
 	&__controls
 		float right
 		margin-top 20px
+		@media tablet
+			margin-top 13px
 	&__language
 		display inline-block
 		vertical-align middle
@@ -45,6 +55,8 @@
 		font-size 58px
 		font-weight 600
 		margin-bottom 55px
+		@media tablet
+			font-size 48px
 	&__info
 		&-date-wrapper
 			vertical-align inherit

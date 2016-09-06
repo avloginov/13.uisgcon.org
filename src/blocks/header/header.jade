@@ -3,8 +3,10 @@
 		+e("img").logo-img(src=site.logoSmall, alt="" width="186" height="35")
 	+e("span").tooltip.icon-info
 		+e("span").tooltip-text Прем'єр Готель Русь, Київ, Україна <br> 25-26 листопада, 2016
-	+e.controls
-		+e("a").reg.btn.btn-sm(href="/order.html") Реєстрація
-		//- +e("a").language(href="/") Eng
-	+e.menu
-		+b("nav").menu: +i({ prefix: "main", items: mainMenu, blockTitle: "Головне меню" })
+	+e.toggle
+	+e.content
+		+e.controls
+			+e("a").reg.btn.btn-sm(href="/order.html") Реєстрація
+			+e("a").language(href="/") Eng
+		+e.menu
+			+b("nav").menu: +i({ prefix: "main", items: mainMenu, blockTitle: "Головне меню" })

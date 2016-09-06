@@ -55,6 +55,14 @@
 	&__menu
 		float right
 		margin-top 7px
+		@media sm
+			margin-top 10px
+		@media tablet
+			display none
+			position absolute
+			top 100%
+			right 0
+			background-color #fff
 	&__logo
 		float left
 		margin-top 4px
@@ -77,8 +85,30 @@
 		font-weight 600
 		text-transform uppercase
 		text-decoration none
+		@media sm
+			margin-left 20px
+			font-size 16px
 		&:hover
 			color brandColor
 	&__controls
 		float right
 		margin-left 30px
+		@media sm
+			margin-left 20px
+	&__content
+		float right
+		@media phone
+			display none
+			position absolute
+			top 100%
+			right 0
+			background-color #fff
+	&__toggle
+		display none
+		float right
+		margin-left 30px
+		width 50px
+		height @width
+		background-color brandColor
+		@media phone_tablet
+			display block

@@ -6,16 +6,19 @@
 	&__item
 		float left
 		margin-right 25px
+		@media sm
+			margin-right 15px
 		&:last-child
 			margin-right 0
 		&-link
 			position relative
 			display block
-			padding-bottom 28px
+			padding-bottom 5px
 			font-size 18px
 			color blueColor
 			text-decoration none
-			transform color 0.2s ease
+			@media sm
+				font-size 14px
 			&:after
 				content ""
 				position absolute
