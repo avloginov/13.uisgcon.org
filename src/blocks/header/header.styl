@@ -17,21 +17,26 @@
 		position relative
 		&:hover
 			.header__tooltip-text
-				display block
+				opacity 1
+				visibility visible
+				height 103px
 		&-text
-			display none
+			font-family mainFont
+			opacity 0
+			visibility hidden
+			height 0
 			color blueColor
 			font-size 16px
 			line-height 1.4
-			width 200px
-			height 103px
+			width 214px
 			background-color #fff
 			border-radius 5px
 			box-shadow 0 3px 5px rgba(16, 22, 30, 0.15)
 			position absolute
 			padding 16px 18px
 			bottom -120px
-			left -92px
+			left -99px
+			transition opacity 0.2s ease
 			&:after
 				content ""
 				position absolute
