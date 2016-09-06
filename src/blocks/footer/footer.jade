@@ -1,24 +1,30 @@
 .container
 	+e.main
-		+e.info
-			+e("a").logo(href=site.baseUrl)
-				+e("img").logo-img(src=site.logoSmallGrey, alt="" width="186" height="35")
+		+e.section._info
 			+e.copyright &copy; UISGCON, Cyber Security Conference
-		+e.socials
 			+b.socials: +i({ data: site.socials })
-		+e.location
-			+e("address").location-address!= site.location
-			+e("span").location-dates
-				if site.date
-					if site.date.dateStart
-						time.footer__location-date(datetime!=site.date.dateStartShort)!= site.date.dateStart
-					if site.date.dateEnd
-						| -
-						time.footer__location-date(datetime!=site.date.dateEndShort)!= site.date.dateEnd
-					if site.date.month
-						| #{site.date.month}
-					if site.date.year
-						| , #{site.date.year}
+		+e.section._org
+			+e.section-title Організатори:
+			+e.logos
+				+e("a").logos-item(href="https://www.facebook.com/ngouisg/" target="_blank")
+					+e("img").logos-img(src=asset("i/ngouisg-grey.svg"), alt="" width="160" height="46")
+				+e("a").logos-item(href="https://berezhasecurity.com/" target="_blank")
+					+e("img").logos-img(src=asset("i/berezhasecurity-grey.svg"), alt="" width="142" height="50")
+		+e.section._location
+			+e.section-title Адреса UISGCON 12:
+			+e.location
+				+e("address").location-address!= site.location
+				+e("span").location-dates
+					if site.date
+						if site.date.dateStart
+							time.footer__location-date(datetime!=site.date.dateStartShort)!= site.date.dateStart
+						if site.date.dateEnd
+							| -
+							time.footer__location-date(datetime!=site.date.dateEndShort)!= site.date.dateEnd
+						if site.date.month
+							| #{site.date.month}
+						if site.date.year
+							| , #{site.date.year}
 
 	+e.dev
 		+e("address").dev-label Розроблено в

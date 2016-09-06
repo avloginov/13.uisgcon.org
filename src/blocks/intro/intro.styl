@@ -14,7 +14,7 @@
 		@media phone
 			position static
 			padding-top 0
-			margin-bottom 40px
+			margin-bottom 50px
 	&__logo
 		float left
 		text-decoration none
@@ -70,10 +70,14 @@
 			vertical-align middle
 			width 0
 			height 100%
+			@media phone
+				content none
 		&-inner
 			display inline-block
 			vertical-align middle
 			max-width 96%
+			@media phone
+				display block
 	&__title
 		color #fff
 		font-size 58px
@@ -88,7 +92,7 @@
 		font-size 22px
 		color #fff
 		@media phone
-			font-size 18px
+			font-size 16px
 		&-location
 			margin-bottom 10px
 		&-icon
