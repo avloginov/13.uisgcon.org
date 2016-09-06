@@ -8,8 +8,17 @@
 		margin-right 25px
 		@media sm
 			margin-right 15px
+		@media tablet
+			float none
+			margin-right 0
+			text-align right
+			border-bottom 1px solid lightGrey
+		@media phone
+			float none
+			margin-right 0
 		&:last-child
 			margin-right 0
+			border-bottom 0
 		&-link
 			position relative
 			display block
@@ -19,6 +28,15 @@
 			text-decoration none
 			@media sm
 				font-size 14px
+			@media tablet
+				padding-bottom 0
+				margin 20px 28px
+				&:after
+					height 0
+			@media phone
+				padding-bottom 0
+				&:after
+					height 0
 			&:after
 				content ""
 				position absolute

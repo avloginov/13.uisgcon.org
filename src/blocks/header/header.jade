@@ -5,6 +5,9 @@
 		+e("span").tooltip-icon.icon-info
 		+e("span").tooltip-body Прем'єр Готель Русь, Київ, Україна <br> 25-26 листопада, 2016
 	+e.toggle
+		- for (var i = 0; i < 4; i++) {
+			+e("span")
+		- }
 	+e.content
 		+e.controls
 			+e("a").reg.btn.btn-sm(href="/order.html") Реєстрація
