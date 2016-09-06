@@ -22,11 +22,28 @@
 	&__times
 		color siteColor
 		font-size 18px
+		position relative
+		padding-left 35px
+		&:before
+			font-family "icons"
+			position absolute
+			top 0
+			left 0
+			color brandColor
+			font-size 18px
 	&__adress
 	&__link
 		display block
 		margin-bottom 10px
+	&__adress
+		&:before
+			content "\e900"
+	&__times
+		&:before
+			content "\e906"
 	&__link
 		text-decoration none
+		&:before
+			content "\e905"
 		&:hover
 			text-decoration underline
