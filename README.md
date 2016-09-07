@@ -8,4 +8,4 @@ or
 
 –––
 
-```./deploy``` — generate static and push2deploy to dokku, and push to github
+```./deploy.sh``` — generate static and push2deploy to dokku, and push to github
