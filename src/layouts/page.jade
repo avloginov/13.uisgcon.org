@@ -1,0 +1,32 @@
+extends main
+
+block main
+	.container
+		- classes = ""
+		if file.pageClasses
+			- classes = file.pageClasses
+		+b("section").page(class=classes)
+			+e.body
+				+e.header
+					if file.title
+						+e("h1").title!= file.title
+					if file.subtitle
+						+e.subtitle!= file.subtitle
+				.rich-text
+					block article
+						!= content
+
+	block afterContent
+
+	+b("section").page-section: +i({
+		list: infoSupport,
+		items: sections.infoSupport
+	})
+	+b("section").page-section.bg-lightgrey#sponsors: +i({
+		//- list: sponsors,
+		items: sections.sponsors
+	})
+	+b("section").page-section#partners: +i({
+		//- list: partners,
+		items: sections.partners
+	})

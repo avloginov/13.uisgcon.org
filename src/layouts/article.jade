@@ -1,20 +1,10 @@
-extends main
+extends page
 
-block main
-	.container
-		+b.page
-			+e.body
-				+e.header
-					+e("h1").title!= file.title
-					+e.subtitle!= file.subtitle
-				.rich-text
-					!= content
-		hr
-	+b("section").page-section.bg-lightgrey#sponsors: +i({
-		//- list: sponsors,
-		items: sections.sponsors
-	})
-	+b("section").page-section#partners: +i({
-		//- list: partners,
-		items: sections.partners
-	})
+block article
+	!= content
+
+	if file.fileTitle
+		+e.footer
+			+b("a").file-link(href=file.fileUrl): +i({ title: file.fileTitle })
+	+b.likely.likely-big: +i
+	hr

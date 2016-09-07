@@ -2,6 +2,8 @@
 	position relative
 	min-height 500px
 	background-color #f0f0f0
+	@media phone
+		min-height inherit
 	&__interactive
 		position relative
 		z-index 1
@@ -27,6 +29,8 @@
 		&-content
 			p
 				margin 0 0 10px
+			a
+				text-decoration none
 	&__title
 		color blueColor
 		font-size 40px
@@ -42,12 +46,12 @@
 		position relative
 		padding-left 35px
 		&:before
-			font-family "icons"
 			position absolute
-			top 0
+			top 4px
 			left 0
 			color brandColor
 			font-size 18px
+			iconParams()
 	&__adress
 	&__link
 		display block
@@ -56,9 +60,9 @@
 			content "\e900"
 	&__times
 		&:before
+			top 3px
 			content "\e906"
 	&__link
-		text-decoration none
 		&:before
 			content "\e905"
 		&:hover

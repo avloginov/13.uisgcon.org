@@ -1,0 +1,22 @@
+.file-link
+	position relative
+	display inline-block
+	vertical-align middle
+	height 50px
+	max-width 100%
+	padding 14px 0 0 60px
+	text-decoration none
+	&:before
+		content "\e909"
+		position absolute
+		top 0
+		left 0
+		iconParams()
+		font-size 50px
+		color greenColor
+	&__title
+		display block
+		font-size 20px
+		line-height 1.1
+		overflow ellipsis
+		border-bottom 1px solid

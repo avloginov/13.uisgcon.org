@@ -1,12 +1,21 @@
 .page
-	padding 130px 0 80px
+	padding 130px 0 60px
+	@media phone
+		padding 80px 0 40px
 	&__header
 		margin-bottom 40px
 	&__title
 		margin 0 0 10px
 		color blueColor
+		@media phone
+			font-size 40px
 	&__subtitle
 		font-size 20px
-		color #717171
+		color #939393
 	&__body
-		padding 0 15%
+		@media desktop
+			padding 0 15%
+		@media sm
+			padding 0 10%
+	&__footer
+		margin 50px 0

@@ -4,6 +4,7 @@ cssmin: true
 ---
 /*! project.css v1.0.0 | SE7ENSKY frontend studio <hello@se7ensky.com> */
 
+/*= require vendor/likely/likely */
 /*= require assets/styles/normalize */
 /*= require assets/styles/typo */
 /*= require assets/styles/icons */

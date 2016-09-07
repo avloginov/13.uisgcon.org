@@ -1,0 +1,10 @@
+extends page
+
+block article
+	!= content
+
+block afterContent
+	+b.map#contacts: +i({
+		items: sections.map,
+		hideInfo: true
+	})
