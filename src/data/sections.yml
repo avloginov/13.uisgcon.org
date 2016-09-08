@@ -57,7 +57,7 @@ news:
 sponsors:
   title: "Спонсори"
   buttonLabel: "Стати спонсором"
-  buttonUrl: "/cfp"
+  buttonUrl: "mailto:biz@uisgcon.org?subject=UISGCON12 Sponsorship"
 
 organizers:
   title: "Організатори"
@@ -105,7 +105,7 @@ tickets:
       orderLink: "/order"
       order: "Купити"
     - title: "Квиток на два дні <div class='color-blue'>25-26.11.16</div>"
-      price: 700
+      price: 750
       currency: "грн"
       orderLink: "/order"
       order: "Купити"
