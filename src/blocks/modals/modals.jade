@@ -1,0 +1,16 @@
+if list
+	each item in list
+		.modal.fade(id=item.id)
+			.modal-dialog
+				.modal-content
+					.modal-header
+						button.modal-close(type="button" class="close" data-dismiss="modal") &times
+						span.modal-title!= item.name
+					.modal-body
+						img.modal-portrait(src=item.image alt=item.alt)
+						span.modal-language Language:&nbsp;
+							span.modal-language-value!= item.language
+						span.modal-position!= item.position
+						span.modal-additiona-position!= item.additionalPosition
+						div.modal-description!= item.description
+					.modal-footer
