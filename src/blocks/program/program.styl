@@ -28,7 +28,6 @@
 			&:hover
 			&.active
 				background blueColor
-				// border-right 1px solid blueColor
 				.program__nav-title
 					color #fff
 				.program__nav-date
@@ -37,6 +36,10 @@
 			color blueColor
 			font-size 30px
 			font-weight 600
+			@media phone
+				font-size 20px
+			@media (max-width: 400px )
+				font-size 16px
 		&-date
 			color #9fa8b0
 			font-size 13px
@@ -57,6 +60,16 @@
 		width (100% / 3)
 		height auto
 		border-right 1px solid #e0e6ec
+		@media (max-width: mdWidth)
+			cursor pointer
+			width 100%
+			border-right 0
+			border-bottom 1px solid #e0e6ec
+			&:last-child
+				border-bottom 0
+			&.active
+				.program__list
+					display block
 		&:last-child
 			border-right 0
 		&-title
@@ -69,6 +82,8 @@
 		list-style none
 		padding 0
 		margin 20px 20px
+		@media (max-width: mdWidth)
+			display none
 		&-item
 			margin-bottom 10px
 			&:last-child
@@ -83,11 +98,17 @@
 			float left
 			width 18%
 			padding-right 20px
+			@media (max-width: mdWidth)
+				// width 8%
+				width 70px
 		&-text
 			color siteColor
 			font-size 18px
 			float right
 			width 82%
+			@media (max-width: mdWidth)
+				// width 92%
+				width calc(100% - 70px)
 			span
 				color blueColor
 				font-weight 600

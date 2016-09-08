@@ -2,14 +2,14 @@
 	if data.title
 		+e("h2").title.main-title!= data.title
 	if list
-		+e("ul").nav
+		+e("ul").nav.nav-tabs
 			each item, i in list
 				if i === 0
 					- var classes = "active"
 				else
 					- var classes = ""
 				+e("li").nav-item(class=classes)
-					+e("a").nav-link(href="##{item.id}")
+					+e("a").nav-link(href="##{item.id}" data-toggle="tab")
 						+e("span").nav-title!= item.title
 						br
 						+e("span").nav-date!= item.date
@@ -21,8 +21,12 @@
 					else
 						- var classes2 = ""
 					+e.tab-pane(id=item.id class=classes2)
-						each item2 in item.places
-							+e.column
+						each item2, j in item.places
+							if j === 0 && i === 0
+								- var classes3 = "active"
+							else
+								- var classes3 = ""
+							+e.column(class=classes3)
 								+e.column-title!= item2.title
 								if item2.list
 									+e("ul").list
