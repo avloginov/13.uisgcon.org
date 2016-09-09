@@ -20,13 +20,15 @@ $ ->
 		$this.closest(".header").toggleClass("menu-open")
 
 	manageTooltip = (event) ->
-		if not $tooltip.is(event.target) and $tooltip.has(event.target).length is 0
+		$this = $(event.target)
+		if not $tooltip.is($this) and not $tooltip.has($this).length
 			$tooltip.removeClass("active")
 		else
 			$tooltip.addClass("active")
 
 	manageMenu = (event) ->
-		if not $(event.target).closest(".header__content").length
+		$this = $(event.target)
+		if not $this.closest(".header__content").length and not $this.is($menuToggle)
 			$block.removeClass("menu-open")
 
 	closeMenuOnResize = ->
@@ -37,5 +39,5 @@ $ ->
 	$window.on("resize", closeMenuOnResize)
 
 	$menuToggle.on("click", menuToggle)
-	# $(document).on("click", manageMenu)
+	$(document).on("click", manageMenu)
 	$(document).on("touchstart", manageTooltip)
