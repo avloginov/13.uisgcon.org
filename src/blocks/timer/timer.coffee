@@ -1,6 +1,8 @@
 $.fn.makeCustomTimer = ->
 	@each ->
+		nowTime = ($.now() / 1000) | 0
 		{value} = $(@).data()
+		value = value - nowTime
 		$(@).find(".timer__item").on 'setTimerDigit', (e, v) ->
 			digitMax = switch $(@).attr 'data-timer-rel'
 				when 'seconds', 'minutes' then 59
@@ -8,11 +10,11 @@ $.fn.makeCustomTimer = ->
 				when 'days' then 6
 				else 100
 			percents = 100 - 100 * v / digitMax
-			$(@).find(".timer__spinner").css transform: "rotate(#{360 / 100 * percents}deg)"
-			$(@).find(".timer__mask").css opacity: if percents > 50 then 0 else 1
-			$(@).find(".timer__filler").css opacity: if percents > 50 then 1 else 0
-			$(@).find(".timer__border-left").css 'z-index': if percents > 50 then 0 else 4
-			$(@).find(".timer__border-right").css opacity: if percents > 50 then 0 else 1
+			# $(@).find(".timer__spinner").css transform: "rotate(#{360 / 100 * percents}deg)"
+			# $(@).find(".timer__mask").css opacity: if percents > 50 then 0 else 1
+			# $(@).find(".timer__filler").css opacity: if percents > 50 then 1 else 0
+			# $(@).find(".timer__border-left").css 'z-index': if percents > 50 then 0 else 4
+			# $(@).find(".timer__border-right").css opacity: if percents > 50 then 0 else 1
 			v = "0#{v}" if v < 10
 			$(@).find(".timer__digit").text v
 		display = (seconds) =>
@@ -40,7 +42,6 @@ $.fn.makeCustomTimer = ->
 $ ->
 	$block = $('.timer')
 	return unless $block.length
-	$timerLabel = $block.find(".timer__label")
-
+	# $timerLabel = $block.find(".timer__label")
 	$(".timer").makeCustomTimer()
 

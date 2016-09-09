@@ -1,18 +1,18 @@
 .container
 	+e("h2").title.main-title!= title
 	+e.content
-		+e("span").item
-			+e("span").digit.badge 00
+		+e("span").item(data-timer-rel="days")
+			+e("span").digit 00
 			+e("span").label днів
 		+e("span").separator :
-		+e("span").item
+		+e("span").item(data-timer-rel="hours")
 			+e("span").digit 00
 			+e("span").label годин
 		+e("span").separator :
-		+e("span").item
+		+e("span").item(data-timer-rel="minutes")
 			+e("span").digit 00
 			+e("span").label хвилин
 		+e("span").separator :
-		+e("span").item
+		+e("span").item(data-timer-rel="seconds")
 			+e("span").digit 00
 			+e("span").label секунд
