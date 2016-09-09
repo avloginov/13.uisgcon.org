@@ -9,15 +9,16 @@ block main
 		data: sections.features
 	})
 
-	+b("section").speakers#speakers: +i({
-		list: speakers,
-		data: sections.speakers
-	})
+	//- +b("section").speakers#speakers: +i({
+	//- 	list: speakers,
+	//- 	data: sections.speakers
+	//- })
 
-	+b("section").program#program: +i({
-		list: program,
-		data: sections.program
-	})
+	//- +b("section").program#program: +i({
+	//- 	list: program,
+	//- 	data: sections.program
+	//- })
+	
 	+b("section").timer(data-value="1480057200"): +i({ title: "До початку конференції лишилось:" })
 
 	//- +b("section").contest#contest: +i({
