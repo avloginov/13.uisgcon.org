@@ -23,7 +23,7 @@
 		vertical-align middle
 		margin 10px 0
 		min-width 300px
-		width 570px
+		width 1000px
 		transform-origin center center
 		transition transform .3s cubic-bezier(0.58, 0.92, 0.32, 1)
 		@media tablet
@@ -41,9 +41,27 @@
 	&-body
 		position relative
 		z-index 4
+		clearfix()
+	&-image-wrapper
+		float left
+		width 20%
+		padding-right 20px
+		@media phone_tablet
+			float none
+			width auto
+			padding-right 0
+			margin-bottom 10px
+	&-text-wrapper
+		float left
+		width 80%
+		padding-left 20px
+		@media phone_tablet
+			width auto
+			float none
+			padding-left 0
 	&-content
 		position relative
-		padding 30px 60px 40px
+		padding 60px 50px
 		background-color #fff
 		box-shadow 0 3px 20px rgba(0,0,0,.2)
 		outline 0
@@ -59,7 +77,7 @@
 		bottom 0
 		left 0
 		z-index 1040
-		background-color rgba(0,0,0,.5)
+		background-color alpha(blueColor, 0.8)
 	&-open
 		overflow hidden
 		.modal
@@ -68,65 +86,63 @@
 	&-close
 		position absolute
 		z-index 5
-		top 0
-		right @top
+		top 18px
+		right 18px
+		// right @top
 		width 30px
+		cursor pointer
 		height @width
 		padding 0
-		border 0 none
 		outline none
-		background brandColor
-		transition transform .2s ease, background .2s ease
+		background transparent
+		color transparent
+		border 2px solid transparent
+		transition transform .2s ease, border .2s ease
+		@media phone_tablet
+			top 10px
+			right 10px
 		&:before
 		&:after
 			content ""
 			position absolute
-			width 1px
+			width 2px
 			top 50%
 			left 50%
-			height 16px
+			height 26px
 			margin-top -(@height / 2)
-			background-color #fff
+			background-color blueColor
+			margin-left -1px
 			transition background-color .15s ease
 		&:before
 			transform rotate(-45deg)
 		&:after
 			transform rotate(45deg)
 		&:hover
-			background redColor
+			border 2px solid blueColor
 	&-title
 		font-size 28px
-		margin-bottom 15px
-		font-weight 600
 		display block
-		text-align center
 	&-language
 	&-position
-	&-additiona-position
 	&-description
-		font-size 19px
-		margin-bottom 8px
+		font-size 18px
+		margin-bottom 0
 		display block
+		color #717171
 		@media phone
 			font-size 17px
 	&-language
-		font-weight 600
-		&-value
-			font-weight 400
+		margin-bottom 30px
 	&-description
-		margin-bottom 0
+		color siteColor
+		div
+			margin-bottom 10px
+	&-position
+		&-link
+			color #717171
 	&-portrait
 		display block
 		max-width 100%
 		height auto
 		border-radius 50%
-		margin 0 auto 10px
-	&-close
-		background #c75050
-		color #fff
-		cursor pointer
-		&:after
-		&:before
-			background #fff
-		&:hover
-			background darken(#c75050, 15%)
+		margin 10px auto 0
