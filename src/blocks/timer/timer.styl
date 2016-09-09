@@ -1,0 +1,44 @@
+.timer
+	padding 55px 0 70px
+	font-weight 100
+	line-height 1
+	text-align center
+	&__title
+		@media phone
+			font-size 28px
+	&__content
+		display inline-block
+		vertical-align middle
+		white-space nowrap
+	&__item
+	&__separator
+		float left
+	&__item
+		width 110px
+		font-size 90px
+		color brandColor
+		text-align center
+		@media phone
+			width 60px
+			font-size 36px
+	&__separator
+		margin 15px 5px 0
+		font-size 54px
+		color blueColor
+		@media phone
+			margin 8px 3px 0
+			font-size 20px
+	&__label
+		display block
+		font-size 18px
+		font-weight 300
+		color #636f76
+		@media phone
+			font-size 13px
+	&_big
+		.timer
+			&__item
+				width 70px
+				font-size 60px
+			&__separator
+				font-size 45px
