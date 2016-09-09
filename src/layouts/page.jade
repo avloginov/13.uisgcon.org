@@ -17,8 +17,8 @@ block main
 						!= content
 
 	block afterContent
-
-	+b("section").informer: +i({ title: "12-а конференція <br>інформаційної безпеки", buttonLabel: "Реєстрація", buttonUrl: "/order" })
+	unless file.hideInformer
+		+b("section").informer: +i({ title: "12-а конференція <br>інформаційної безпеки", buttonLabel: "Реєстрація", buttonUrl: "/order" })
 	//- +b("section").page-section: +i({
 	//- 	list: infoSupport,
 	//- 	items: sections.infoSupport
