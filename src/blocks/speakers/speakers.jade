@@ -4,10 +4,10 @@
 		+e("ul").list
 			each item in list
 				+e("li").list-item
-					+e.person
-						+e("img").person-avatar(src!=item.image alt!=item.alt)
-						+e("a").person-link(href="##{item.id}" data-toggle="modal")
-							+e("span").person-name!= item.name
+					+e("a").person(href="##{item.id}" data-toggle="modal")
+						+e("span").person-image
+							img(src!=item.image alt!=item.name)
+						+e("span").person-name!= item.name
 						+e("span").person-position!= item.position
 	+e.footer
 		+e("a").more.btn.btn_default(href!=data.btnMoreLink)!= data.btnMore

@@ -1,16 +1,17 @@
-if list
-	each item in list
-		.modal.fade(id=item.id)
-			.modal-dialog
-				.modal-content
-					.modal-header
-						button.modal-close(type="button" class="close" data-dismiss="modal") &times
-					.modal-body
-						.modal-image-wrapper
-							img.modal-portrait(src=item.image alt=item.alt)
-						.modal-text-wrapper
-							span.modal-title!= item.name
-							span.modal-position!= item.positionWithUrl
-							span.modal-language Мова: #{item.language}
-							div.modal-description!= item.description
-					.modal-footer
+each item in speakers
+	.modal.fade(id=item.id)
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.modal-close.close(type="button" data-dismiss="modal") &times;
+				.modal-body
+					.modal-image-wrapper
+						img.modal-portrait(src=item.image alt=item.name)
+					.modal-text-wrapper
+						.modal-title!= item.name
+						.modal-position!= item.positionWithUrl
+						.modal-language Мова: #{item.language}
+						.modal-description!= item.description
+
+
+
