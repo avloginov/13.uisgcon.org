@@ -25,6 +25,10 @@ $ ->
 		else
 			$tooltip.addClass("active")
 
+	manageMenu = (event) ->
+		if not $(event.target).closest(".header__content").length
+			$block.removeClass("menu-open")
+
 	closeMenuOnResize = ->
 		if window.innerWidth > 1000 and $block.hasClass("menu-open")
 			$block.removeClass("menu-open")
@@ -33,4 +37,5 @@ $ ->
 	$window.on("resize", closeMenuOnResize)
 
 	$menuToggle.on("click", menuToggle)
+	# $(document).on("click", manageMenu)
 	$(document).on("touchstart", manageTooltip)

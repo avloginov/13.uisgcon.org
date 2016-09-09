@@ -13,7 +13,13 @@
 		&-item
 			float left
 			width 33.33%
+			@media phone_tablet
+				float none
+				width auto
+				display block
 	&__gift
+		@media phone_tablet
+			margin-bottom 30px
 		&-badge
 			position absolute
 			top 0
@@ -55,3 +61,5 @@
 	&__footer
 		margin-top 110px
 		text-align center
+		@media phone_tablet
+			margin-top 70px
