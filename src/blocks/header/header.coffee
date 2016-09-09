@@ -1,5 +1,5 @@
 $ ->
-	$block = $("#header")
+	$block = $(".header")
 	return unless $block.length
 	$window = $(window)
 	preakpoint = $block.offset().top
@@ -16,8 +16,8 @@ $ ->
 			$block.removeClass("header_fixed")
 
 	menuToggle = (event) ->
-		$this = $(@)
-		$this.closest(".header").toggleClass("menu-open")
+		# $this = $(@)
+		$block.toggleClass("menu-open")
 
 	manageTooltip = (event) ->
 		$this = $(event.target)
