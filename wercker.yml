@@ -1,0 +1,14 @@
+box: node
+build:
+    steps:
+      - script:
+          name: git intro
+          code: |
+            git config --global user.email "roma@se7ensky.com"
+            git config --global user.name "RV"
+      - script:
+          name: install verstat
+          code: npm install -g verstat-cli
+      - script:
+          name: deploy
+          code: ./deploy.sh
