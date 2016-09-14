@@ -11,4 +11,13 @@ build:
           code: npm install -g verstat-cli
       - script:
           name: deploy
-          code: ./deploy.sh
+          code: |
+            npm install ; verstat -e static generate
+            cd server
+            git init
+            git add .
+            git commit -m 'auto deploy'
+            git remote add github git@github.com:sapran/12.uisgcon.org.git
+            git push -f github master:out
+            rm -rf .git
+            cd ..
