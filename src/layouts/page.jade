@@ -7,7 +7,10 @@ block main
 			- classes = file.pageClasses
 		+b("section").page(class=classes)
 			+e.body
-				+e.header
+				- pageHeaderClasses = ""
+				if file.pageHeaderClasses
+					- pageHeaderClasses = file.pageHeaderClasses
+				+e.header(class=pageHeaderClasses)
 					if file.title
 						+e("h1").title!= file.title
 					if file.subtitle

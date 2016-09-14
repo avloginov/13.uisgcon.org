@@ -7,6 +7,6 @@
 - title: "Конкурс"
   url: "/#contest"
 - title: "Новини"
-  url: "/#news"
+  url: "/news"
 - title: "Контакти"
   url: "/contacts"

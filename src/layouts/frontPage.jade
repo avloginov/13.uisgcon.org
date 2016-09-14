@@ -14,24 +14,25 @@ block main
 	//- 	data: sections.speakers
 	//- })
 
-	//- +b("section").program#program: +i({
-	//- 	list: program,
-	//- 	data: sections.program
-	//- })
-	
+	+b("section").program#program: +i({
+		list: program,
+		data: sections.program
+	})
+
 	+b("section").timer(data-value="1480057200"): +i({ title: "До початку конференції лишилось:" })
 
-	//- +b("section").contest#contest: +i({
-	//- 	gifts: gifts,
-	//- 	data: sections.contest
-	//- })
+	+b("section").contest#contest: +i({
+		gifts: gifts,
+		data: sections.contest
+	})
 
 	//- .container
 	//- 	hr.offset-0
 
-	//- +b("section").news#news: +i({
-	//- 	data: sections.news
-	//- })
+	+b("section").news#news: +i({
+		data: sections.news,
+		list: news
+	})
 
 	+b("section").tickets#tickets: +i({
 		data: sections.tickets

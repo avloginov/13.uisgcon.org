@@ -1,6 +1,7 @@
 .container
 	if data.title
 		+e("h2").title.main-title!= data.title
+		+e.text!= data.text
 	if list
 		+e("ul").nav.nav-tabs
 			each item, i in list

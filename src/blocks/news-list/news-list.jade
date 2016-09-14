@@ -1,0 +1,4 @@
+each item in data
+	+e("li").item
+		time(datetime!=item.dateTime).news-list__date!= item.subtitle
+		+e("a").text(href="#{ item.filename.replace(/.md/g, '') }")!= item.title
