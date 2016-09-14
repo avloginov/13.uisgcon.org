@@ -21,31 +21,32 @@ block main
 
 	+b("section").timer(data-value="1480057200"): +i({ title: "До початку конференції лишилось:" })
 
-	+b("section").contest#contest: +i({
-		gifts: gifts,
-		data: sections.contest
-	})
+	//- +b("section").contest#contest: +i({
+	//- 	gifts: gifts,
+	//- 	data: sections.contest
+	//- })
 
 	//- .container
 	//- 	hr.offset-0
+
+	+b("section").tickets#tickets: +i({
+		data: sections.tickets
+	})
+	
+	+b("section").map#contacts: +i({
+		items: sections.map
+	})
 
 	+b("section").news#news: +i({
 		data: sections.news,
 		list: news
 	})
 
-	+b("section").tickets#tickets: +i({
-		data: sections.tickets
-	})
 
 	//- +b("section").page-section#sponsors: +i({
 	//- 	list: sponsors,
 	//- 	items: sections.sponsors
 	//- })
-
-	+b("section").map#contacts: +i({
-		items: sections.map
-	})
 
 	+b("section").page-section.bg-lightgrey#organizers: +i({
 		list: organizers,
