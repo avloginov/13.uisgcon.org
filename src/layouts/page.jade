@@ -1,35 +1,45 @@
 extends main
 
 block main
-	.container
-		- classes = ""
-		if file.pageClasses
-			- classes = file.pageClasses
-		+b("section").page(class=classes)
-			+e.body
-				- pageHeaderClasses = ""
-				if file.pageHeaderClasses
-					- pageHeaderClasses = file.pageHeaderClasses
-				+e.header(class=pageHeaderClasses)
-					if file.title
-						+e("h1").title!= file.title
-					if file.subtitle
-						+e.subtitle!= file.subtitle
-				.rich-text
-					block article
-						!= content
+
+	if customPage
+		+b.page
+			block article
+				!= content
+	else
+		.container
+			- classes = ""
+			if file.pageClasses
+				- classes = file.pageClasses
+			+b("section").page(class=classes)
+				+e.body
+					- pageHeaderClasses = ""
+					if file.pageHeaderClasses
+						- pageHeaderClasses = file.pageHeaderClasses
+					+e.header(class=pageHeaderClasses)
+						if file.title
+							+e("h1").title!= file.title
+						if file.subtitle
+							+e.subtitle!= file.subtitle
+					.rich-text
+						block article
+							!= content
 
 	block afterContent
+
 	unless file.hideInformer
 		+b("section").informer: +i({ title: "12-а конференція <br>інформаційної безпеки", buttonLabel: "Реєстрація", buttonUrl: "/order" })
+	
 	//- +b("section").page-section: +i({
 	//- 	list: infoSupport,
 	//- 	items: sections.infoSupport
 	//- })
+
 	+b("section").page-section.bg-lightgrey#sponsors: +i({
 		//- list: sponsors,
 		items: sections.sponsors
 	})
+
 	+b("section").page-section#partners: +i({
 		list: partners,
 		items: sections.partners

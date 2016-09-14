@@ -1,0 +1,10 @@
+extends page
+
+append params
+	- customPage = true
+
+block article
+	+b("section").program.padding-0: +i({
+		list: program,
+		data: sections.program
+	})
