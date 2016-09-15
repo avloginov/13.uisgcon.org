@@ -1,11 +1,14 @@
 +e.header
 	.container
-		+e("a").logo(href=site.baseUrl)
+		- logoUrl = "/"
+		if language == "en"
+			- logoUrl = "/en"
+		+e("a").logo(href=logoUrl)
 			+e("img").logo-img(src=site.logoBig, alt="" width="372" height="94")
 		+e.controls
 			+e("a").reg.btn.btn-sm.btn-white(href="/order")!= reg
 			if language == "en"
-				+e("a").language(href=site.baseUrl) Укр
+				+e("a").language(href="/") Укр
 			else
 				+e("a").language(href="/en") Eng
 .container

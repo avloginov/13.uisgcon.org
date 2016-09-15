@@ -8,6 +8,9 @@
 			if date
 				+e.features-value #{date.dateStart}-#{date.dateEnd}
 				+e.features-label #{date.month}, #{date.year} <br>#{location}
-	+e.text!= data.text
-	//- +e.footer
-	//- 	+e("a").more.btn.btn_default(href=data.btnMoreUrl)!= data.btnMore
+	if shortBlock
+		+e.text.text-center!= data.shortText
+		+e.footer
+			+e("a").more.btn.btn_default(href=data.btnMoreUrl)!= data.btnMore
+	else
+		+e.text!= data.text

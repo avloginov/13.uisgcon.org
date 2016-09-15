@@ -1,0 +1,11 @@
+extends page
+
+append params
+	- customPage = true
+
+block article
+	+b("section").about.padding-0: +i({
+		data: sections.about,
+		date: site.date,
+		location: site.location
+	})
