@@ -1,18 +1,19 @@
 .container
-	+e("h2").title.main-title!= title
-	+e.content
-		+e("span").item(data-timer-rel="days")
-			+e("span").digit 00
-			+e("span").label днів
-		+e("span").separator :
-		+e("span").item(data-timer-rel="hours")
-			+e("span").digit 00
-			+e("span").label годин
-		+e("span").separator :
-		+e("span").item(data-timer-rel="minutes")
-			+e("span").digit 00
-			+e("span").label хвилин
-		+e("span").separator :
-		+e("span").item(data-timer-rel="seconds")
-			+e("span").digit 00
-			+e("span").label секунд
+	if timer
+		+e("h2").title.main-title!= timer.title
+		+e.content
+			+e("span").item(data-timer-rel="days")
+				+e("span").digit 00
+				+e("span").label!= timer.day
+			+e("span").separator :
+			+e("span").item(data-timer-rel="hours")
+				+e("span").digit 00
+				+e("span").label!= timer.hour
+			+e("span").separator :
+			+e("span").item(data-timer-rel="minutes")
+				+e("span").digit 00
+				+e("span").label!= timer.minute
+			+e("span").separator :
+			+e("span").item(data-timer-rel="seconds")
+				+e("span").digit 00
+				+e("span").label!= timer.second

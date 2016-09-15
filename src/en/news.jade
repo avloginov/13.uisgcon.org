@@ -1,0 +1,10 @@
+//---
+	layout: layouts/page
+	pageUrl: "news"
+	title: "News"
+	pageClasses: "text-center"
+	world: true
+	language: "en"
+
+block article
+	+b("ul").news-list: +i({ data: news })

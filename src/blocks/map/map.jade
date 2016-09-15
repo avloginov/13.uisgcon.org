@@ -3,7 +3,7 @@ unless hideInfo
 		+e("h2").title!= items.title
 		+e.info-content
 			p
-				+e("span").adress!= site.location
+				+e("span").adress!= location
 			p
 				+e("a").link(href=items.mailLink)!= items.mailLinkText
 			if items.times

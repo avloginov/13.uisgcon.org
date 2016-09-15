@@ -25,6 +25,13 @@ news:
   btnMore: "Всі новини"
   btnMoreLink: "/"
 
+timer:
+  title: "До початку конференції лишилось:"
+  day: "днів"
+  hour: "годин"
+  minute: "хвилин"
+  second: "секунд"
+
 sponsors:
   title: "Спонсори"
   buttonLabel: "Стати спонсором"
@@ -32,6 +39,13 @@ sponsors:
 
 organizers:
   title: "Організатори"
+  location: "Адреса UISGCON 12:"
+  dev: "Розроблено в"
+
+informer:
+  title: "12-а конференція <br>інформаційної безпеки"
+  buttonLabel: "Реєстрація"
+  buttonUrl: "/order"
 
 partners:
   title: "Партнери"

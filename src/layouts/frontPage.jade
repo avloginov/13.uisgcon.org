@@ -2,7 +2,9 @@ extends main
 
 block main
 	+b("section").about#about: +i({
-		data: sections.about
+		data: sections.about,
+		date: site.date,
+		location: site.location
 	})
 
 	+b("section").features#features: +i({
@@ -19,7 +21,7 @@ block main
 		data: sections.program
 	})
 
-	+b("section").timer(data-value="1480057200"): +i({ title: "До початку конференції лишилось:" })
+	+b("section").timer(data-value="1480057200"): +i({ timer: sections.timer })
 
 	//- +b("section").contest#contest: +i({
 	//- 	gifts: gifts,
@@ -32,9 +34,10 @@ block main
 	+b("section").tickets#tickets: +i({
 		data: sections.tickets
 	})
-	
+
 	+b("section").map#contacts: +i({
-		items: sections.map
+		items: sections.map,
+		location: site.location
 	})
 
 	+b("section").news#news: +i({

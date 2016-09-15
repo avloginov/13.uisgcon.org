@@ -1,0 +1,105 @@
+map:
+  data:
+    title: "Premier Hotel Rus"
+    latitude: 50.435883
+    longitude: 30.524122
+    zoom: 15
+    icon: "assets/i/map-pin.png"
+  title: "Contact"
+  mailLink: "mailto:biz@uisgcon.org"
+  mailLinkText: "biz@uisgcon.org"
+  times:
+    - 8:30
+    - 21:00
+
+about:
+  title: "About UISGCON12"
+  featuresValue: "12<sup><small>12th</small></sup>"
+  featuresLabel: "cyber<br>security conference"
+  text: "<p>UISGCON is biggest in Ukraine information security community's Conference which is held under aegis of Non-government Organization Ukrainian Information Security Group (NGO UISG). About 600 participants visited previuos Conference.</p><p>UISGCON Conferences are annual events mainly for those who suppose information and cybersecurity as their profession. However among UISGCON audience there are many pople who consider this industry important for their business, who is interested to discuss current cybersecurity trends with experts, and to be prepared for contemporary challenges.</p><p>Who goes to UISGCON? CEO, CSO, CISO, CFO from industry, banking, transport, energy, engineering, software developers, people from consulting companies, integrators, Government, also freelancers, professors and students, bloggers, journalists and many other supporters and adepts of safe virtual space.</p>"
+  btnMore: "Details about UISGCON"
+  btnMoreUrl: "/"
+
+news:
+  title: "News"
+  btnMore: "More news"
+  btnMoreLink: "/en/news"
+
+sponsors:
+  title: "Sponsors"
+  buttonLabel: "Become a sponsor"
+  buttonUrl: "mailto:biz@uisgcon.org?subject=UISGCON12 Sponsorship"
+
+organizers:
+  title: "Organisers"
+  location: "Address of UISGCON 12:"
+  dev: "Developed by"
+
+informer:
+  title: "12<small>th</small> conference <br>of cyber security"
+  buttonLabel: "Registration"
+  buttonUrl: "/order"
+
+timer:
+  title: "Time remaining before the conference:"
+  day: "days"
+  hour: "hours"
+  minute: "minutes"
+  second: "seconds"
+
+partners:
+  title: "Partners"
+  buttonLabel: "Become a partner"
+  buttonUrl: "mailto:biz@uisgcon.org?subject=UISGCON12 Partnership"
+
+speakers:
+  title: "Speakers"
+  btnMore: "All speakers"
+  btnMoreLink: "/"
+
+program:
+  title: "Program"
+  text: "Please note that this is not the final version of the Program"
+
+contest:
+  title: "Contest"
+  text: "Розробіть новий семпл або модифікуйте існуючі семпли, що не будуть виявлятися засобами для боротьби з malware і отримайте цінні призи"
+  btnMore: "More details"
+  btnMoreLink: "/"
+
+features:
+  title: "Features"
+  list:
+    - value: "2"
+      label: "Days of unique <br>content"
+    - value: "500+"
+      label: "Professionals <br>of information security"
+    - value: "30+"
+      label: "Thematic lectures, discussions <br>and workshops"
+
+tickets:
+  title: "Ticket options"
+  list:
+    - title: "Tickets for <div class='color-blue'>11.25.16</div>"
+      price: 500
+      currency: "uah"
+      orderLink: "/order"
+      order: "Buy"
+    - title: "Tickets for <div class='color-blue'>11.26.16</div>"
+      price: 500
+      currency: "uah"
+      orderLink: "/order"
+      order: "Buy"
+    - title: "Tickets for two days <div class='color-blue'>11.25.16-11.26.16</div>"
+      price: 750
+      currency: "uah"
+      orderLink: "/order"
+      order: "Buy"
+    - title: "Student ID <div class='color-blue'>two days</div>"
+      price: 350
+      currency: "uah"
+      orderLink: "/order"
+      order: "Buy"
+
+infoSupport:
+  title: "Information support"

@@ -28,8 +28,15 @@ block main
 	block afterContent
 
 	unless file.hideInformer
-		+b("section").informer: +i({ title: "12-а конференція <br>інформаційної безпеки", buttonLabel: "Реєстрація", buttonUrl: "/order" })
-	
+		+b("section").informer: +i({
+			title: sections.informer.title,
+			buttonLabel: sections.informer.buttonLabel,
+			buttonUrl: sections.informer.buttonUrl,
+			date: site.date,
+			location: site.location,
+			language: file.language
+		})
+
 	//- +b("section").page-section: +i({
 	//- 	list: infoSupport,
 	//- 	items: sections.infoSupport

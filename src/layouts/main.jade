@@ -7,15 +7,17 @@ block root
 			title: file.intro.title,
 			location: site.location,
 			date: site.date,
-			arrowUrl: file.intro.arrowUrl
+			reg: site.reg,
+			arrowUrl: file.intro.arrowUrl,
+			language: file.language
 		})
-	+b("header").header#header: +i
+	+b("header").header#header: +i({ language: file.language, pageUrl: file.pageUrl })
 
 	main.main
 		block main
 			!= content
 
-	+b("footer").footer: +i
+	+b("footer").footer: +i({language: file.language})
 
 	if file.showModals
 		+b.modals: +i

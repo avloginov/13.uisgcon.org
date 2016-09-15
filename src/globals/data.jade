@@ -1,12 +1,21 @@
-- var site = queryFile({ fullname: "data/site" })
-- var sections = queryFile({ fullname: "data/sections" })
-- var mainMenu = queryFile({ fullname: "data/mainMenu" }).items
-- var program = queryFile({ fullname: "data/program" }).items
-- var partners = queryFile({ fullname: "data/partners" }).items
-- var sponsors = queryFile({ fullname: "data/sponsors" }).items
-- var speakers = queryFile({ fullname: "data/speakers" }).items
-- var organizers = queryFile({ fullname: "data/organizers" }).items
-- var gifts = queryFile({ fullname: "data/gifts" }).items
-- var infoSupport = queryFile({ fullname: "data/infoSupport" }).items
+- var lang = ''
 
-- var news = queryFiles({ dir: "news" })
+- if ((file && file.language == 'en'))
+	- lang = file.language + '/'
+- else if (language == 'en')
+	- lang = language + '/'
+
+
+- var site = queryFile({ fullname: "data/" + lang + "site" })
+- var sections = queryFile({ fullname: "data/" + lang + "sections" })
+- var mainMenu = queryFile({ fullname: "data/" + lang + "mainMenu" }).items
+- var program = queryFile({ fullname: "data/" + lang + "program" }).items
+- var partners = queryFile({ fullname: "data/" + lang + "partners" }).items
+- var sponsors = queryFile({ fullname: "data/" + lang + "sponsors" }).items
+- var speakers = queryFile({ fullname: "data/" + lang + "speakers" }).items
+- var organizers = queryFile({ fullname: "data/" + lang + "organizers" }).items
+- var gifts = queryFile({ fullname: "data/" + lang + "gifts" }).items
+- var infoSupport = queryFile({ fullname: "data/" + lang + "infoSupport" }).items
+
+- var news = queryFiles({ dir: lang + "news" })
+

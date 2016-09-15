@@ -1,18 +1,29 @@
 .container
 	+e("h2").title!= title
 	+e.content
-		if site.location
-			p!= site.location
-		if site.date
+		if location
+			p!= location
+		if date
 			p
-				if site.date.dateStart
-					time(datetime=site.date.dateStartShort)=site.date.dateStart
-				if site.date.dateEnd
-					| -
-					time(datetime=site.date.dateEndShort)= site.date.dateEnd
-				if site.date.month
-					|  #{site.date.month}
-				if site.date.year
-					| , #{site.date.year}
+				if language !== "en"
+					if date.dateStart
+						time(datetime=date.dateStartShort)=date.dateStart
+					if date.dateEnd
+						| -
+						time(datetime=date.dateEndShort)= date.dateEnd
+					if date.month
+						|  #{date.month}
+					if date.year
+						| , #{date.year}
+				else
+					if date.month
+						|  #{date.month}
+					if date.dateStart
+						time(datetime=date.dateStartShort)=date.dateStart
+					if date.dateEnd
+						| -
+						time(datetime=date.dateEndShort)= date.dateEnd
+					if date.year
+						| , #{date.year}
 	+e.footer
 		+e("a").button.btn.btn-white(href=buttonUrl)= buttonLabel
