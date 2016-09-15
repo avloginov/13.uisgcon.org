@@ -8,7 +8,7 @@
 	+e.content
 		+e.controls
 			+e("a").reg.btn.btn-sm(href="/order")!= site.reg
-			if pageUrl
+			if pageUrl || pageUrl == ""
 				if language == "en"
 					+e("a").language(href="/#{pageUrl}")!= site.language
 				else
