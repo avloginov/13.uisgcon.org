@@ -1,5 +1,6 @@
 ---
 layout: layouts/article
+language: "en"
 title: "Wilcome to 12th Ukrainian Information Security Group Cyber Security Conference website!"
 subtitle: "09.12.2016"
 dateTime: "2016-09-12"

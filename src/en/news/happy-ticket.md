@@ -1,5 +1,6 @@
 ---
 layout: layouts/article
+language: "en"
 title: "Happy ticket"
 subtitle: "09.12.2016"
 dateTime: "2016-09-12"
