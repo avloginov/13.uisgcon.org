@@ -1,5 +1,6 @@
 ---
 layout: layouts/article
+pageUrl: "news/happy-ticket"
 language: "en"
 title: "Happy ticket"
 subtitle: "09.12.2016"

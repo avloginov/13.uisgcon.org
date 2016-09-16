@@ -14,10 +14,16 @@ else
 	+e.content
 		+e.controls
 			+e("a").reg.btn.btn-sm(href="/order")!= site.reg
+			//- if pageUrl || pageUrl == ""
 			if language == "en"
-				+e("a").language(href="/")!= site.language
+				+e("a").language(href="/#{pageUrl}")!= site.language
 			else
-				+e("a").language(href="/en/")!= site.language
+				+e("a").language(href="/en/#{pageUrl}")!= site.language
+
+			//- if language == "en"
+			//- 	+e("a").language(href="/")!= site.language
+			//- else
+			//- 	+e("a").language(href="/en/")!= site.language
 		+e.menu
 			+b("nav").menu: +i({ prefix: "main", items: mainMenu, blockTitle: "Головне меню" })
 

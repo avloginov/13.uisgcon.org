@@ -1,5 +1,6 @@
 ---
 layout: layouts/article
+pageUrl: "news/happy-ticket"
 title: "Акція «Щасливий квиток»"
 subtitle: "12.09.2016"
 dateTime: "2016-09-12"

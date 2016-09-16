@@ -1,5 +1,6 @@
 ---
 layout: layouts/article
+pageUrl: "news/uisgcon12-info"
 title: "Вітаємо на сайті 12-ї конференції з інформаційної безпеки UISGCON 12!"
 subtitle: "12.09.2016"
 dateTime: "2016-09-12"

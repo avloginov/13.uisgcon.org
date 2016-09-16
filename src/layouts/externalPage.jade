@@ -2,6 +2,6 @@ extends main
 
 block root
 	if file.showHeader
-		+b("header").header._static: +i({ language: file.language })
+		+b("header").header._static: +i({ language: file.language, pageUrl: file.pageUrl })
 
 	!= content
