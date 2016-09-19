@@ -1,4 +1,5 @@
-title: "UISGCON 12 - ukrainian information security group conference"
+title: "UISGCON 12"
+description: "UISGCON 12 - ukrainian information security group conference"
 logoBig: "/assets/i/uisg12-logo-big.svg"
 logoSmall: "/assets/i/uisg12-logo-small.svg"
 logoSmallGrey: "/assets/i/uisg12-logo-small-grey.svg"
@@ -20,4 +21,9 @@ socials:
     url: "https://twitter.com/ngouisg"
   - title: "linkedin"
     url: "https://www.linkedin.com/groups/4580558"
+og:
+  title: "UISGCON 12 - ukrainian information security group conference"
+  image: "i/uisg12-social-image.jpg"
+  description: "UISGCON 12 - ukrainian information security group conference"
+  twitter: "@ngouisg"
 
