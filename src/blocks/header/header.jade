@@ -13,7 +13,7 @@ else
 	+e.toggle
 	+e.content
 		+e.controls
-			+e("a").reg.btn.btn-sm(href="/order")!= site.reg
+			+e("a").reg.btn.btn-sm(href=site.orderLink target="_blank")!= site.reg
 			//- if pageUrl || pageUrl == ""
 			if language == "en"
 				+e("a").language(href="/#{pageUrl}")!= site.language
