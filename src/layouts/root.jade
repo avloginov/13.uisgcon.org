@@ -14,20 +14,18 @@ html
 					| #{file.title} – #{site.title}
 				else
 					| #{site.title}
-		if site.description
-			meta(name="description" content=site.description)
 
-		//- if site.og
+		if site.og
 			//- Schema.org markup for Google+
 			meta(itemprop="name", content="#{site.og.title}")
-			meta(itemprop="description", content="#{site.og.description}")
+			meta(itemprop="description", content="#{site.description}")
 			meta(itemprop="image", content=assetLong(site.og.image))
 
 			//- Twitter Card data
 			meta(name="twitter:card", content="product")
 			meta(name="twitter:site", content="#{site.og.twitter}")
-			meta(name="twitter:title", content="#{file.og.title}")
-			meta(name="twitter:description", content="#{file.og.description}")
+			meta(name="twitter:title", content="#{site.og.title}")
+			meta(name="twitter:description", content="#{site.description}")
 			meta(name="twitter:creator", content="#{site.og.twitter}")
 			meta(name="twitter:image", content=assetLong(site.og.image))
 
@@ -36,7 +34,7 @@ html
 			meta(property="og:type", content="article")
 			meta(property="og:url", content="#{site.baseUrl}")
 			meta(property="og:image", content=assetLong(site.og.image))
-			meta(property="og:description", content="#{site.og.description}")
+			meta(property="og:description", content="#{site.description}")
 			meta(property="og:site_name", content="#{site.title}")
 
 	body
