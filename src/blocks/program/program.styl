@@ -59,13 +59,15 @@
 				clear both
 	&__column
 		float left
-		width (100% / 2)
-		height auto
+		width 50%
 		border-right 1px solid #e0e6ec
+		@media md_lg
+			.cols-3 &
+				width 33.333%
 		@media phone_sm
 			cursor pointer
 			width 100%
-			border-right 0
+			border-right 0 none
 			&:last-child
 				border-bottom 0
 			&.active
@@ -74,7 +76,7 @@
 						&:after
 							transform rotate(90deg)
 		&:last-child
-			border-right 0
+			border-right 0 none
 		&-title
 			position relative
 			background lightGrey

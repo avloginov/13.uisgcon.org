@@ -21,7 +21,7 @@
 						- var classes2 = "active"
 					else
 						- var classes2 = ""
-					+e.tab-pane(id=item.id class=classes2)
+					+e.tab-pane(id=item.id, class="#{classes2} cols-#{item.places.length}")
 						each item2, j in item.places
 							if j === 0 && i === 0
 								- var classes3 = "active"
