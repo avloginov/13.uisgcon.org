@@ -25,7 +25,7 @@
         - time: "16:00"
           event: "TBD"
         - time: "17:00"
-          event: "Представник офісу НАТО в Україні"
+          event: "Представник офісу НАТО в Україні <span>Mesut Kuсuk</span>"
     - title: "Зала F"
       list:
         - time: "09:30"

@@ -25,7 +25,7 @@
         - time: "16:00"
           event: "TBD"
         - time: "17:00"
-          event: "NATO liaison office Rep"
+          event: "NATO liaison office Rep <span>Mesut Kuсuk</span>"
     - title: "Hall F"
       list:
         - time: "09:30"
