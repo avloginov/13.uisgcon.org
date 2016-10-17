@@ -4,7 +4,7 @@ map:
     latitude: 50.435883
     longitude: 30.524122
     zoom: 15
-    icon: "assets/i/map-pin.png"
+    icon: "/assets/i/map-pin.png"
   title: "Contact"
   mailLink: "mailto:biz@uisgcon.org"
   mailLinkText: "biz@uisgcon.org"

@@ -13,4 +13,4 @@ unless hideInfo
 						| &#32;-
 						time.map__time!= items.times[1]
 if items.data
-	+e.interactive#map-interactive(data-title!=items.data.title data-latitude!=items.data.latitude data-longitude!=items.data.longitude data-zoom!=items.data.zoom data-icon!=items.data.icon)
+	+e.interactive#map-interactive(data-title=items.data.title, data-latitude=items.data.latitude, data-longitude=items.data.longitude, data-zoom=items.data.zoom, data-icon=items.data.icon)
