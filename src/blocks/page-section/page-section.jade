@@ -2,7 +2,10 @@
 	if items.title
 		+e("h2").title.main-title!= items.title
 	if list
-		+b.tiles: +i({ data: list })
+		- classes = ""
+		if listClasses
+			- classes = listClasses
+		+b.tiles(class=classes): +i({ data: list })
 	if items.buttonLabel
 		+e.footer
 			a.btn(href=items.buttonUrl)= items.buttonLabel
