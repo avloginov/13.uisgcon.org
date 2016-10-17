@@ -41,7 +41,9 @@
         - time: "13:00"
           event: "Lunch"
         - time: "14:00"
-          event: "Next-generation botnet from 1970's. <spanTim Karpinsky</span>"
+          event: "Next-generation botnet from 1970's, <spanTim Karpinsky </span>"
+          speaker: "Tim Karpinsky "
+          description: "Ever thought *nix systems could be massively infected? Do you trust your own router? Still think your web-server is secured? Nope, It's not;) We'll show you why, and talk 'bout some of the most badass Linux malware."
         - time: "15:00"
           event: "CERT-UA, TBD"
         - time: "15:40"
