@@ -20,7 +20,7 @@ block root
 	+b("footer").footer: +i({language: file.language})
 
 	if file.showModals
-		+b.modals: +i
+		+b.modals: +i({ speakersList: speakers })
 
 block fonts
 	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic" rel="stylesheet")

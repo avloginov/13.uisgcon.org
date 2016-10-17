@@ -57,6 +57,7 @@ speakers:
   title: "Спікери"
   btnMore: "Всі спікери"
   btnMoreLink: "/"
+  langLabel: "Мова"
 
 program:
   title: "Програма"

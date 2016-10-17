@@ -28,10 +28,10 @@
   language: "Ukrainian"
 - name: "Oleksii Baranovskyi"
   image: "/assets/i/speakers/Oleksii_Baranovsky.jpg"
-  position: "CEH, CEI, CEO "Kyiv Cyber Academy", Ph.D., assistant professor"
-  positionWithUrl: "CEH, CEI, CEO "Kyiv Cyber Academy", Ph.D., assistant professor in department of information security of Institute Physics and Technology of the National Technical University of Ukraine "Kyiv"
+  position: 'CEH, CEI, CEO "Kyiv Cyber Academy", Ph.D., assistant professor'
+  positionWithUrl: 'CEH, CEI, CEO "Kyiv Cyber Academy", Ph.D., assistant professor in department of information security of Institute Physics and Technology of the National Technical University of Ukraine "Kyiv"'
   id: "speaker-5"
-  description: "<p>Polytechnic Institute" and cybersecurity instructor. He has experience as Security Analyst in Softline, Security Officer in BTA Bank and  Societe Generale Group. Spheres of interests are: technical audit, penetration testing, OSINT, web security.</p>"
+  description: '<p>Polytechnic Institute" and cybersecurity instructor. He has experience as Security Analyst in Softline, Security Officer in BTA Bank and  Societe Generale Group. Spheres of interests are: technical audit, penetration testing, OSINT, web security.</p>'
   language: "Ukrainian"
 - name: "Nazar Tymoshyk"
   image: "/assets/i/speakers/Nazar_Tymoshyk.jpg"

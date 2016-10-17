@@ -57,6 +57,7 @@ speakers:
   title: "Speakers"
   btnMore: "All speakers"
   btnMoreLink: "/"
+  langLabel: "Language"
 
 program:
   title: "Program"
