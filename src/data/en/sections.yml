@@ -56,7 +56,7 @@ partners:
 speakers:
   title: "Speakers"
   btnMore: "All speakers"
-  btnMoreLink: "/"
+  btnMoreLink: "/en/speakers"
   langLabel: "Language"
 
 program:

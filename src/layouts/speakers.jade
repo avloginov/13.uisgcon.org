@@ -1,0 +1,11 @@
+extends page
+
+append params
+	- customPage = true
+	- speakersFullList = true
+
+block article
+	+b("section").speakers.padding-0: +i({
+		list: speakers,
+		data: sections.speakers
+	})

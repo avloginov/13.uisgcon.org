@@ -56,7 +56,7 @@ partners:
 speakers:
   title: "Спікери"
   btnMore: "Всі спікери"
-  btnMoreLink: "/"
+  btnMoreLink: "/speakers"
   langLabel: "Мова"
 
 program:

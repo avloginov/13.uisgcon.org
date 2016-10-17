@@ -17,10 +17,10 @@ block root
 		block main
 			!= content
 
-	+b("footer").footer: +i({language: file.language})
+	+b("footer").footer: +i({ language: file.language })
 
 	if file.showModals
-		+b.modals: +i({ speakersList: speakers })
+		+b.modals: +i({ speakersList: speakers, language: file.language, speakersFullList: speakersFullList })
 
 block fonts
 	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic" rel="stylesheet")

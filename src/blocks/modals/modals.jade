@@ -1,18 +1,22 @@
+mixin speakerModal(item)
+	.modal.fade(id=item.id)
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.modal-close.close(type="button" data-dismiss="modal") &times;
+				.modal-body
+					.modal-image-wrapper
+						img.modal-portrait(src=item.image alt=item.name)
+					.modal-text-wrapper
+						.modal-title!= item.name
+						.modal-position!= item.positionWithUrl
+						.modal-language #{sections.speakers.langLabel}: #{item.language}
+						.modal-description!= item.description
+
 if speakersList
-	each item in speakersList
-		.modal.fade(id=item.id)
-			.modal-dialog
-				.modal-content
-					.modal-header
-						button.modal-close.close(type="button" data-dismiss="modal") &times;
-					.modal-body
-						.modal-image-wrapper
-							img.modal-portrait(src=item.image alt=item.name)
-						.modal-text-wrapper
-							.modal-title!= item.name
-							.modal-position!= item.positionWithUrl
-							.modal-language #{sections.speakers.langLabel}: #{item.language}
-							.modal-description!= item.description
-
-
-
+	each item, i in speakersList
+		if !speakersFullList
+			if i < 6
+				+speakerModal(item)
+		else
+			+speakerModal(item)

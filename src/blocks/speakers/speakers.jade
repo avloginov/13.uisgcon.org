@@ -1,13 +1,21 @@
+mixin listItem(item)
+	+e("li").list-item
+		+e("a").person(href="##{item.id}" data-toggle="modal")
+			+e("span").person-image
+				img(src!=item.image alt!=item.name)
+			+e("span").person-name!= item.name
+			+e("span").person-position!= item.position
+
 .container
 	+e("h2").title.main-title!= data.title
 	if list
 		+e("ul").list
-			each item in list
-				+e("li").list-item
-					+e("a").person(href="##{item.id}" data-toggle="modal")
-						+e("span").person-image
-							img(src!=item.image alt!=item.name)
-						+e("span").person-name!= item.name
-						+e("span").person-position!= item.position
-	+e.footer
-		+e("a").more.btn.btn_default(href!=data.btnMoreLink)!= data.btnMore
+			each item, i in list
+				if shortList
+					if i < 6
+						+listItem(item)
+				else
+					+listItem(item)
+	if shortList
+		+e.footer
+			+e("a").more.btn.btn_default(href!=data.btnMoreLink)!= data.btnMore
