@@ -34,12 +34,12 @@
 									|  #{date.month}
 							else
 								if date.month
-									| #{date.month}
+									| #{date.month} 
 								if date.dateStart
 									time.intro__info-date(datetime=date.dateStartShort)=date.dateStart
 								if date.dateEnd
 									| -
 									time.intro__info-date(datetime=date.dateEndShort)= date.dateEnd
 							if date.year
-								|  #{date.year}
+								| , #{date.year}
 +e("a").arrow.icon-arrow-down.scroll-link(href=arrowUrl)
