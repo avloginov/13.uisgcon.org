@@ -53,21 +53,20 @@
 			display none
 			&.active
 				display block
-			&:after
-				content ""
-				display block
-				clear both
+				@media md_lg
+					display flex
 	&__column
-		float left
-		width 50%
+		// float left
+		// width 50%
 		border-right 1px solid #e0e6ec
 		@media md_lg
-			.cols-3 &
-				width 33.333%
+			flex 1
+			// .cols-3 &
+			// 	width 33.333%
 		@media phone_sm
-			cursor pointer
-			width 100%
+			// width auto
 			border-right 0 none
+			cursor pointer
 			&:last-child
 				border-bottom 0
 			&.active
