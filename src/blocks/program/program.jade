@@ -37,4 +37,10 @@
 										each item3 in item2.list
 											+e("li").list-item
 												+e.list-date!= item3.time
-												+e.list-text!= item3.event
+												if item3.event || item3.speaker
+													+e.list-text
+														if item3.event
+															!= item3.event
+														if item3.speaker
+															| &#32;
+															+e("span").list-speaker= item3.speaker
