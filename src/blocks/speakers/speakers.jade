@@ -5,7 +5,6 @@ mixin listItem(item)
 				img(src!=item.image alt!=item.name)
 			+e("span").person-name!= item.name
 			+e("span").person-position!= item.position
-
 .container
 	+e("h2").title.main-title!= data.title
 	if list
