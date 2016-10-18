@@ -5,6 +5,10 @@
 		padding 0
 		list-style none
 		text-align center
+		@media phone
+			overflow-x auto
+			-webkit-overflow-scrolling touch
+			white-space nowrap
 		&-item
 			width 32%
 			padding 0 10px
@@ -12,7 +16,7 @@
 			vertical-align top
 			margin-bottom 50px
 			@media phone
-				display block
+				white-space normal
 				width auto
 	&__person
 		display block
@@ -32,7 +36,7 @@
 			overflow hidden
 			border-radius 100%
 			fit-image()
-			@media tablet
+			@media phone_tablet
 				width 150px
 				height 150px
 		&-name
@@ -41,13 +45,15 @@
 			color siteColor
 			font-size 22px
 			transition color 0.2s ease
-			@media tablet
+			@media phone_tablet
 				font-size 18px
+
+
 		&-position
 			display block
 			color #717171
 			font-size 15px
-			@media tablet
+			@media phone_tablet
 				font-size 14px
 	&__footer
 		margin-top 80px
