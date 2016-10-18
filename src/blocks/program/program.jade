@@ -34,13 +34,21 @@
 									+e.icon
 								if item2.list
 									+e("ul").list(style=styles)
-										each item3 in item2.list
+										each item3, k in item2.list
 											+e("li").list-item
 												+e.list-date!= item3.time
 												if item3.event || item3.speaker
 													+e.list-text
-														if item3.event
-															!= item3.event
-														if item3.speaker
-															| &#32;
-															+e("span").list-speaker= item3.speaker
+														if item3.description
+															+e("a").list-link(href="#program-event-#{item.id}-#{j + 1}-#{k + 1}" data-toggle="modal")
+																if item3.event
+																	!= item3.event
+																if item3.speaker
+																	| &#32;
+																	+e("span").list-speaker= item3.speaker
+														else
+															if item3.event
+																!= item3.event
+															if item3.speaker
+																| &#32;
+																+e("span").list-speaker= item3.speaker

@@ -1,17 +1,21 @@
-mixin speakerModal(item)
-	.modal.fade(id=item.id)
+mixin modal(name, classes)
+	.modal.fade(id=name, class=classes, tabindex="-1")
 		.modal-dialog
 			.modal-content
 				.modal-header
-					button.modal-close.close(type="button" data-dismiss="modal") &times;
+					button.modal-close.close(data-dismiss="modal" type="button") &times;
 				.modal-body
-					.modal-image-wrapper
-						img.modal-portrait(src=item.image alt=item.name)
-					.modal-text-wrapper
-						.modal-title!= item.name
-						.modal-position!= item.positionWithUrl
-						.modal-language #{sections.speakers.langLabel}: #{item.language}
-						.modal-description!= item.description
+					block
+
+mixin speakerModal(item)
+	+modal(item.id, '')
+		.modal-image-wrapper
+			img.modal-portrait(src=item.image alt=item.name)
+		.modal-text-wrapper
+			.modal-title!= item.name
+			.modal-position!= item.positionWithUrl
+			.modal-language #{sections.speakers.langLabel}: #{item.language}
+			.modal-description!= item.description
 
 if speakersList
 	each item, i in speakersList
@@ -20,3 +24,20 @@ if speakersList
 				+speakerModal(item)
 		else
 			+speakerModal(item)
+
+if programList
+	each item, i in programList
+		if item.places
+			each item2, j in item.places
+				if item2.list
+					each item3, k in item2.list
+						if item3.description
+							- modalClasses = "program-event-" + item.id + "-" + (j + 1) + "-" + (k + 1)
+							+modal(modalClasses, '')
+								+b.event-info: +i({
+									date: item.date,
+									place: item2.title,
+									time: item3.time,
+									speaker: item3.speaker,
+									text: item3.description
+								})
