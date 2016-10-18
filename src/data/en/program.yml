@@ -81,7 +81,7 @@
         - time: "13:00"
           event: "End-to-end encryption and user centric trust without suffering,"
           speaker: "Eugene Pilyankevich"
-          description: "Eugene will talk about modern approaches to protecting customer data within complex infrastructures, how to achieve "end-to-end" guarantees without sacrificing flexibility, feature richness or convenience. Also he will  talk about both boring (e.g. onion encryption, trust isolation) and exciting (like homomorphic encryption, zero-knowledge proofs, searchable cryptography) techniques, which open up new opportunities for building even more resilient systems without sacrificing usability a lot."
+          description: 'Eugene will talk about modern approaches to protecting customer data within complex infrastructures, how to achieve "end-to-end" guarantees without sacrificing flexibility, feature richness or convenience. Also he will  talk about both boring (e.g. onion encryption, trust isolation) and exciting (like homomorphic encryption, zero-knowledge proofs, searchable cryptography) techniques, which open up new opportunities for building even more resilient systems without sacrificing usability a lot.'
         - time: "14:45"
           event: "Closing"
     - title: "Hall E"
