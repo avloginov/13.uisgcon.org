@@ -9,6 +9,10 @@ build:
       - script:
           name: install verstat
           code: npm install -g verstat-cli
+      - add-to-known_hosts:
+        hostname: github.com
+      - add-ssh-key:
+        keyname: uisgconWerckerSSH
       - script:
           name: deploy
           code: |
@@ -19,5 +23,3 @@ build:
             git commit -m 'auto deploy'
             git remote add github git@github.com:sapran/12.uisgcon.org.git
             git push -f github master:out
-            rm -rf .git
-            cd ..
