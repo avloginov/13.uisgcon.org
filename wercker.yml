@@ -4,8 +4,8 @@ build:
       - script:
           name: git intro
           code: |
-            git config --global user.email "roma@se7ensky.com"
-            git config --global user.name "RV"
+            git config --global user.email "sapran@gmail.com"
+            git config --global user.name "sapran"
       - script:
           name: install verstat
           code: npm install -g verstat-cli
