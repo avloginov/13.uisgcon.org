@@ -66,7 +66,6 @@
 		@media phone_sm
 			// width auto
 			border-right 0 none
-			cursor pointer
 			&:last-child
 				border-bottom 0
 			&.active
@@ -83,6 +82,8 @@
 			color blueColor
 			padding 14px 0
 			border-bottom 1px solid #e0e6ec
+			@media phone_sm
+				cursor pointer
 	&__icon
 		position absolute
 		top (59px/2 - 20px/2)
