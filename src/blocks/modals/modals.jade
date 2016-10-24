@@ -14,7 +14,7 @@ mixin speakerModal(item)
 		.modal-text-wrapper
 			.modal-title!= item.name
 			.modal-position!= item.positionWithUrl
-			.modal-language #{sections.speakers.langLabel}: #{item.language}
+			//- .modal-language #{sections.speakers.langLabel}: #{item.language}
 			.modal-description!= item.description
 
 if speakersList
