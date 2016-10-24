@@ -26,7 +26,6 @@
   id: "speaker-4"
   description: "<p>Ihor Malchenyuk is IT expert and evangelist of choosing, implementing and getting the most value of solutions in multiple areas including smart city, big data, cloud computing and information security.</p>"
   language: "Ukrainian"
-
 - name: "Oleksii Baranovskyi"
   image: "/assets/i/speakers/Oleksii_Baranovsky.jpg"
   position: 'CEH, CEI, CEO'
@@ -34,8 +33,6 @@
   id: "speaker-5"
   description: '<p>CEH, CEI, CEO "Kyiv Cyber Academy", Ph.D., associate professor in department of information security of Institute Physics and Technology of the National Technical University of Ukraine "Kyiv Polytechnic Institute" and cybersecurity instructor.</p>'
   language: "Ukrainian"
-
-
 - name: "Nazar Tymoshyk"
   image: "/assets/i/speakers/Nazar_Tymoshyk.jpg"
   position: "Security Researcher, PWN, Architect, OWASP Lviv Chapter Leader"
