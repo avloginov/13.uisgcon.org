@@ -29,7 +29,7 @@
           event: "Перерва"
         - time: "16:00"
           event: "Cisco Talos"
-          speaker: "Уорен Мерсер"
+          speaker: "<a href='#speaker-10' data-toggle='modal'>Уорен Мерсер</a>"
         - time: "17:00"
           event: "Представник офісу НАТО в Україні"
           speaker: "Mesut Kuсuk"

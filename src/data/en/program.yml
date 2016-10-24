@@ -29,7 +29,7 @@
           event: "Coffee break"
         - time: "16:00"
           event: "Cisco Talos"
-          speaker: "Warren Mercer"
+          speaker: "<a href='#speaker-10' data-toggle='modal'>Warren Mercer</a>"
         - time: "17:00"
           event: "NATO liaison office Rep"
           speaker: "Mesut Kuсuk"

@@ -20,7 +20,8 @@ mixin speakerModal(item)
 if speakersList
 	each item, i in speakersList
 		if !speakersFullList
-			if i < 6
+			//- if i < 6
+			if i < 100
 				+speakerModal(item)
 		else
 			+speakerModal(item)
