@@ -26,6 +26,14 @@
   url: "http://automated-testing.info/"
   text: "Information partner: АТ-INFO"
   image: "/assets/i/partners/at.info.png"
+- title: "Information partner: YouControl"
+  url: "https://youcontrol.com.ua/landing_001/"
+  text: "Information partner: YouControl"
+  image: '/assets/i/sponsors/you_control_logo.png'
+- title: "Information partner: BrainTV"
+  url: "http://braintv.net/en"
+  text: "Information partner: BrainTV"
+  image: '/assets/i/sponsors/brain_tv_logo.png'
 - title: "Blog Domishky Bezpeky"
   url: "https://blog.styran.com/"
   text: "Blog Domishky Bezpeky"
