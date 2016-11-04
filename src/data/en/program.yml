@@ -13,7 +13,9 @@
         - time: "10:40"
           event: "Coffee break"
         - time: "11:00"
-          event: "TBD"
+          event: "Technical Lead, Security Research Team Lead, Talos Outreach EMEA"
+          speaker: "Martin Lee"
+          description: '<p>Cyber criminals are adept at maximising their profit from compromised machines. Criminals have developed botnets to monetise compromised devices, developed DDoS as a form of extortion racket, and created dark markets to trade stolen personal data.</p><p>As financial institutions have become better at detecting fraud, criminals have switched to encrypting personal data and holding it to ransom rather than attempting to sell it to other criminals.</p><p>Originating in the late 1980s, ransomware has evolved over the years to become the criminal business model of choice. In this session I will discuss the evolution of ransomware and describe the details of some of the most recent ransomware campaigns that we have been investigating.</p>'
         - time: "12:00"
           event: "Drones Hijacking - multi-dimensional attack vectors and countermeasures,"
           speaker: "Aaron Luo"
@@ -24,7 +26,9 @@
           event: "First Deputy Chairman of the State Service of Special Communication and Information Protection of Ukraine, сolonel."
           speaker: "Oleksandr Chauzov"
         - time: "15:00"
-          event: "TBD"
+          event: "Bayrob - A botnet that has stayed under the radar for nearly a decade."
+          speaker: "Adam Brunner"
+          description: 'Bayrob refers to the name given to a piece of malware first observed in 2007, but has for the most part stayed under the radar for nearly a decade. The group and the malware has changed over time , but the capabilities and threat has only grown. Originally used to assist in auto auction fraud this malware has because a swiss army knife and can be used for everything from spam to bitcoin mining. In this presentation we will go over the evolution of the bayrob malware and a bit of explanation of how its used and the group behind it.'
         - time: "15:40"
           event: "Coffee break"
         - time: "16:00"
