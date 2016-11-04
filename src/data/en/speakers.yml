@@ -72,7 +72,7 @@
   position: "Progremmer-hooligan"
   positionWithUrl: "Progremmer-hooligan"
   id: "speaker-11"
-  description: "/"
+  description: ""
   language: "Ukrainian"
 - name: "Tim Karpinsky"
   image: "/assets/i/speakers/uahacker.jpg"
@@ -119,6 +119,6 @@
   image: "/assets/i/speakers/uahacker.jpg"
   position: "FireEye Bayrob"
   positionWithUrl: "FireEye Bayrob"
-  id: "speaker-19"
+  id: "speaker-18"
   description: 'Brunner joined iSIGHT Partners (now part of FireEye )  in 2012 where he has been dabbling with malware and tracking botnets.'
   language: "Ukrainian"
