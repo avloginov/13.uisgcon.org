@@ -118,8 +118,8 @@
   language: "Українська"
 - name: "Адам Брюнер"
   image: "/assets/i/speakers/uahacker.jpg"
-  position: "FireEye Bayrob"
-  positionWithUrl: "FireEye Bayrob"
+  position: "FireEye"
+  positionWithUrl: "FireEye"
   id: "speaker-18"
-  description: 'Брюнер приєднався до iSIGHT Partners (наразі частина FireEye) у 2012 році, де на теперішній час грається зі шкідливим ПЗ та моніторить ботнети.'
+  description: 'Адам Брюнер приєднався до iSIGHT Partners (наразі частина FireEye) у 2012 році, де на теперішній час грається зі шкідливим ПЗ та моніторить ботнети.'
   language: "Українська"
