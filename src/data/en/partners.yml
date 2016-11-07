@@ -26,14 +26,14 @@
   url: "https://youcontrol.com.ua/landing_001/"
   text: "Information partner: YouControl"
   image: '/assets/i/sponsors/you_control_logo.png'
-- title: "Podcast SecurIt13"
-  url: "http://securit13.libsyn.com/"
-  text: "Podcast SecurIt13"
-  image: "/assets/i/partners/securit13.jpg"
 - title: "Information partner: КО"
   url: "http://ko.com.ua/"
   text: "Information partner: КО"
   image: '/assets/i/sponsors/KO_logo.png'
+- title: "Podcast SecurIt13"
+  url: "http://securit13.libsyn.com/"
+  text: "Podcast SecurIt13"
+  image: "/assets/i/partners/securit13.jpg"
 - title: "Blog Domishky Bezpeky"
   url: "https://blog.styran.com/"
   text: "Blog Domishky Bezpeky"
