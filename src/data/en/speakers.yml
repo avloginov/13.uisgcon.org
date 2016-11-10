@@ -122,3 +122,13 @@
   id: "speaker-18"
   description: 'Adam Brunner joined iSIGHT Partners (now part of FireEye )  in 2012 where he has been dabbling with malware and tracking botnets.'
   language: "Ukrainian"
+- name: "Adrian Trandafir"
+  image: "/assets/i/speakers/uahacker.jpg"
+  position: "FireEye"
+  positionWithUrl: "FireEye"
+  id: "speaker-19"
+  description: '<p>Adrian Trandafir joined iSIGHT Partners in October 2010 (now part of FireEye) and he is specialized in cyber crime and hacktivism threats security research</p>'
+  language: "Ukrainian"
+- name: " Mesut Kucuk"
+  image: "/assets/i/speakers/uahacker.jpg"
+  position: "NATO liaison office in Ukraine"

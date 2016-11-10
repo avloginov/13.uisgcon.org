@@ -123,3 +123,17 @@
   id: "speaker-18"
   description: 'Адам Брюнер приєднався до iSIGHT Partners (наразі частина FireEye) у 2012 році, де на теперішній час грається зі шкідливим ПЗ та моніторить ботнети.'
   language: "Українська"
+- name: "Адріан Трандафір"
+  image: "/assets/i/speakers/uahacker.jpg"
+  position: "FireEye"
+  positionWithUrl: "FireEye"
+  id: "speaker-19"
+  description: '<p>Адріан Трандафір приєднався до iSIGHT Partners у жовтні 2010 року (зараз це частина компанії  FireEye) і він спеціалізується на дослідженнях загроз кіберзлочинності та хактивізму.<p>'
+  language: "Українська"
+- name: "Месут Кючюк"
+  image: "/assets/i/speakers/uahacker.jpg"
+  position: "Офіс зв’язку НАТО в Україні"
+  # positionWithUrl: "FireEye"
+  # id: "speaker-20"
+  # description:
+  # language: "Українська"
