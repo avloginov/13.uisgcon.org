@@ -137,3 +137,10 @@
   # id: "speaker-20"
   # description:
   # language: "Українська"
+- name: "Нестор Дубневич"
+  image: "/assets/i/speakers/Nestor_Dubnevych.jpg"
+  position: "Партнер lexnet.io"
+  id: "speaker-21"
+  positionWithUrl: "Партнер <a class='modal-position-link' href='http://lexnet.io'>lexnet.io</a> - провайдера legaltech рішень."
+  description: '<p>Спікер на HackIT Ukraine, IOT Conf Ukraine, Blockchain Conference Kyiv, Lviv Startup Garden.</p><p>Автор публікацій про юридичні аспекти кібербезпеки в Україні і світі на Forbes, AIN, Forklog, Юридична газета.</p><p>Співорганізатор Всеукраїнського круглого столу про правовий статус біткойна в Україні.</p><p>Серед проектів, в юридичному супроводі яких брав участь, ІТ кластери, бізнес-інкубатори, інтернет-комерція, фінтек-проекти.</p>'
+  language: "Українська"

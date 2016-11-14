@@ -67,7 +67,9 @@
           speaker: "Mykola Koval"
           description: "<p>Ukraine has been centre of confrontation in cyber space for more then two years. Despite difficult geopolitical situation and significant activity of foreign secret/special services on cyber field, regular users’ banking assets (ATM, SWIFT, PoS) and bank-client systems are still under threat.</p><p>During his presentation Mykola will share his practical experience in trend cyber threats research and present so called ‘Ukraine Cyber-Threat Landscape 2016’.</p>"
         - time: "17:00"
-          event: "Please go to Hall A"
+          event: "Impunity of cybercrime, legitimacy of ‘white hackers’ and other legal issues of unformation security."
+          speaker: "Nestor Dubnevych"
+          description: '<p>Impunity of cybercrime, legitimacy of ‘white hackers’ and other legal issues of unformation security.</p><p>What cybercrime you will not find in the Criminal Code of Ukraine? Is it possible to sell the 0-day vulnerability to the domestic software developers and not go to jail? Why the human factor is the shortest channel for an unauthorized person to access to the critical data of your business? Can the cyberpolice return stolen bitcoins in light of existing laws?</p><p>Come and find out which information security points exist in the legal framework of our country.</p>'
 - title: "Day 2"
   date: "11/26/2016"
   id: "day-2"
@@ -81,8 +83,9 @@
           speaker: "Volodymyr Tkachenko"
           description: 'Information secuirty solutions convergence(SIEM, DLP, VM...): trend or necessity? Analyzing based on Splunk, IBM, Rapid7 and other information security solutions’ vendors.'
         - time: "11:00"
-          event: "Workshop,"
+          event: "Practical investigation by own hands: do it by yourself with experienced mentor,"
           speaker: "Ibrahim Halil Saruhan"
+          description: '<p>Practical investigation by own hands: do it by yourself with experienced mentor.</p><p>- A case explanation: 10 minutes;</p><p>- Concept and forensic tools: 20 minutes;</p><p>- Your own investigation: 60 minutes»</p>'
         - time: "12:30"
           event: "Coffee break"
         - time: "13:00"
