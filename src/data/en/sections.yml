@@ -24,7 +24,7 @@ about:
 news:
   title: "News"
   btnMore: "More news"
-  btnMoreLink: "/en/news"
+  btnMoreLink: "https://www.facebook.com/ngouisg/"
 
 sponsors:
   title: "Sponsors"
