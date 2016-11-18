@@ -1,8 +1,8 @@
 .container
 	if data
 		+e("h2").title.main-title!= data.title
-	if list
-		+e.list
-			+b("ul").news-list: +i({ data: list })
+	//- if list
+	//- 	+e.list
+	//- 		+b("ul").news-list: +i({ data: list })
 	+e.footer
 		+e("a").more.btn.btn_default(href=data.btnMoreLink)!= data.btnMore

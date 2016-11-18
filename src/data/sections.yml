@@ -22,8 +22,8 @@ about:
   btnMoreUrl: "/about"
 
 news:
-  title: "Новини"
-  btnMore: "Всі новини"
+  title: "Будь в курсі останніх новин"
+  btnMore: "Читати нас в фейсбуці"
   btnMoreLink: "https://www.facebook.com/ngouisg/"
 
 timer:

@@ -6,12 +6,10 @@
   url: "http://www.cisco.com/c/ru_ua/index.html"
   text: "Золотий Партнер: Cisco"
   image: "/assets/i/partners/cisco.jpg"
-
 - title: "Золотий Партнер: ADVANTIO"
   url: "http://www.advantio.com/"
   text: "Золотий Партнер: ADVANTIO"
   image: "/assets/i/partners/advantio_logo.png"
-
 - title: "Срібний Партнер: ISSP"
   url: "http://issp.ua/"
   text: "Срібний Партнер: ISSP"
@@ -60,6 +58,27 @@
   url: "http://it-forum.com.ua/"
   text: "Інформаційний партнер: IT-форум"
   image: "/assets/i/partners/it-forum.jpg"
+- title: "Інформаційний партнер: Фуэте"
+  url: "http://fuete.info/"
+  text: "Інформаційний партнер: Фуэте"
+  image: "/assets/i/partners/fuete_log.jpg"
+- title: "Інформаційний партнер: ITM"
+  url: "http://fuete.info/"
+  text: "Інформаційний партнер: ITM"
+  image: "/assets/i/partners/ITM_logo.jpg"
+
+- title: "Інформаційний партнер: Security News"
+  url: "http://www.security-news.today/"
+  text: "Інформаційний партнер: Security News"
+  image: "/assets/i/partners/secourity_news_logo.jpg"
+
+- title: "Інформаційний партнер: iTrends Digital"
+  url: "http://itrends.digital/"
+  text: "Інформаційний партнер: iTrends Digital"
+  image: "/assets/i/partners/itrends_digital_logo.png"
+
+
+
 - title: "Подкаст SecurIt13"
   url: "http://securit13.libsyn.com/"
   text: "Подкаст SecurIt13"

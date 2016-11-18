@@ -22,8 +22,8 @@ about:
   btnMoreUrl: "/en/about"
 
 news:
-  title: "News"
-  btnMore: "More news"
+  title: "Latest news"
+  btnMore: "Read us in Facebook"
   btnMoreLink: "https://www.facebook.com/ngouisg/"
 
 sponsors:
