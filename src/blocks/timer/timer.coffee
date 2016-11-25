@@ -33,10 +33,12 @@ $.fn.makeCustomTimer = ->
 				$(@).trigger "timer.tick", value
 				if value <= 0
 					clearInterval interval
-					$(@).trigger "timer.finished"
+#					$(@).trigger "timer.finished"
+					display 0
 			, 1000
 		else
-			$(@).trigger "timer.finished"
+#			$(@).trigger "timer.finished"
+			display 0
 	@
 
 $ ->
