@@ -37,7 +37,7 @@ organizers:
   dev: "Developed by"
 
 informer:
-  title: "12<small>th</small> conference <br>of cyber security"
+  title: "13<small>th</small> conference <br>of cyber security"
   buttonLabel: "Registration"
   buttonUrl: "/order"
 
@@ -72,12 +72,14 @@ contest:
 features:
   title: "Features"
   list:
-    - value: "2"
+    - value: "21"
       label: "Days of unique <br>content"
-    - value: "500+"
-      label: "Professionals <br>of information security"
-    - value: "30+"
-      label: "Thematic lectures, discussions <br>and workshops"
+    - value: "400+"
+      label: "Professionals <br>of cyber security"
+    - value: "20+"
+      label: "Speeches, discussions <br>and workshops"
+    - value: "1"
+      label: "The party for all<br> participants"
 
 tickets:
   title: "Ticket options"
