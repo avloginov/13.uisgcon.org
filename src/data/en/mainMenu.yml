@@ -7,6 +7,7 @@
 - title: "Сontest"
   url: "/en/#contest"
 - title: "News"
-  url: "/en/news"
+  url: "/en/#news"
+  # url: "/en/news"
 - title: "Contacts"
   url: "/en/contacts"

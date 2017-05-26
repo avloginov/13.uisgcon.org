@@ -1,8 +1,8 @@
 ---
 layout: layouts/article
-pageUrl: "news/uisgcon12-info"
-title: "Вітаємо на сайті 12-ї конференції з інформаційної безпеки UISGCON 12!"
-subtitle: "12.09.2016"
+pageUrl: "https://www.facebook.com/ngouisg/"
+title: "Слідкуйте за новинами UISGCON13 у Facebook"
+subtitle: "26.05.2017"
 dateTime: "2016-09-12"
 ---
 
@@ -11,5 +11,3 @@ dateTime: "2016-09-12"
 Програма буде доступна після 01.11.2016 <br>Оргкомітет розглядатиме отримані заявки <strong>до 25 жовтня 2016</strong>.
 
 Зробимо  UISGCON 12 цікавим разом!
-
-
