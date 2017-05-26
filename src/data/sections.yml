@@ -1,8 +1,8 @@
 map:
   data:
     title: "'Президент Готель'"
-    latitude: 50.435883
-    longitude: 30.524122
+    latitude: 50.436223
+    longitude: 30.525358
     zoom: 15
     icon: "/assets/i/map-pin.png"
   title: "Контакти"
@@ -81,28 +81,34 @@ features:
     # - value: "Заключна вечірка для всіх учасників"
 
 tickets:
-  title: "Варіанти квитків"
+  title: "Квитки"
   list:
-    - title: "Квиток на<div class='color-blue'>25.11.16</div>"
-      price: 500
-      currency: "грн"
+    - text: "Єдина all-inclusive ціна для всіх учасників: 900 грн У ціну включено відвідування усіх сесій Конференції, два кава-брейки, обід, вечірка (допускаються особи старші 18 років)"
       orderLink: "/order"
       order: "Купити"
-    - title: "Квиток на<div class='color-blue'>26.11.16</div>"
-      price: 500
-      currency: "грн"
-      orderLink: "/order"
-      order: "Купити"
-    - title: "Квиток на два дні <div class='color-blue'>25-26.11.16</div>"
-      price: 750
-      currency: "грн"
-      orderLink: "/order"
-      order: "Купити"
-    - title: "Студентський квиток <div class='color-blue'>два дні</div>"
-      price: 350
-      currency: "грн"
-      orderLink: "/order"
-      order: "Купити"
+#title: "Варіанти квитків"
+#  text: "11cЄдина all-inclusive ціна для всіх учасників: 900 грн </br> У ціну включено відвідування усіх сесій Конференції, два кава-брейки, обід, вечірка (допускаються особи старші 18 років)"
+#  list:
+#    - title: "Квиток на<div class='color-blue'>25.11.16</div>"
+#      price: 500
+#      currency: "грн"
+#      orderLink: "/order"
+#      order: "Купити"
+#    - title: "Квиток на<div class='color-blue'>26.11.16</div>"
+#      price: 500
+#      currency: "грн"
+#      orderLink: "/order"
+#      order: "Купити"
+#    - title: "Квиток на два дні <div class='color-blue'>25-26.11.16</div>"
+#      price: 750
+#      currency: "грн"
+#      orderLink: "/order"
+#      order: "Купити"
+#    - title: "Студентський квиток <div class='color-blue'>два дні</div>"
+#      price: 350
+#      currency: "грн"
+#      orderLink: "/order"
+#      order: "Купити"
 
 infoSupport:
   title: "Інформаційна підтримка"

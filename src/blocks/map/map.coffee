@@ -4,8 +4,8 @@ $ ->
 
 	{ title, latitude, longitude, zoom, icon } = $block.data()
 
-	latitude = 50.435883 unless latitude
-	longitude = 30.524122 unless longitude
+	latitude = 50.436223 unless latitude
+	longitude = 30.525358 unless longitude
 	zoom = 15 unless zoom
 
 	window.initMap = ->

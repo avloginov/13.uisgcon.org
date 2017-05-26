@@ -1,8 +1,8 @@
 map:
   data:
     title: "President Hotel"
-    latitude: 50.435883
-    longitude: 30.524122
+    latitude: 50.436223
+    longitude: 30.525358
     zoom: 15
     icon: "/assets/i/map-pin.png"
   title: "Contact"
@@ -33,7 +33,7 @@ sponsors:
 
 organizers:
   title: "Organisers"
-  location: "Address of UISGCON 12:"
+  location: "Address of UISGCON 13:"
   dev: "Developed by"
 
 informer:
@@ -80,28 +80,33 @@ features:
       label: "Thematic lectures, discussions <br>and workshops"
 
 tickets:
-  title: "Ticket options"
+  title: "Ticket"
   list:
-    - title: "Tickets for <div class='color-blue'>11.25.16</div>"
-      price: 500
-      currency: "uah"
+    - text: "Single all-inclusive price for everyone: 900 UAH ($36) What included: all sessions at the Conference, two coffee-breaks, launch, evening party (18+ only)"
       orderLink: "/order"
       order: "Buy"
-    - title: "Tickets for <div class='color-blue'>11.26.16</div>"
-      price: 500
-      currency: "uah"
-      orderLink: "/order"
-      order: "Buy"
-    - title: "Tickets for two days <div class='color-blue'>11.25.16-11.26.16</div>"
-      price: 750
-      currency: "uah"
-      orderLink: "/order"
-      order: "Buy"
-    - title: "Student ID <div class='color-blue'>two days</div>"
-      price: 350
-      currency: "uah"
-      orderLink: "/order"
-      order: "Buy"
+#title: "Ticket options"
+#  list:
+#    - title: "Tickets for <div class='color-blue'>11.25.16</div>"
+#      price: 500
+#      currency: "uah"
+#      orderLink: "/order"
+#      order: "Buy"
+#    - title: "Tickets for <div class='color-blue'>11.26.16</div>"
+#      price: 500
+#      currency: "uah"
+#      orderLink: "/order"
+#      order: "Buy"
+#    - title: "Tickets for two days <div class='color-blue'>11.25.16-11.26.16</div>"
+#      price: 750
+#      currency: "uah"
+#      orderLink: "/order"
+#      order: "Buy"
+#    - title: "Student ID <div class='color-blue'>two days</div>"
+#      price: 350
+#      currency: "uah"
+#      orderLink: "/order"
+#      order: "Buy"
 
 infoSupport:
   title: "Information support"
