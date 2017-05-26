@@ -24,7 +24,7 @@
     "verstat-plugin-jade": "^1.4.0",
     "verstat-plugin-livereload": "^1.1.0",
     "verstat-plugin-marked": "^1.0.0",
-    "verstat-plugin-prettify-html": "~1.2.1",
+    "verstat-plugin-prettify-html": "1.2.2",
     "verstat-plugin-sprockets": "^1.0.2",
     "verstat-plugin-stylus": "^1.2.1",
     "verstat-plugin-uglify": "^1.0.0",
