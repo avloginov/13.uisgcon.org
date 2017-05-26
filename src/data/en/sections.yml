@@ -72,14 +72,14 @@ contest:
 features:
   title: "Features"
   list:
-    - value: "21"
+    - value: "1"
       label: "Days of unique <br>content"
     - value: "400+"
       label: "Professionals <br>of cyber security"
     - value: "20+"
       label: "Speeches, discussions <br>and workshops"
     - value: "1"
-      label: "The party for all<br> participants"
+      label: "Final party <br>for all participants"
 
 tickets:
   title: "Ticket"
