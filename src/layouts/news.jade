@@ -1,4 +1,6 @@
 extends page
 
 block article
-	+b("ul").news-list: +i({ data: news })
+	.text-center
+		a.btn.btn_default(href=sections.news.btnMoreLink)!= sections.news.btnMore
+	//- +b("ul").news-list: +i({ data: news })
