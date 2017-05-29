@@ -5,3 +5,6 @@ block root
 		+b("header").header._static: +i({ language: file.language, pageUrl: file.pageUrl })
 
 	!= content
+
+	if file.showFooter
+		+b("footer").footer: +i({ language: file.language })

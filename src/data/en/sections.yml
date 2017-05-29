@@ -87,7 +87,9 @@ tickets:
     - text: "Single all-inclusive price for everyone: 900 UAH ($36) What included: all sessions at the Conference, two coffee-breaks, launch, evening party (18+ only)"
       orderLink: "/order"
       order: "Buy"
-#title: "Ticket options"
+cfp:
+  title: "Dear colleagues, UISGCON13 Call For Paper is starting"
+  text: "If you would like to share your unique expertise, research, information or experience with Cyber Security Community <a href='https://docs.google.com/a/se7ensky.com/forms/d/e/1FAIpQLSddb-tLp7qcgfTJ4aFmP9-mUgWCB5aAz6xZD-69AxnX2HCVxw/viewform?c=0&w=1' target='_blank'>Please fill in the form.</a> OrgTeam would be very appreciated for your short bio and your good enough photo.<br><br>As a reminder: any ads like definite services, goods, company names, trade marks, brands etc should not be mentioned in your speach/presentation. Your contacts and current job may be specified in your speech/presentation.<br><br>All applications will be considered and not later August 31, 2016 we will let every applicant know on our decision on his/her application.<br><br>We wait for your bright speeches at UISGCON13!"
 #  list:
 #    - title: "Tickets for <div class='color-blue'>11.25.16</div>"
 #      price: 500
