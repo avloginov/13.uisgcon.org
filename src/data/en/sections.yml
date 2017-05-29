@@ -57,7 +57,10 @@ speakers:
   title: "Speakers"
   btnMore: "All speakers"
   btnMoreLink: "/en/speakers"
+  btnAdd: "Become Speaker"
+  btnAddLink: "/cfp"
   langLabel: "Language"
+
 
 program:
   title: "Program"
@@ -84,7 +87,7 @@ features:
 tickets:
   title: "Ticket"
   list:
-    - text: "Single all-inclusive price for everyone: 900 UAH ($36) What included: all sessions at the Conference, two coffee-breaks, launch, evening party (18+ only)"
+    - text: "Single all-inclusive price for everyone: 900 UAH ($36) What included: all sessions at the Conference, two coffee-breaks, launch, evening party (18+ only)<br><br>*The tickets will soon be available."
       orderLink: "/order"
       order: "Buy"
 cfp:
