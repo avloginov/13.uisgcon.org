@@ -76,7 +76,7 @@ features:
   title: "Features"
   list:
     - value: "1"
-      label: "Days of unique <br>content"
+      label: "Day of unique <br>content"
     - value: "400+"
       label: "Professionals <br>of cyber security"
     - value: "20+"
