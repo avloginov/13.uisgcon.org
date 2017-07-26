@@ -87,8 +87,8 @@ features:
 tickets:
   title: "Ticket"
   list:
-    - text: "Single all-inclusive price for everyone: 900 UAH ($36) What included: all sessions at the Conference, two coffee-breaks, launch, evening party (18+ only)<br><br>*The tickets will soon be available."
-      orderLink: "/order"
+    - text: "Single all-inclusive price for everyone: 900 UAH ($36) What included: all sessions at the Conference, two coffee-breaks, launch, evening party (18+ only)"
+      orderLink: "https://www.concert.ua/en/eventpage/uisgcon"
       order: "Buy"
 cfp:
   title: "Dear colleagues, UISGCON13 Call For Paper is starting"

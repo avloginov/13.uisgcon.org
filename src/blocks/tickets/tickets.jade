@@ -5,23 +5,23 @@
 				each item, i in data.list
 					+e.list-item1
 							+e.text-new!= item.text
-					//- +e.box-wrap
-					//- 	+e("a").order-new.btn.btn-lg.btn-white(class=classes href=item.orderLink)!= item.order
+					+e.box-wrap
+						+e("a").order-new.btn.btn-lg.btn-white(class=classes href=item.orderLink)!= item.order
 
 	//+e("p").text-new= data.text
 	//
 	//+e("a").box-order.btn.btn-white(class=classes href=item.orderLink)!= item.order
 
-	//if data.list
-	//	+e("ul").list
-	//		each item, i in data.list
-	//			+e("li").list-item
-	//				+e.box
-	//					+e.box-title!= item.title
-	//					+e.box-price!= item.price
-	//						sup!= item.currency
-	//					if i === 2
-	//						- classes = "active"
-	//					else
-	//						- classes = ""
-	//					+e("a").box-order.btn(class=classes href=item.orderLink)!= item.order
+	//- if data.list
+	//- 	+e("ul").list
+	//- 		each item, i in data.list
+	//- 			+e("li").list-item
+	//- 				+e.box
+	//- 					+e.box-title!= item.title
+	//- 					+e.box-price!= item.price
+	//- 						sup!= item.currency
+	//- 					if i === 2
+	//- 						- classes = "active"
+	//- 					else
+	//- 						- classes = ""
+	//- 					+e("a").box-order.btn(class=classes href=item.orderLink)!= item.order
